@@ -22,7 +22,7 @@ public class PermissionEntity {
      */
     private String permissionsName;
     /**
-     * 当前权限可以访问的urssl
+     * 当前权限可以访问的url
      */
     private String url;
     /**
