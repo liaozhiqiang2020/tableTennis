@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Triangle Platform</title>
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+
+
+
+<div class="container">
+
+    <div class="starter-template">
+        <h1>Admin page (Spring Security protected)</h1>
+
+        <h1>Hello [[${#httpServletRequest.remoteUser}]]!</h1>
+        <form action="/logout" method="post">
+            <input type="submit" value="Sign Out"/>
+        </form>
+
+    </div>
+
+</div>
+<!-- /.container -->
+
+</body>
+</html>
