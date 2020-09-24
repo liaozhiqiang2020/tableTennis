@@ -304,3 +304,7 @@
 [DEBUG] 2020-09-24 17:06:13,865 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
 [INFO ] 2020-09-24 17:06:13,865 com.tt.TTApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-09-24 17:06:18,600 com.tt.TTApplication - Started TTApplication in 5.047 seconds (JVM running for 5.975)
+[INFO ] 2020-09-24 17:13:53,960 com.tt.TTApplication - Starting TTApplication on PC-20200911IHLU with PID 7784 (E:\ideawork\tableTennis\target\classes started by Administrator in E:\ideawork\tableTennis)
+[DEBUG] 2020-09-24 17:13:53,965 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-09-24 17:13:53,966 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-09-24 17:13:58,720 com.tt.TTApplication - Started TTApplication in 5.105 seconds (JVM running for 6.038)
