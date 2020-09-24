@@ -1,6 +1,6 @@
 package com.tt.repository;
 
-import com.sv.mc.pojo.PermissionEntity;
+import com.tt.pojo.PermissionEntity;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;

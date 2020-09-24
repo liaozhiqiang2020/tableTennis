@@ -1,0 +1,119 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<!-- logo和导航条 -->
+<aside th:fragment="menu" class="main-sidebar">
+    <section class="sidebar">
+        <ul class="sidebar-menu" data-widget="tree">
+            <li class="header">导航栏</li>
+
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-files-o"></i>
+                    <span>基础数据管理</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li>
+                        <a href="/mc/headMgr/turnToHeadMgr"><i class="fa fa-circle-o"></i>教练信息管理</a>
+                    </li>
+                    <li>
+                        <a href="/mc/branchMgr/turnToBranchMgr"><i class="fa fa-circle-o"></i>学员信息管理</a>
+                    </li>
+                    <li>
+                        <a href="/mc/vendorMgr/turnToVendorMgr"><i class="fa fa-circle-o"></i>场地信息管理</a>
+                    </li>
+                    <li>
+                        <a href="/mc/placeMgr/turnToPlaceMgr"><i class="fa fa-circle-o"></i>球馆信息管理</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-pie-chart"></i>
+                    <span>报名管理</span>
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li>
+                        <a href="/mc/price/priceTest"><i class="fa fa-circle-o"></i>报名方式</a>
+                    </li>
+                    <li>
+                        <a href="/mc/price/priceTest1"><i class="fa fa-circle-o"></i>定价</a>
+                    </li>
+                </ul>
+            </li>
+
+<!--            <li class="treeview">-->
+<!--                <a href="#">-->
+<!--                    <i class="fa fa-pie-chart"></i>-->
+<!--                    <span>销售管理</span>-->
+<!--                    <span class="pull-right-container">-->
+<!--                      <i class="fa fa-angle-left pull-right"></i>-->
+<!--                    </span>-->
+<!--                </a>-->
+<!--                <ul class="treeview-menu">-->
+<!--                    <li>-->
+<!--                        <a href="/mc/turnToreport"><i class="fa fa-circle-o"></i>销售报表</a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </li>-->
+<!--            <li class="treeview">-->
+<!--                <a href="#">-->
+<!--                    <i class="fa fa-laptop"></i>-->
+<!--                    <span>交易管理</span>-->
+<!--                    <span class="pull-right-container">-->
+<!--              <i class="fa fa-angle-left pull-right"></i>-->
+<!--            </span>-->
+<!--                </a>-->
+<!--                <ul class="treeview-menu">-->
+<!--                    <li><a href="/mc/orderMgr/turnToOrderPlaceMgr"><i class="fa fa-circle-o"></i>-->
+<!--                        订单查询</a></li>-->
+<!--                </ul>-->
+<!--            </li>-->
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-dashboard"></i> <span>用户管理</span>
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li>
+                        <a href="/mc/user/userManagement"><i class="fa fa-circle-o"></i> 用户信息管理</a>
+                    </li>
+                    <li>
+                        <a href="/mc/role/roleManagement"><i class="fa fa-circle-o"></i>角色管理</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <!-- /.sidebar -->
+</aside>
+<script>
+    $('.sidebar-menu li:not(.treeview) > a').on('click', function () {
+        var $parent = $(this).parent().addClass('active');
+        $parent.siblings('.treeview.active').find('> a').trigger('click');
+        $parent.siblings().removeClass('active').find('li').removeClass('active');
+    });
+
+    $(window).on('load', function () {
+        $('.sidebar-menu a').each(function () {
+            // console.log(this);
+            var cur = window.location.href;
+            var url = this.href;
+            // console.log(cur.match(url));
+            if (cur.match(url)) {
+                $(this).parent().addClass('active')
+                    .closest('.treeview-menu').addClass('.menu-open')
+                    .closest('.treeview').addClass('active');
+            }
+        });
+    });
+</script>
+</html>

@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<html xmlns:th="http://www.thymeleaf.org">
 <head th:replace="fragments/header::header-css">
     <title>Triangle Platform</title>
 </head>
@@ -26,10 +26,10 @@
                         <span class="info-box-icon bg-green"><i class="fa fa-check" aria-hidden="true"></i></span>
 
                         <div class="info-box-content">
-                            <span class="info-box-text">正常设备</span>
+                            <span class="info-box-text">今日教练人数</span>
                             <span class="info-box-number">
                                 <p style="font-size: 30px;">
-                                    <a href="#" target="_blank" id="nmoDevice">0</a>台
+                                    <a href="#" target="_blank" id="nmoDevice">0</a>人
                                 </p>
                             </span>
                         </div>
@@ -45,10 +45,10 @@
                             <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
                         </span>
                         <div class="info-box-content">
-                            <span class="info-box-text">故障设备</span>
+                            <span class="info-box-text">今日学员人数</span>
                             <span class="info-box-number">
                                 <p style="font-size: 30px;">
-                                    <a href="#" target="_blank" id="expDevice">0</a>台
+                                    <a href="#" target="_blank" id="expDevice">0</a>人
                                 </p>
                             </span>
 
@@ -71,7 +71,7 @@
                     <div class="info-box">
                         <span class="info-box-icon bg-green"><i class="fa fa-jpy" aria-hidden="true"></i></span>
                         <div class="info-box-content">
-                            <span class="info-box-text">今日收入</span>
+                            <span class="info-box-text">今日营业收入</span>
                             <span class="info-box-number">
                                 <p style="font-size: 30px;">
                                 <a href="#" target="_blank" id="yedInc">0.00</a>元
@@ -89,10 +89,10 @@
                         <span class="info-box-icon bg-navy"><i class="ion ion-ios-people-outline"></i></span>
 
                         <div class="info-box-content">
-                            <span class="info-box-text">今日订单</span>
+                            <span class="info-box-text">今日报名人数</span>
                             <span class="info-box-number">
                                 <p style="font-size: 30px;">
-                                <a href="/mc/orderMgr/turnToOrderMgrByYesterday"  id="orderCount">2000</a>单
+                                <a href="/mc/orderMgr/turnToOrderMgrByYesterday"  id="orderCount">2000</a>人
                                 </p>
                             </span>
                         </div>

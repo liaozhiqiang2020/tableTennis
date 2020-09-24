@@ -1,8 +1,8 @@
 package com.tt.service.impl;
 
-import com.sv.mc.pojo.PermissionEntity;
-import com.sv.mc.repository.PermissionRepository;
-import com.sv.mc.service.PermissionService;
+import com.tt.pojo.PermissionEntity;
+import com.tt.repository.PermissionRepository;
+import com.tt.service.PermissionService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -10,7 +10,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @Service
-public class PermissionServiceImpl implements PermissionService{
+public class PermissionServiceImpl implements PermissionService {
     @Resource
     PermissionRepository permissionRepository;
 

@@ -1,6 +1,7 @@
 package com.tt.service;
 
-import com.sv.mc.pojo.PermissionEntity;
+
+import com.tt.pojo.PermissionEntity;
 
 import java.util.List;
 

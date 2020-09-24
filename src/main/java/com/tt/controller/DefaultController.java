@@ -7,7 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * 初始页面
@@ -32,28 +35,33 @@ public class DefaultController {
      */
     @RequestMapping("/")
     public ModelAndView home() {
-        return new ModelAndView("./home");
+        return new ModelAndView("login");
     }
 
-    /**
-     * 登陆页面跳转控制
-     * @param error 不正确
-     * @param logout 退出
-     * @return 页面跳转
-     */
-    @GetMapping("/login")
-    public ModelAndView login(@RequestParam(value = "error", required = false) String error,
-                              @RequestParam(value = "logout", required = false) String logout) {
-        ModelAndView model = new ModelAndView();
-        if (error != null) {
-            model.addObject("error", "不正确的用户名和密码");
-        }
-        if (logout != null) {
-            model.addObject("msg", "你已经成功退出");
-        }
-        model.setViewName("login");
-        return model;
+    @RequestMapping("/toLogin")
+    public ModelAndView toLogin() {
+        return new ModelAndView("login");
     }
+
+//    /**
+//     * 登陆页面跳转控制
+//     * @param error 不正确
+//     * @param logout 退出
+//     * @return 页面跳转
+//     */
+//    @GetMapping("/login")
+//    public ModelAndView login(@RequestParam(value = "error", required = false) String error,
+//                              @RequestParam(value = "logout", required = false) String logout) {
+//        ModelAndView model = new ModelAndView();
+//        if (error != null) {
+//            model.addObject("error", "不正确的用户名和密码");
+//        }
+//        if (logout != null) {
+//            model.addObject("msg", "你已经成功退出");
+//        }
+//        model.setViewName("login");
+//        return model;
+//    }
 
     /**
      *
@@ -79,7 +87,7 @@ public class DefaultController {
      */
     @RequestMapping("/getYesterdayOrderCount")
     public String  getYesterdayOrderCount(){
-        return String.valueOf(12);
+        return null;
     }
 
     /**
@@ -89,11 +97,43 @@ public class DefaultController {
      */
     @GetMapping("/getCount")
     public HomeVO getCount(HttpServletRequest request){
-        UserEntity user= (UserEntity) request.getSession().getAttribute("user");
-        HomeVO result=  homeService.dataDisplay(user);
 
-        return result;
+
+        return null;
     }
 
+    /**
+     * 登陆页面跳转控制
+     * @return 页面跳转
+     */
+    @PostMapping("/login")
+    public ModelAndView verPwd(@RequestParam(value = "username", required = false) String username,
+                               @RequestParam(value = "password", required = false) String password, HttpSession session, HttpServletResponse response) {
+        ModelAndView model = new ModelAndView();
+
+        if(username.equals("admin") && password.equals("123456")){
+            Cookie c1 = new Cookie("loginName", username);
+            c1.setPath("/");
+            response.addCookie(c1);
+            session.setAttribute("user", username);
+            model.setViewName("home");
+        }else{
+            model.setViewName("login");
+            model.addObject("error", "不正确的用户名和密码");
+        }
+
+
+        return model;
+    }
+
+
+    @RequestMapping("/logout")
+    public ModelAndView logout(HttpServletRequest request) {
+        ModelAndView model = new ModelAndView();
+        HttpSession session = request.getSession();
+        session.removeAttribute("user");
+        model.setViewName("login");
+        return model;
+    }
 
 }

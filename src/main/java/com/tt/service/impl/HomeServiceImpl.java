@@ -25,7 +25,7 @@ public class HomeServiceImpl implements HomeService {
      */
     @Override
     public HomeVO dataDisplay(UserEntity user) {
-        //判断用户的等级
+/*        //判断用户的等级
         int gradeId = user.getGradeId(); //用户等级
         int pId=user.getpId();//隶属单位
         HomeVO result = new HomeVO();//结果集
@@ -33,8 +33,8 @@ public class HomeServiceImpl implements HomeService {
         result.setNmoDevice(deviceRepository.getDeviceCount());//正常设备数
         result.setExpDevice(deviceRepository.getDeviceErrorCount()); //异常设备数
         result.setYedOrder(12);//昨天的订单数
-        result.setYedInc(new BigDecimal("12.3"));//昨天的收入
+        result.setYedInc(new BigDecimal("12.3"));//昨天的收入*/
 
-        return result;
+        return null;
     }
 }
