@@ -7,7 +7,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "tt_course", schema = "tt", catalog = "")
-public class Course {
+public class CourseEntity {
     private int id;
     private String name;
     private int type;//1.社团(免费)  2.社团(收费)  3.收费培训(基础)  4.收费培训(高级)

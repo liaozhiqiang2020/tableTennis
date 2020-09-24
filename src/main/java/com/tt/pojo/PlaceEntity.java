@@ -8,7 +8,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "tt_place", schema = "tt", catalog = "")
-public class Place {
+public class PlaceEntity {
     private int id;
     private String name;
     private String address;

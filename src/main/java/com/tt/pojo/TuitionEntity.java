@@ -7,7 +7,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "tt_tuition", schema = "tt", catalog = "")
-public class Tuition {
+public class TuitionEntity {
     private int id;
     private String explain;//备注
     private int studentId;//学生
