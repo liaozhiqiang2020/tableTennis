@@ -1,0 +1,143 @@
+<html>
+
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../layui/layui.js"></script>
+    <script src="../js/baseutil.js"></script>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+
+
+<div class="content-wrapper">
+    <form class="layui-form" action="">
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">课程名称</label>
+            <div class="layui-input-block">
+                <input type="text" name="name" lay-verify="name" placeholder="请输入课程名称" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">课程类型</label>
+            <div class="layui-input-block">
+                <select name="type" lay-filter="type">
+                    <option value="">请选择---</option>
+                    <option value="1">社团(免费)</option>
+                    <option value="2">社团(收费)</option>
+                    <option value="3">收费培训(基础)</option>
+                    <option value="4">收费培训(高级)</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">是否在校</label>
+            <div class="layui-input-block">
+                <select name="inSchool" lay-filter="inSchool">
+                    <option value="">请选择---</option>
+                    <option value="1">校内</option>
+                    <option value="2">校外</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">课时数(节)</label>
+            <div class="layui-input-block">
+                <input type="text" name="classHours" lay-verify="classHours" placeholder="请输入课时数" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">课时费(元)</label>
+            <div class="layui-input-block">
+                <input type="text" name="money" lay-verify="money" placeholder="请输入课时费" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button type="submit" class="layui-btn" lay-submit=""
+                        lay-filter="demo1" id="commit">立即提交</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- /.container -->
+<script>
+    $(document).ready(function(){
+        // var uuid = '${uuid}';
+
+    });
+
+    layui.use(['form', 'layedit', 'laydate','upload'], function(){
+        var form = layui.form
+        ,laydate = layui.laydate
+        var $ = layui.jquery;
+        $(this).removeAttr("lay-key");
+        //日期
+        laydate.render({
+            elem : '#date'
+            ,trigger : 'click'
+        });
+
+        //自定义验证规则
+        form.verify({
+
+        });
+
+        form.on('submit(demo1)', function(data){
+            $.ajax({
+                url:'../course/add',
+                method : 'post',
+                data : data.field,
+                dataType : 'JSON',
+                async:false,
+                success : function(res) {
+                    if(res==0){
+                        layuiOpen("结果","添加成功");
+                    }else{
+                        layuiOpen("结果","添加失败");
+                    }
+                },
+                error : function(res) {
+                    layuiOpen("结果","请求异常");
+                }
+            });
+
+            return false;
+        });
+    });
+
+    //提示框
+    function layuiOpen(id, text) {
+        layer.open({
+            type : 1,
+            offset : 'auto',
+            id : id //防止重复弹出
+            ,
+            content : '<div style="padding: 20px 100px;">' + text
+                + '</div>',
+            btn : '确定',
+            btnAlign : 'c' //按钮居中
+            ,
+            shade : 0.2 //不显示遮罩
+            ,
+            yes : function() {
+                layer.closeAll();
+                window.parent.location.reload();
+            }
+        });
+    }
+
+</script>
+
+</body>
+</html>
