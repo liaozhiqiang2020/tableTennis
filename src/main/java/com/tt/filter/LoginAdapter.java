@@ -18,7 +18,7 @@ public class LoginAdapter implements WebMvcConfigurer {
 
         //添加对用户是否登录的拦截器，并添加过滤项、排除项
         registry.addInterceptor(LoginInterceptor).addPathPatterns("/*")
-                .excludePathPatterns("/css/**","/js/**","/images/**")//排除样式、脚本、图片等资源文件
+                .excludePathPatterns("/css/**","/js/**","/images/**","/layui/**")//排除样式、脚本、图片等资源文件
                 .excludePathPatterns("/login")//排除用户点击登录按钮
                 .excludePathPatterns("/toLogin");
 

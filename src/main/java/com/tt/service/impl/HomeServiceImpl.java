@@ -2,20 +2,15 @@ package com.tt.service.impl;
 
 import com.tt.pojo.UserEntity;
 import com.tt.pojo.vo.HomeVO;
-import com.tt.repository.DeviceRepository;
 import com.tt.service.HomeService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.math.BigDecimal;
 
 /**
  * 主页面信息
  */
 @Service
 public class HomeServiceImpl implements HomeService {
-    @Autowired
-    private DeviceRepository deviceRepository;
 
 
     /**
