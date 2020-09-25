@@ -3,6 +3,9 @@
       xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
 
 <head th:fragment="header-css">
+    <!-- layui -->
+    <link rel="stylesheet" th:src="@{/layui/css/layui.css}"
+          href="../layui/css/layui.css">
 
     <!-- Bootstrap 3.3.7 -->
     <link rel="stylesheet" th:href="@{/css/bootstrap/bootstrap.min.css}">
@@ -17,10 +20,10 @@
           href="../../static/css/adminlte/AdminLTE.min.css">
     <link rel="stylesheet" th:href="@{/css/adminlte/skins/_all-skins.min.css}"
           href="../../static/css/adminlte/skins/_all-skins.min.css">
-    <link rel="stylesheet" th:href="@{/css/kendo/kendo.common.min.css}"
+<!--    <link rel="stylesheet" th:href="@{/css/kendo/kendo.common.min.css}"
           href="../../static/css/kendo/kendo.common.min.css">
     <link rel="stylesheet" th:href="@{/css/kendo/kendo.bootstrap.min.css}"
-          href="../../static/css/kendo/kendo.bootstrap.min.css">
+          href="../../static/css/kendo/kendo.bootstrap.min.css">-->
 
 
     <script type="text/javascript" th:src="@{/js/jquery-3.2.1.min.js}"
@@ -31,21 +34,26 @@
             src="../../static/js/adminlte/adminlte.min.js"></script>
     <script type="text/javascript" th:src="@{/js/jquery-slimscroll/jquery.slimscroll.min.js}"
             src="../../static/js/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script th:src="@{/layui/layui.js}"
+            src="../layui/layui.js"></script>
+    <script th:src="@{/js/baseutil.js}"
+            src="../../static/js/baseutil.js"></script>
 
     <!--Kendo libraries-->
-    <script type="text/javascript" th:src="@{/js/kendo/kendo.all.min.js}"
+<!--    <script type="text/javascript" th:src="@{/js/kendo/kendo.all.min.js}"
             src="../../static/js/kendo/kendo.all.min.js"></script>
     <script type="text/javascript" th:src="@{/js/kendo/cultures/kendo.culture.zh-CN.min.js}"
             src="../../static/js/kendo/cultures/kendo.culture.zh-CN.min.js"></script>
     <script type="text/javascript" th:src="@{/js/kendo/messages/kendo.messages.zh-CN.min.js}"
-            src="../../static/js/kendo/messages/kendo.messages.zh-CN.min.js"></script>
+            src="../../static/js/kendo/messages/kendo.messages.zh-CN.min.js"></script>-->
 
     <!--commons.js -->
     <script type="text/javascript" th:src="@{/js/commons.js}"
             src="../../static/js/commons.js"></script>
     <!--echarts-->
-    <script type="text/javascript" th:src="@{/js/echarts/echarts.min.js}"
-            src="../../static/js/echarts/echarts.min.js"></script>
+<!--    <script type="text/javascript" th:src="@{/js/echarts/echarts.min.js}"
+            src="../../static/js/echarts/echarts.min.js"></script>-->
+
 </head>
 <!-- 页眉 -->
 <header class="main-header" th:fragment="header-body">
