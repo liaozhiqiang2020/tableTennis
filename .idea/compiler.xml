@@ -6,16 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="tt" />
+        <module name="tableTennis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="tt" target="1.8" />
+      <module name="tableTennis" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="tt" options="-parameters" />
+      <module name="tableTennis" options="-parameters" />
     </option>
   </component>
 </project>
