@@ -32,6 +32,17 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
+    public Map<String, Object> findStudentByPage2(int page, int pageSize) {
+        Map<String,Object> result = new HashedMap();
+        List<Map<String,Object>> list = this.studentRepository.findAllStudentByPage2((page-1)*10,pageSize);
+        int total = this.studentRepository.findAllStudentTotal();
+        result.put("code", 0);
+        result.put("data", list);
+        result.put("count", total);
+        return result;
+    }
+
+    @Override
     public List<StudentEntity> findAllStudent() {
         return this.studentRepository.findAllStudent();
     }

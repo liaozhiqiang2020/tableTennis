@@ -25,6 +25,8 @@ public interface TuitionService<T> {
      */
     Map<String,Object> findTuitionByPage(int page, int pageSize);
 
+    Map<String,Object> findTuitionByPage2(int page, int pageSize);
+
     /**
      * 不分页查询所有Tuition
      *

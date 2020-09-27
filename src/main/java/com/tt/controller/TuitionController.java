@@ -30,7 +30,7 @@ public class TuitionController {
 	@RequestMapping(value="/getList")
 	public Map<String,Object> getDatasource(@RequestParam(value = "page", defaultValue = "1") int page,
 			@RequestParam(value = "limit", defaultValue = "5") int limit){
-        return this.tuitionService.findTuitionByPage(page,limit);
+        return this.tuitionService.findTuitionByPage2(page,limit);
 	}
 	
 	@RequestMapping(value = "/toadd")

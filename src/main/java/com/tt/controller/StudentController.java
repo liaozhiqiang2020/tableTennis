@@ -31,8 +31,9 @@ public class StudentController {
 	@RequestMapping(value="/getListByPage")
 	public Map<String,Object> getListByPage(@RequestParam(value = "page", defaultValue = "1") int page,
 			@RequestParam(value = "limit", defaultValue = "5") int limit){
-        return this.studentService.findStudentByPage(page,limit);
+        return this.studentService.findStudentByPage2(page,limit);
 	}
+
 
 	@ResponseBody
 	@RequestMapping(value="/getList")

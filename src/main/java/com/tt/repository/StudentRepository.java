@@ -9,6 +9,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * 学员dao
@@ -38,6 +39,10 @@ public interface StudentRepository extends BaseRepository<StudentEntity, Long>, 
      */
     @Query(value = "select * from tt_student as u LIMIT :offset,:pageSize", nativeQuery = true)
     List<StudentEntity> findAllStudentByPage(@Param("offset") Integer page, @Param("pageSize") Integer pageSize);
+
+    @Query(value = "SELECT s.*,p.name place_name FROM tt_student s,tt_place p where s.place_id=p.id LIMIT :offset,:pageSize", nativeQuery = true)
+    List<Map<String,Object>> findAllStudentByPage2(@Param("offset") Integer page, @Param("pageSize") Integer pageSize);
+
 
     /**
      * 查询数量

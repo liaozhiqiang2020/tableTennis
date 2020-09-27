@@ -24,6 +24,7 @@ public interface StudentService<T> {
      * @return 分页集合
      */
     Map<String,Object> findStudentByPage(int page, int pageSize);
+    Map<String,Object> findStudentByPage2(int page, int pageSize);
 
     /**
      * 不分页查询所有Student

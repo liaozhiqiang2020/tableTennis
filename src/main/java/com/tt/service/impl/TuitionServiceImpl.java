@@ -33,6 +33,17 @@ public class TuitionServiceImpl implements TuitionService{
     }
 
     @Override
+    public Map<String, Object> findTuitionByPage2(int page, int pageSize) {
+        Map<String,Object> result = new HashedMap();
+        List<Map<String,Object>> list = this.tuitionRepository.findAllTuitionByPage2((page-1)*10,pageSize);
+        int total = this.tuitionRepository.findAllTuitionTotal();
+        result.put("code", 0);
+        result.put("data", list);
+        result.put("count", total);
+        return result;
+    }
+
+    @Override
     public List<TuitionEntity> findAllTuition() {
         return this.tuitionRepository.findAllTuition();
     }

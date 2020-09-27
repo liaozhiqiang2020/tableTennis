@@ -9,6 +9,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * 收费信息dao
@@ -39,6 +40,9 @@ public interface TuitionRepository extends BaseRepository<TuitionEntity, Long>, 
     @Query(value = "select * from tt_tuition as u LIMIT :offset,:pageSize", nativeQuery = true)
     List<TuitionEntity> findAllTuitionByPage(@Param("offset") Integer page, @Param("pageSize") Integer pageSize);
 
+    @Query(value="SELECT t.*,s.name student_name,p.name place_name,c.name course_name FROM tt_tuition t,tt_student s,tt_place p,tt_course c where t.student_id=s.id and t.place_id=p.id and t.course_id=c.id LIMIT :offset,:pageSize",nativeQuery = true)
+    List<Map<String,Object>> findAllTuitionByPage2(@Param("offset") Integer page, @Param("pageSize") Integer pageSize);
+
     /**
      * 查询数量
      * @return 收费信息数量
@@ -51,4 +55,6 @@ public interface TuitionRepository extends BaseRepository<TuitionEntity, Long>, 
     @Modifying
     @Query(value = "delete from tt_tuition where id=:id", nativeQuery = true)
     int deleteById(@Param("id") int id);
+
+
 }
