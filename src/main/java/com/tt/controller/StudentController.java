@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -27,10 +28,16 @@ public class StudentController {
 	}
 	
 	@ResponseBody
-	@RequestMapping(value="/getList")
-	public Map<String,Object> getDatasource(@RequestParam(value = "page", defaultValue = "1") int page,
+	@RequestMapping(value="/getListByPage")
+	public Map<String,Object> getListByPage(@RequestParam(value = "page", defaultValue = "1") int page,
 			@RequestParam(value = "limit", defaultValue = "5") int limit){
         return this.studentService.findStudentByPage(page,limit);
+	}
+
+	@ResponseBody
+	@RequestMapping(value="/getList")
+	public List<StudentEntity> getList(){
+		return this.studentService.findAllStudent();
 	}
 	
 	@RequestMapping(value = "/toadd")
@@ -78,5 +85,11 @@ public class StudentController {
 	@RequestMapping(value = "/delete")
 	public int delete(int id){
 		return this.studentService.deleteStudent(id);
+	}
+
+	@ResponseBody
+	@RequestMapping(value = "/findStuByPlaceId")
+	public List<StudentEntity> findStudentByPlaceId(int placeId){
+		return this.studentService.findStudentByPlaceId(placeId);
 	}
 }

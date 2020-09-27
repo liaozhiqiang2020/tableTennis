@@ -59,6 +59,6 @@ public interface StudentService<T> {
      */
     StudentEntity findStudentById(int studentId);
 
-
+    List<StudentEntity> findStudentByPlaceId(int placeId);
 
 }

@@ -15,10 +15,22 @@
     <form class="layui-form" action="">
 
         <div class="layui-form-item">
+            <label class="layui-form-label">场地</label>
+            <div class="layui-input-block">
+                <input type="hidden" id="place" th:value="*{tuitionEntity.placeId}">
+                <select id="placeId" name="placeId" lay-filter="placeId">
+                    <option value="">请选择场地---</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="layui-form-item" >
             <label class="layui-form-label">学员</label>
             <div class="layui-input-block">
-                <input type="hidden" name="id" lay-verify="id" th:value="*{tuitionEntity.id}">
-                <input type="text" name="studentId" lay-verify="studentId" th:value="*{tuitionEntity.studentId}" autocomplete="off" class="layui-input">
+                <input type="hidden" id="student" th:value="*{tuitionEntity.studentId}">
+                <select name="studentId" id="studentId" lay-filter="studentId">
+                    <option value="">请选择学员---</option>
+                </select>
             </div>
         </div>
 
@@ -100,6 +112,47 @@
         $("select[name='chargeType']").val($("#chargeType").val());
         $("select[name='invoice']").val($("#invoice").val());
         $("select[name='billingType']").val($("#billingType").val());
+        $("select[name='placeId']").val($("#place").val());
+        $("select[name='studentId']").val($("#student").val());
+
+        var placeId = $("#place").val();
+
+        $.ajax({
+            url: '../place/getList',
+            dataType: 'json',
+            data:{},
+            type: 'post',
+            success: function (data) {
+                $.each(data, function (index, item) {
+                    $('#placeId').append(new Option(item.name, item.id));// 下拉菜单里添加元素
+                });
+
+                if(placeId!=""){
+                    $("select[name='placeId']").val(placeId);
+                }
+                layui.form.render("select");
+            }
+        });
+
+        $.ajax({
+            url: '../student/findStuByPlaceId',
+            dataType: 'json',
+            data:{'placeId':placeId},
+            type: 'post',
+            success: function (data1) {
+                $.each(data1, function (index, item) {
+                    $('#studentId').append(new Option(item.name, item.id));// 下拉菜单里添加元素
+                });
+
+                var studentId = $("#student").val();
+                if(studentId!=""){
+                    $("select[name='studentId']").val(studentId);
+                }
+                layui.form.render("select");
+            }
+        });
+
+
     });
 
     layui.use(['form', 'layedit', 'laydate','upload'], function(){
@@ -116,6 +169,26 @@
         //自定义验证规则
         form.verify({
 
+        });
+
+        form.on('select(placeId)', function (data) {
+            var placeId = $("#placeId").val();
+
+            $.ajax({
+                url: '../student/findStuByPlaceId',
+                dataType: 'json',
+                data:{'placeId':placeId},
+                type: 'post',
+                async:false,
+                success: function (data1) {
+                    $('#studentId').empty();
+                    $.each(data1, function (index, item) {
+                        $('#studentId').append(new Option(item.name, item.id));// 下拉菜单里添加元素
+                    });
+
+                    layui.form.render("select");
+                }
+            });
         });
 
         form.on('submit(demo1)', function(data){

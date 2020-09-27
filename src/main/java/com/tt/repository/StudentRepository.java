@@ -50,4 +50,7 @@ public interface StudentRepository extends BaseRepository<StudentEntity, Long>, 
     @Modifying
     @Query(value = "delete from tt_student where id=:id", nativeQuery = true)
     int deleteById(@Param("id") int id);
+
+    @Query(value = "select * from tt_student u where u.place_id=:placeId", nativeQuery = true)
+    List<StudentEntity> findStudentByPlaceId(@Param("placeId") Integer placeId);
 }

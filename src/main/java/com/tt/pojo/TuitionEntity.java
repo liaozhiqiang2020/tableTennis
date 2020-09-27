@@ -7,6 +7,7 @@ import javax.persistence.*;
 public class TuitionEntity {
     private int id;
     private int studentId;//学生
+    private int placeId;
     private String payMoney;//缴费金额
     private String payTime;//缴费时间
     private int chargeType;//缴费方式  1.现金  2.微信  3.支付宝
@@ -104,5 +105,15 @@ public class TuitionEntity {
 
     public void setCourseId(int courseId) {
         this.courseId = courseId;
+    }
+
+    @Basic
+    @Column(name = "place_id")
+    public int getPlaceId() {
+        return placeId;
+    }
+
+    public void setPlaceId(int placeId) {
+        this.placeId = placeId;
     }
 }

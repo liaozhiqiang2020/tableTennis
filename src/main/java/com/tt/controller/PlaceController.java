@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -27,11 +28,19 @@ public class PlaceController {
 	}
 	
 	@ResponseBody
-	@RequestMapping(value="/getList")
-	public Map<String,Object> getDatasource(@RequestParam(value = "page", defaultValue = "1") int page,
+	@RequestMapping(value="/getListByPage")
+	public Map<String,Object> getListByPage(@RequestParam(value = "page", defaultValue = "1") int page,
 			@RequestParam(value = "limit", defaultValue = "5") int limit){
         return this.placeService.findPlaceByPage(page,limit);
 	}
+
+	@ResponseBody
+	@RequestMapping(value="/getList")
+	public List<PlaceEntity> getList(){
+		return this.placeService.findAllPlace();
+	}
+
+
 	
 	@RequestMapping(value = "/toadd")
 	public ModelAndView toadd() {
