@@ -56,6 +56,12 @@
             </div>
         </div>
         <div class="layui-form-item">
+            <label class="layui-form-label">家庭地址</label>
+            <div class="layui-input-block">
+                <input type="text" name="address" lay-verify="address" placeholder="请输入家庭地址" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
             <label class="layui-form-label">上课场地</label>
             <div class="layui-input-block">
                 <input type="text" name="placeId" lay-verify="placeId" placeholder="请输入上课场地" autocomplete="off" class="layui-input">
@@ -78,7 +84,19 @@
 <script>
     $(document).ready(function(){
         // var uuid = '${uuid}';
+        $.ajax({
+            url: '../place/getList',
+            dataType: 'json',
+            data:{},
+            type: 'post',
+            success: function (data) {
+                $.each(data, function (index, item) {
+                    $('#placeId').append(new Option(item.name, item.id));// 下拉菜单里添加元素
+                });
 
+                layui.form.render("select");
+            }
+        });
     });
 
     layui.use(['form', 'layedit', 'laydate','upload'], function(){

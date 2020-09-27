@@ -55,9 +55,18 @@
             </div>
         </div>
         <div class="layui-form-item">
+            <label class="layui-form-label">家庭地址</label>
+            <div class="layui-input-block">
+                <input type="text" name="address" lay-verify="address" th:value="*{studentEntity.address}" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
             <label class="layui-form-label">上课场地</label>
             <div class="layui-input-block">
-                <input type="text" name="placeId" lay-verify="placeId" th:value="*{studentEntity.placeId}" autocomplete="off" class="layui-input">
+                <input type="hidden" id="place" th:value="*{studentEntity.placeId}">
+                <select id="placeId" name="placeId" lay-filter="placeId">
+                    <option value="">请选择场地---</option>
+                </select>
             </div>
         </div>
 
@@ -73,7 +82,25 @@
 <!-- /.container -->
 <script>
     $(document).ready(function(){
+        $("select[name='placeId']").val($("#place").val());
+        var placeId = $("#place").val();
 
+        $.ajax({
+            url: '../place/getList',
+            dataType: 'json',
+            data:{},
+            type: 'post',
+            success: function (data) {
+                $.each(data, function (index, item) {
+                    $('#placeId').append(new Option(item.name, item.id));// 下拉菜单里添加元素
+                });
+
+                if(placeId!=""){
+                    $("select[name='placeId']").val(placeId);
+                }
+                layui.form.render("select");
+            }
+        });
     });
 
     layui.use(['form', 'layedit', 'laydate','upload'], function(){

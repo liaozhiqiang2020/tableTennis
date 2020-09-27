@@ -106,14 +106,14 @@
                 cols: [
                     [
                         {field: "xuhao", title: "序号", width: '8%',align:"center",templet:setXuHao,fixed:'left'},
-                        {field: "placeId", title: "所属场地", width: '15%',align:"center"},
-                        {field: "studentId", title: "学员", width: '15%',align:"center"},
-                        {field: "payMoney", title: "缴费金额", width: '15%',align:"center"},
-                        {field: "payTime", title: "缴费时间", width: '15%',align:"center"},
-                        {field: "chargeType", title: "缴费方式", width: '35%',align:"center"},
-                        {field: "courseId", title: "课程", width: '20%',align:"center"},
-                        {field: "invoice", title: "是否开票", width: '20%',align:"center"},
-                        {field: "billingType", title: "开票类型", width: '20%',align:"center"},
+                        {field: "place_name", title: "所属场地", width: '15%',align:"center"},
+                        {field: "student_name", title: "学员", width: '15%',align:"center"},
+                        {field: "pay_money", title: "缴费金额", width: '15%',align:"center"},
+                        {field: "pay_time", title: "缴费时间", width: '15%',align:"center"},
+                        {field: "charge_type", title: "缴费方式", width: '35%',align:"center",templet:setChargeType},
+                        {field: "course_name", title: "课程", width: '20%',align:"center"},
+                        {field: "invoice", title: "是否开票", width: '20%',align:"center",templet:setInvoice},
+                        {field: "billing_type", title: "开票类型", width: '20%',align:"center",templet:setBillingType},
                         {field: "description", title: "备注", width: '20%',align:"center"},
                         {fixed: 'right', title:'操作', toolbar: '#barDemo', width:150}
                     ]
@@ -172,16 +172,44 @@
         });
     }
 
-    function setPlace(data){
-        var placeId = data.placeId;
-        // if(inSchool=="1"){
-        //     return "<span>校内</span>";
-        // }else if(inSchool=="2"){
-        //     return "<span>校外</span>";
-        // }else{
-        //     return "<span></span>";
-        // }
-        return placeId;
+    function setChargeType(data){
+        var chargeType = data.charge_type;
+        if(chargeType=="1"){
+            return "<span>现金</span>";
+        }else if(chargeType=="2"){
+            return "<span>微信</span>";
+        }else if(chargeType=="3"){
+            return "<span>支付宝</span>";
+        }else{
+            return "<span></span>";
+        }
+        return chargeType;
+    }
+
+    function setInvoice(data){
+        var invoice = data.invoice;
+        if(invoice=="1"){
+            return "<span>已开</span>";
+        }else if(invoice=="2"){
+            return "<span>未开</span>";
+        }else{
+            return "<span></span>";
+        }
+        return invoice;
+    }
+
+    function setBillingType(data){
+        var billingType = data.billing_type;
+        if(billingType=="1"){
+            return "<span>普通发票</span>";
+        }else if(billingType=="2"){
+            return "<span>增值税专用发票</span>";
+        }else if(billingType=="3"){
+            return "<span>收据</span>";
+        } else{
+            return "<span></span>";
+        }
+        return billingType;
     }
 
 

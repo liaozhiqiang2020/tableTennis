@@ -153,6 +153,7 @@
                 type: 'post',
                 async:false,
                 success: function (data1) {
+                    $('#studentId').empty();
                     $.each(data1, function (index, item) {
                         $('#studentId').append(new Option(item.name, item.id));// 下拉菜单里添加元素
                     });

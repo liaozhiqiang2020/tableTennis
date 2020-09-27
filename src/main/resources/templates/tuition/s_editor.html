@@ -17,6 +17,7 @@
         <div class="layui-form-item">
             <label class="layui-form-label">场地</label>
             <div class="layui-input-block">
+                <input type="hidden" name="id" lay-verify="id" th:value="*{tuitionEntity.id}">
                 <input type="hidden" id="place" th:value="*{tuitionEntity.placeId}">
                 <select id="placeId" name="placeId" lay-filter="placeId">
                     <option value="">请选择场地---</option>

@@ -107,7 +107,7 @@
                     [
                         {field: "xuhao", title: "序号", width: '8%',align:"center",templet:setXuHao,fixed:'left'},
                         {field: "name", title: "名称", width: '15%',align:"center",fixed:'left'},
-                        {field: "type", title: "类型", width: '15%',align:"center"},
+                        {field: "type", title: "类型", width: '15%',align:"center",templet:setType},
                         {field: "address", title: "地址", width: '15%',align:"center"},
                         {field: "startTime", title: "开始时间", width: '35%',align:"center"},
                         {field: "endTime", title: "结束时间", width: '20%',align:"center"},
@@ -176,15 +176,31 @@
 
     //收租方式
     function setRentType(data){
-        var placeId = data.placeId;
-        // if(inSchool=="1"){
-        //     return "<span>校内</span>";
-        // }else if(inSchool=="2"){
-        //     return "<span>校外</span>";
-        // }else{
-        //     return "<span></span>";
-        // }
-        return placeId;
+        var rentType = data.rentType;
+        if(rentType=="1"){
+            return "<span>月收</span>";
+        }else if(rentType=="2"){
+            return "<span>年收</span>";
+        }else if(rentType=="3"){
+            return "<span>其他</span>";
+        }else{
+            return "<span></span>";
+        }
+        return rentType;
+    }
+
+    function setType(data){
+        var type = data.type;
+        if(type=="1"){
+            return "<span>学校</span>";
+        }else if(type=="2"){
+            return "<span>球馆</span>";
+        }else if(type=="3"){
+            return "<span>其他</span>";
+        }else{
+            return "<span></span>";
+        }
+        return type;
     }
 
 
