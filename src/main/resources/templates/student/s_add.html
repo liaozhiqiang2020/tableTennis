@@ -64,7 +64,9 @@
         <div class="layui-form-item">
             <label class="layui-form-label">上课场地</label>
             <div class="layui-input-block">
-                <input type="text" name="placeId" lay-verify="placeId" placeholder="请输入上课场地" autocomplete="off" class="layui-input">
+                <select id="placeId" name="placeId" lay-filter="placeId">
+                    <option value="">请选择场地---</option>
+                </select>
             </div>
         </div>
 

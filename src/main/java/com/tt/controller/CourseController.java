@@ -1,5 +1,6 @@
 package com.tt.controller;
 
+import java.util.List;
 import java.util.Map;
 
 
@@ -33,6 +34,12 @@ public class CourseController {
 	public Map<String,Object> getDatasource(@RequestParam(value = "page", defaultValue = "1") int page,
 			@RequestParam(value = "limit", defaultValue = "5") int limit){
         return this.courseService.findCourseByPage(page,limit);
+	}
+
+	@ResponseBody
+	@RequestMapping(value="/getAll")
+	public List<CourseEntity> getAll(){
+		return this.courseService.findAllCourse();
 	}
 	
 	@RequestMapping(value = "/toadd")

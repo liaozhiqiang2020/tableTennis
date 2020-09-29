@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -32,6 +33,15 @@ public class TuitionController {
 			@RequestParam(value = "limit", defaultValue = "5") int limit){
         return this.tuitionService.findTuitionByPage2(page,limit);
 	}
+
+	@ResponseBody
+	@RequestMapping(value="/getAll")
+	public List<TuitionEntity> findAllTuition(){
+		return this.tuitionService.findAllTuition();
+	}
+
+
+
 	
 	@RequestMapping(value = "/toadd")
 	public ModelAndView toadd() {

@@ -4,18 +4,23 @@ import com.tt.pojo.UserEntity;
 import com.tt.pojo.vo.HomeVO;
 import com.tt.service.HomeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import javax.net.ssl.HttpsURLConnection;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.io.IOException;
+import java.util.Map;
 
 /**
  * 初始页面
  */
-@RestController
+@Controller
 public class DefaultController {
 
     @Autowired
@@ -108,20 +113,20 @@ public class DefaultController {
      */
     @PostMapping("/login")
     public ModelAndView verPwd(@RequestParam(value = "username", required = false) String username,
-                               @RequestParam(value = "password", required = false) String password, HttpSession session, HttpServletResponse response) {
+                         @RequestParam(value = "password", required = false) String password, HttpSession session, HttpServletResponse response, RedirectAttributes attributes, Map<String,Object> map) throws IOException {
         ModelAndView model = new ModelAndView();
+        String url = (String) session.getAttribute("url");
 
         if(username.equals("admin") && password.equals("123456")){
             Cookie c1 = new Cookie("loginName", username);
             c1.setPath("/");
             response.addCookie(c1);
             session.setAttribute("user", username);
-            model.setViewName("home");
+            model.setViewName("redirect:"+url);
         }else{
-            model.setViewName("login");
             model.addObject("error", "不正确的用户名和密码");
+            model.setViewName("login");
         }
-
 
         return model;
     }
