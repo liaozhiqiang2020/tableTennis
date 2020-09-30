@@ -1,0 +1,65 @@
+package com.tt.service.impl;
+
+import com.tt.pojo.StudentSignEntity;
+import com.tt.repository.StudentRepository;
+import com.tt.repository.StudentSignRepository;
+import com.tt.service.StudentSignService;
+import org.apache.commons.collections.map.HashedMap;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Map;
+
+@Service
+public class StudentSignServiceImpl implements StudentSignService {
+    @Autowired
+    private StudentSignRepository studentSignRepository;
+
+
+    @Override
+    public Map<String, Object> findStudentSignByPage(int page, int pageSize) {
+        return null;
+    }
+
+    @Override
+    public Map<String, Object> findStudentSignByPage2(int page, int pageSize) {
+        Map<String,Object> result = new HashedMap();
+        List<Map<String,Object>> list = this.studentSignRepository.findAllStudentSignByPage2((page-1)*10,pageSize);
+        int total = this.studentSignRepository.findAllStudentSignTotal();
+        result.put("code", 0);
+        result.put("data", list);
+        result.put("count", total);
+        return result;
+    }
+
+    @Override
+    public List<StudentSignEntity> findAllStudentSign() {
+        return null;
+    }
+
+    @Override
+    public StudentSignEntity updateStudentSign(StudentSignEntity studentSignEntity) {
+        return null;
+    }
+
+    @Override
+    public StudentSignEntity saveStudentSign(StudentSignEntity studentSignEntity) {
+        return this.studentSignRepository.save(studentSignEntity);
+    }
+
+    @Override
+    public int deleteStudentSign(int studentSignId) {
+        return 0;
+    }
+
+    @Override
+    public StudentSignEntity findStudentSignById(int studentSignId) {
+        return null;
+    }
+
+    @Override
+    public List<StudentSignEntity> findStudentSignByPlaceId(int placeId) {
+        return null;
+    }
+}
