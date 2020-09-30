@@ -25,7 +25,7 @@ public interface UserService<T>  {
      * @param pageSize  截至个数
      * @return 分页集合
      */
-    String findEntitiesPager(int page, int pageSize);
+    Map<String,Object> findEntitiesPager(int page, int pageSize);
 
     /**
      * 不分页查询所有user
@@ -39,16 +39,14 @@ public interface UserService<T>  {
     String findAllByStatus(HttpServletRequest request);
     /**
      *更新user对象
-     * @param map user对象
      * @return 更新的user对象
      */
-    int updateUser(Map<String, Object> map);
+    UserEntity updateUser(UserEntity userEntity);
     /**
      *保存user对象
-     * @param map user对象
      * @return 保存的user对象
      */
-    int saveUser(Map<String, Object> map);
+    UserEntity saveUser(UserEntity userEntity);
 
     /**
      * 逻辑删除一个user对象
@@ -115,6 +113,13 @@ public interface UserService<T>  {
      * @return 修改后的密码
      */
     String changePwd(HttpServletRequest request, HttpSession session, HttpServletResponse response);
+
+    /**
+     * 用户名查用户对象
+     * @param username
+     * @return
+     */
+    UserEntity findUserByName(String username);
 
 
 }

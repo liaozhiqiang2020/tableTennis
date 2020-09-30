@@ -43,6 +43,8 @@ public interface StudentRepository extends BaseRepository<StudentEntity, Long>, 
     @Query(value = "SELECT s.*,p.name place_name FROM tt_student s,tt_place p where s.place_id=p.id LIMIT :offset,:pageSize", nativeQuery = true)
     List<Map<String,Object>> findAllStudentByPage2(@Param("offset") Integer page, @Param("pageSize") Integer pageSize);
 
+    @Query(value = "SELECT s.*,p.name place_name FROM tt_student s,tt_place p where s.place_id=p.id and s.place_id=:placeId LIMIT :offset,:pageSize", nativeQuery = true)
+    List<Map<String,Object>> findAllStudentByPage2(@Param("offset") Integer page, @Param("pageSize") Integer pageSize,@Param("placeId") Integer placeId);
 
     /**
      * 查询数量
@@ -50,6 +52,8 @@ public interface StudentRepository extends BaseRepository<StudentEntity, Long>, 
      */
     @Query(value = "select count(*) from tt_student as u", nativeQuery = true)
     int findAllStudentTotal();
+    @Query(value = "select count(*) from tt_student as u where u.place_id=:placeId", nativeQuery = true)
+    int findAllStudentTotal(@Param("placeId") Integer placeId);
 
     @Transactional
     @Modifying

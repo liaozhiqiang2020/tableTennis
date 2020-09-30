@@ -10,6 +10,7 @@ import com.tt.util.MD5Util;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import net.sf.json.JsonConfig;
+import org.apache.commons.collections.map.HashedMap;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -30,8 +31,6 @@ public class UserServiceImpl implements UserService<UserEntity> {
     @Resource
     UserRepository userRepository;
 
-    @Resource
-    RoleRepository roleRepository;
 
     /**
      * 分页查询所有用户
@@ -41,32 +40,15 @@ public class UserServiceImpl implements UserService<UserEntity> {
      */
     @Override
     @Transactional
-    public String findEntitiesPager(int page, int pageSize) {
+    public Map<String,Object> findEntitiesPager(int page, int pageSize) {
+        Map<String,Object> map = new HashedMap();
         int offset = ((page - 1) * pageSize);
         int total = this.userRepository.findPriceTotal();
         List<UserEntity> userList = this.userRepository.findAllUserByPage(offset, pageSize);
-        String company = "";
-        String pName = "";
-        JsonConfig config = new JsonConfig();
-        config.registerJsonValueProcessor(Timestamp.class, new DateJsonValueProcessor("yyyy-MM-dd HH:mm:ss"));
-        config.setExcludes(new String[]{"roleEntitySet"});//红色的部分是过滤掉deviceEntities对象 不转成JSONArray
-//        config.setIgnoreDefaultExcludes(false);  //设置默认忽略
-//        config.setCycleDetectionStrategy(CycleDetectionStrategy.LENIENT);
-        JSONArray jsonArray = JSONArray.fromObject(userList, config);//转化为jsonArray
-        JSONArray jsonArray1 = new JSONArray();//新建json数组
-        JSONObject jsonObject = new JSONObject();
 
-        for (int y = 0; y < jsonArray.size(); y++) {
-            JSONObject jsonObject2 = jsonArray.getJSONObject(y);
-            company="总公司";
-            pName="总公司";
-            jsonObject2.put("company", company);
-            jsonObject2.put("pName", pName);
-            jsonArray1.add(jsonObject2);
-        }
-        jsonObject.put("data", jsonArray1);
-        jsonObject.put("total", total);
-        return jsonObject.toString();
+        map.put("data", userList);
+        map.put("total", total);
+        return map;
     }
 
     /**
@@ -90,94 +72,16 @@ public class UserServiceImpl implements UserService<UserEntity> {
         return "";
     }
 
-    /**
-     * 更新用户
-     * @param map user对象
-     * @return 修改的个数
-     */
     @Override
-    @Transactional
-    public int updateUser(Map<String, Object> map) {
-        String company = (String) map.get("company");
-        String password = (String) map.get("authenticationString");
-        String cellphoneNumber = (String) map.get("cellphoneNumber");
-        String email = (String) map.get("email");
-        int id = (int) map.get("id");
-        String fixedPhoneNumber = (String) map.get("fixedPhoneNumber");
-        String latestLoginIp = (String) map.get("latestLoginIp");
-        String name = (String) map.get("name");
-        String userName = (String) map.get("userName");
-        int status = (int) map.get("status");
-        String createDateTime = (String) map.get("createDatetime");
-//        String latestLoginDatetime = (String) map.get("latestLoginDatetime");
-//        String lastTime = intUtil.dateString(latestLoginDatetime);
-        UserEntity user = this.userRepository.findUserById(id);
-        UserEntity ss = this.userRepository.findUserByUserName(userName);
-        if ( ss==user||ss == null ){
-            user.setStatus(status);
-            user.setCellphoneNumber(cellphoneNumber);
-            user.setEmail(email);
-            user.setFixedPhoneNumber(fixedPhoneNumber);
-            user.setName(name);
-            user.setUserName(userName);
-            user.setLatestLoginIp(latestLoginIp);
-//        user.setLatestLoginDatetime(Timestamp.valueOf(lastTime));
-//        user.setAuthenticationString(DigestUtils.md5DigestAsHex(password.getBytes()));
-            if (password.length() == 32){
-                user.setAuthenticationString(password);
-            }else {
-                user.setAuthenticationString(MD5Util.encode(password));
-            }
-
-
-            this.userRepository.save(user);
-            return 1;
-        }else {
-
-        return 0;
-        }
+    public UserEntity updateUser(UserEntity userEntity) {
+        return this.userRepository.save(userEntity);
     }
 
-    /**
-     * 新建一个用户
-     * @param map user对象
-     * @return 新建的个数
-     */
     @Override
-    @Transactional
-    public int saveUser(@RequestBody Map<String, Object> map) {
-        String company = (String) map.get("company");
-        String password = (String) map.get("authenticationString");
-        String cellphoneNumber = (String) map.get("cellphoneNumber");
-        String email = (String) map.get("email");
-        String fixedPhoneNumber = (String) map.get("fixedPhoneNumber");
-        String latestLoginIp = (String) map.get("latestLoginIp");
-        String name = (String) map.get("name");
-        String userName = (String) map.get("userName");
-        int status = 1;
-        String latestLoginDatetime = (String) map.get("latestLoginDatetime");
-
-        int ss = this.userRepository.findUserName(userName);
-        if (ss == 1 ){
-            return 0;
-        }else {
-
-            UserEntity user = new UserEntity();
-            user.setStatus(status);
-            user.setCellphoneNumber(cellphoneNumber);
-            user.setEmail(email);
-            user.setFixedPhoneNumber(fixedPhoneNumber);
-            user.setName(name);
-            user.setUserName(userName);
-            user.setLatestLoginIp(latestLoginIp);
-            user.setCreateDatetime(new Timestamp(System.currentTimeMillis()));
-
-            user.setAuthenticationString(MD5Util.encode(password));
-
-            this.userRepository.save(user);
-            return 1;
-        }
+    public UserEntity saveUser(UserEntity userEntity) {
+        return this.userRepository.save(userEntity);
     }
+
 
     /**
      * 逻辑删除用户
@@ -201,62 +105,26 @@ public class UserServiceImpl implements UserService<UserEntity> {
         return this.userRepository.findUserById(userId);
     }
 
-    /**
-     * 查询当前用户拥有的所有角色
-     * @param userId 用户ID
-     * @return 角色信息
-     */
     @Override
     public Set<RoleEntity> findUserRole(int userId) {
-        UserEntity user = this.userRepository.findUserById(userId);
-        return user.getRoleEntitySet();
+        return null;
     }
 
-    /**
-     * 解绑用户所拥有的角色
-     * @param listMap  用户id 权限Id
-     * @return 用户权限
-     */
     @Override
     public Set<RoleEntity> deleteUserRole(Map<String, Object> listMap) {
-        Object userId = listMap.get("userId");
-        Object roleId = listMap.get("roleId");
-        UserEntity user = this.userRepository.findUserById((int) userId);
-
-        RoleEntity role = this.roleRepository.findById((int) roleId);
-        user.getRoleEntitySet().remove(role);
-
-        this.userRepository.save(user);
-        return user.getRoleEntitySet();
+        return null;
     }
 
-    /**
-     * 为用户绑定角色
-     * @param userId 用户Id
-     * @param roleId 角色id
-     * @return 用户角色权限
-     */
     @Override
     public Set<RoleEntity> addUserRole(int userId, int roleId) {
-        UserEntity user = this.userRepository.findUserById(userId);
-        RoleEntity role = this.roleRepository.findById(roleId);
-        user.getRoleEntitySet().add(role);
-        this.userRepository.save(user);
-        return user.getRoleEntitySet();
+        return null;
     }
 
-    /**
-     * 删除绑定的角色
-     * @param userId 用户id
-     * @return 权限信息
-     */
     @Override
     public List<RoleEntity> userUnRole(int userId) {
-        UserEntity user = this.userRepository.findUserById(userId);
-        List<RoleEntity> roleEntities = this.roleRepository.findAll();
-        roleEntities.removeAll(user.getRoleEntitySet());
-        return roleEntities;
+        return null;
     }
+
 
     /**
      * 查询所有公司 
@@ -316,5 +184,10 @@ public class UserServiceImpl implements UserService<UserEntity> {
 //        }
 //        return message;
         return "";
+    }
+
+    @Override
+    public UserEntity findUserByName(String username) {
+        return this.userRepository.findUserByUserName(username);
     }
 }

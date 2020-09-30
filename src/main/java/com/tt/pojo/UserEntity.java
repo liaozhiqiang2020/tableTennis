@@ -36,7 +36,7 @@ public class UserEntity {
     /**
      * 创建日期
      */
-    private Timestamp createDatetime;
+    private String createDatetime;
     /**
      * 邮箱
      */
@@ -46,13 +46,9 @@ public class UserEntity {
      */
     private String cellphoneNumber;
     /**
-     * 固话
-     */
-    private String fixedPhoneNumber;
-    /**
      * 上次登陆时间
      */
-    private Timestamp latestLoginDatetime;
+    private String latestLoginDatetime;
     /**
      * 上次登陆id
      */
@@ -61,16 +57,6 @@ public class UserEntity {
      * 状态
      */
     private int status;
-    /**
-     * 隶属公司Id
-     */
-    private int pId;
-    /**
-     * 判断所属公司是那个级别 1总公司,2分公司,3代理商,4场地方
-     */
-    private int gradeId;
-
-    private Set<RoleEntity> roleEntitySet = new HashSet<>();
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -113,15 +99,6 @@ public class UserEntity {
         this.authenticationString = authenticationString;
     }
 
-    @Basic
-    @Column(name = "create_datetime")
-    public Timestamp getCreateDatetime() {
-        return createDatetime;
-    }
-
-    public void setCreateDatetime(Timestamp createDatetime) {
-        this.createDatetime = createDatetime;
-    }
 
 
     @Basic
@@ -146,27 +123,26 @@ public class UserEntity {
     }
 
 
+
     @Basic
-    @Column(name = "fixed_phone_number")
-    public String getFixedPhoneNumber() {
-        return fixedPhoneNumber;
+    @Column(name = "create_datetime")
+    public String getCreateDatetime() {
+        return createDatetime;
     }
 
-    public void setFixedPhoneNumber(String fixedPhoneNumber) {
-        this.fixedPhoneNumber = fixedPhoneNumber;
+    public void setCreateDatetime(String createDatetime) {
+        this.createDatetime = createDatetime;
     }
-
 
     @Basic
     @Column(name = "latest_login_datetime")
-    public Timestamp getLatestLoginDatetime() {
+    public String getLatestLoginDatetime() {
         return latestLoginDatetime;
     }
 
-    public void setLatestLoginDatetime(Timestamp latestLoginDatetime) {
+    public void setLatestLoginDatetime(String latestLoginDatetime) {
         this.latestLoginDatetime = latestLoginDatetime;
     }
-
 
     @Basic
     @Column(name = "latest_login_ip")
@@ -190,62 +166,4 @@ public class UserEntity {
     }
 
 
-    @Basic
-    @Column(name = "p_id")
-    public int getpId() {
-        return pId;
-    }
-
-    public void setpId(int pId) {
-        this.pId = pId;
-    }
-
-    @Basic
-    @Column(name = "grade_id")
-    public int getGradeId() {
-        return gradeId;
-    }
-
-    public void setGradeId(int gradeId) {
-        this.gradeId = gradeId;
-    }
-
-    @JsonIgnore
-    @ManyToMany(fetch = FetchType.EAGER)
-    @Cascade(value = {org.hibernate.annotations.CascadeType.SAVE_UPDATE})
-    @JoinTable(name = "mc_user_role",                       //指定第三张表
-            joinColumns = {@JoinColumn(name = "user_id")},             //本表与中间表的外键对应
-            inverseJoinColumns = {@JoinColumn(name = "role_id")})  //另一张表与第三张表的外键的对应关系
-    public Set<RoleEntity> getRoleEntitySet() {
-        return roleEntitySet;
-    }
-
-    public void setRoleEntitySet(Set<RoleEntity> roleEntitySet) {
-        this.roleEntitySet = roleEntitySet;
-    }
-
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        UserEntity that = (UserEntity) o;
-        return id == that.id &&
-                status == that.status &&
-                Objects.equals(userName, that.userName) &&
-                Objects.equals(name, that.name) &&
-                Objects.equals(authenticationString, that.authenticationString) &&
-                Objects.equals(createDatetime, that.createDatetime) &&
-                Objects.equals(email, that.email) &&
-                Objects.equals(cellphoneNumber, that.cellphoneNumber) &&
-                Objects.equals(fixedPhoneNumber, that.fixedPhoneNumber) &&
-                Objects.equals(latestLoginDatetime, that.latestLoginDatetime) &&
-                Objects.equals(latestLoginIp, that.latestLoginIp);
-    }
-
-    @Override
-    public int hashCode() {
-
-        return Objects.hash(id, userName, name, authenticationString, createDatetime, email, cellphoneNumber, fixedPhoneNumber, latestLoginDatetime, latestLoginIp, status);
-    }
 }

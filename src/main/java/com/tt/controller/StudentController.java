@@ -36,6 +36,14 @@ public class StudentController {
 
 
 	@ResponseBody
+	@RequestMapping(value="/getListByPageAndPlace")
+	public Map<String,Object> getListByPage(@RequestParam(value = "page", defaultValue = "1") int page,
+											@RequestParam(value = "limit", defaultValue = "5") int limit,@RequestParam(value = "placeId") int placeId){
+		return this.studentService.findStudentByPage2(page,limit,placeId);
+	}
+
+
+	@ResponseBody
 	@RequestMapping(value="/getList")
 	public List<StudentEntity> getList(){
 		return this.studentService.findAllStudent();

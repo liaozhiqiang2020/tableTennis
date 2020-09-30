@@ -40,7 +40,7 @@ public class DefaultController {
      */
     @RequestMapping("/")
     public ModelAndView home() {
-        return new ModelAndView("login");
+        return new ModelAndView("./home");
     }
 
     @RequestMapping("/toLogin")
@@ -122,7 +122,12 @@ public class DefaultController {
             c1.setPath("/");
             response.addCookie(c1);
             session.setAttribute("user", username);
-            model.setViewName("redirect:"+url);
+            if(url.contains("/studentSign/")){
+                model.setViewName("redirect:"+url);
+            }else{
+                model.setViewName("home");
+            }
+
         }else{
             model.addObject("error", "不正确的用户名和密码");
             model.setViewName("login");

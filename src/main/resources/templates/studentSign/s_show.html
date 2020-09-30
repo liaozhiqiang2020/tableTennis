@@ -14,49 +14,105 @@
     <script src="../js/baseutil.js"></script>
 </head>
 
-<body class="hold-transition skin-blue sidebar-mini" style="text-align: center">
+<body class="hold-transition skin-blue sidebar-mini">
 <section class="content-header" style="text-align: center;margin-top: 5%;margin-bottom: 5%;">
     <h1>
         学员签到管理
     </h1>
 </section>
 
-<div class="content-wrapper" style="width:85%;margin:0 auto;">
-    <ul class="flow-default" id="LAY_demo1"></ul>
+<div class="content-wrapper">
+    <form class="layui-form" action="">
+        <div class="layui-form-item" >
+            <div class="layui-input-block" style="margin-left:1%;margin-right: 1%;">
+                <select id="placeId" name="placeId" lay-filter="placeId">
+                    <option value="">请选择场地---</option>
+                </select>
+            </div>
+        </div>
+    </form>
+
+    <div style="width:85%;margin:0 auto;">
+         <ul class="flow-default" id="LAY_demo1"></ul>
+    </div>
+
 </div>
 <!-- /.container -->
 <script>
     $(document).ready(function(){
-
-    });
-
-    layui.use('flow', function(){
-        var $ = layui.jquery; //不用额外加载jQuery，flow模块本身是有依赖jQuery的，直接用即可。
-        var flow = layui.flow;
-        flow.load({
-            elem: '#LAY_demo1' //指定列表容器
-            ,done: function(page, next){ //到达临界点（默认滚动触发），触发下一页
-                var lis = [];
-                //以jQuery的Ajax请求为例，请求下一页数据（注意：page是从2开始返回）
-                $.post('../student/getListByPage',{page:page},function(res){
-                    //假设你的列表返回在data集合中
-                    layui.each(res.data, function(index, item){
-                        lis.push("<div class='list-group' style='border-radius:10px;border:solid 1px #000;margin-bottom: 5px;'>" +
-                            "<a href='#' class='list-group-item' onclick='details("+item.id+")'><p class='list-group-item-text'>" +item.name+" +</p></a>"+
-                            "</div>");
-                    });
-
-                    //执行下一页渲染，第二参数为：满足“加载更多”的条件，即后面仍有分页
-                    //pages为Ajax返回的总页数，只有当前页小于总页数的情况下，才会继续出现加载更多
-                    next(lis.join(''), page < res.pages);
+        $.ajax({
+            url: '../place/getList',
+            dataType: 'json',
+            data:{},
+            type: 'post',
+            success: function (data) {
+                $.each(data, function (index, item) {
+                    $('#placeId').append(new Option(item.name, item.id));// 下拉菜单里添加元素
                 });
+
+                layui.form.render("select");
+                $(".layui-form-select").css("width","100%");
             }
         });
+
+    });
+
+    layui.use(['flow','form'], function(){
+        var $ = layui.jquery; //不用额外加载jQuery，flow模块本身是有依赖jQuery的，直接用即可。
+        var flow = layui.flow;
+        var form = layui.form;
+
+
+        form.on('select(placeId)', function (data) {
+            var placeId = $("#placeId").val();
+            var limit = 5;
+
+            flow.load({
+                elem: '#LAY_demo1' //指定列表容器
+                ,done: function(page, next){ //到达临界点（默认滚动触发），触发下一页
+                    var lis = [];
+                    //以jQuery的Ajax请求为例，请求下一页数据（注意：page是从2开始返回）
+                    $.post('../student/getListByPageAndPlace',{page:page,limit:limit,placeId:placeId},function(res){
+                        //假设你的列表返回在data集合中
+                        layui.each(res.data, function(index, item){
+                            lis.push("<div class='list-group' style='border-radius:10px;border:solid 1px #000;margin-bottom: 5px;'>" +
+                                "<a href='#' class='list-group-item' onclick='details(\""+item.id+"\",\""+item.name+"\",\""+item.place_id+"\",\""+item.place_name+"\")'><p class='list-group-item-text'>" +item.name+" +</p></a>"+
+                                "</div>");
+                        });
+
+                        //执行下一页渲染，第二参数为：满足“加载更多”的条件，即后面仍有分页
+                        //pages为Ajax返回的总页数，只有当前页小于总页数的情况下，才会继续出现加载更多
+                        next(lis.join(''), page < res.pages);
+                    });
+                }
+            });
+        });
+
+
     });
 
 
-    function details(id){
-        alert(id);
+    function details(id,name,placeId,placeName){
+        window.location.href='../studentSign/toadd?id='+id+'&name='+name+'&placeId='+placeId+'&placeName='+placeName;
+    }
+
+
+    function openWin(title,url){
+        layui.use('layer', function(){
+            var layer = layui.layer;
+
+            layer.open({
+                type: 2,
+                skin: 'layui-layer-demo', //样式类名
+                title: title,
+                closeBtn: 1, //不显示关闭按钮
+                anim: 2,
+                area: ['950px', '600px'],
+                shadeClose: true, //开启遮罩关闭
+                content: url
+            });
+        });
+
     }
 </script>
 

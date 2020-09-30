@@ -1,7 +1,9 @@
 package com.tt.controller;
 
 import com.tt.pojo.StudentSignEntity;
+import com.tt.pojo.UserEntity;
 import com.tt.service.StudentSignService;
+import com.tt.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,6 +23,8 @@ import java.util.Map;
 public class StudentSignController {
 	@Autowired
 	private StudentSignService studentSignService;
+	@Autowired
+	private UserService userService;
 
 	@RequestMapping("/toStudentSignMgr")
 	public ModelAndView dataList(ModelAndView model) {
@@ -42,11 +46,17 @@ public class StudentSignController {
 	}
 
 	@RequestMapping(value = "/toadd")
-	public ModelAndView toadd(HttpServletRequest request) {
+	public ModelAndView toadd(HttpServletRequest request,int id,String name,int placeId,String placeName) {
 		HttpSession session   =   request.getSession();
 		String userName = (String) session.getAttribute("user");
+		UserEntity userEntity = this.userService.findUserByName(userName);
 		ModelAndView model = new ModelAndView("/studentSign/s_add");
+		model.addObject("userId",userEntity.getId());
 		model.addObject("userName",userName);
+		model.addObject("studentId",id);
+		model.addObject("studentName",name);
+		model.addObject("placeId",placeId);
+		model.addObject("placeName",placeName);
 		return model;
 	}
 

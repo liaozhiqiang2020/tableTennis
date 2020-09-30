@@ -29,27 +29,37 @@
         <div class="layui-form-item">
             <label class="layui-form-label">教练</label>
             <div class="layui-input-block">
-                <input type="text" name="userId" lay-verify="userId" th:value="*{userName}" autocomplete="off" class="layui-input">
+                <input type="hidden" name="userId" lay-verify="userId" th:value="*{userId}" autocomplete="off" class="layui-input">
+                <input type="text" id="userName" lay-verify="userName" th:value="*{userName}" autocomplete="off" class="layui-input">
             </div>
         </div>
 
         <div class="layui-form-item">
-            <label class="layui-form-label">场地</label>
+            <label class="layui-form-label">学员</label>
             <div class="layui-input-block">
-                <select id="placeId" name="placeId" lay-filter="placeId">
-                    <option value="">请选择场地---</option>
-                </select>
+                <input type="hidden" id="studentId" name="studentId" lay-verify="studentId" th:value="*{studentId}" autocomplete="off" class="layui-input">
+                <input type="text" id="studentName" lay-verify="studentName" th:value="*{studentName}" autocomplete="off" class="layui-input">
             </div>
         </div>
 
-        <div class="layui-form-item" id="studentDiv" style="display: none">
-            <label class="layui-form-label">学员</label>
+        <div class="layui-form-item" style="display: none">
+            <label class="layui-form-label">所在场地</label>
             <div class="layui-input-block">
-                <select id="studentId" name="studentId" lay-filter="studentId">
-                    <option value="">请选择学员---</option>
-                </select>
+                <input type="hidden" id="placeId" name="placeId" lay-verify="placeId" th:value="*{placeId}" autocomplete="off" class="layui-input">
+                <input type="text" id="placeName" lay-verify="placeName" th:value="*{placeName}" autocomplete="off" class="layui-input">
             </div>
         </div>
+
+<!--        <div class="layui-form-item">-->
+<!--            <label class="layui-form-label">场地</label>-->
+<!--            <div class="layui-input-block">-->
+<!--                <select id="placeId" name="placeId" lay-filter="placeId">-->
+<!--                    <option value="">请选择场地-&#45;&#45;</option>-->
+<!--                </select>-->
+<!--            </div>-->
+<!--        </div>-->
+
+
 
         <div class="layui-form-item" >
             <label class="layui-form-label">课程</label>
@@ -82,19 +92,19 @@
 <script>
     $(document).ready(function(){
         // var uuid = '${uuid}';
-        $.ajax({
-            url: '../place/getList',
-            dataType: 'json',
-            data:{},
-            type: 'post',
-            success: function (data) {
-                $.each(data, function (index, item) {
-                    $('#placeId').append(new Option(item.name, item.id));// 下拉菜单里添加元素
-                });
-
-                layui.form.render("select");
-            }
-        });
+        // $.ajax({
+        //     url: '../place/getList',
+        //     dataType: 'json',
+        //     data:{},
+        //     type: 'post',
+        //     success: function (data) {
+        //         $.each(data, function (index, item) {
+        //             $('#placeId').append(new Option(item.name, item.id));// 下拉菜单里添加元素
+        //         });
+        //
+        //         layui.form.render("select");
+        //     }
+        // });
 
         $.ajax({
             url: '../course/getAll',
@@ -133,26 +143,26 @@
 
         });
 
-        form.on('select(placeId)', function (data) {
-            $("#studentDiv").show();
-            var placeId = $("#placeId").val();
-
-            $.ajax({
-                url: '../student/findStuByPlaceId',
-                dataType: 'json',
-                data:{'placeId':placeId},
-                type: 'post',
-                async:false,
-                success: function (data1) {
-                    $('#studentId').empty();
-                    $.each(data1, function (index, item) {
-                        $('#studentId').append(new Option(item.name, item.id));// 下拉菜单里添加元素
-                    });
-
-                    layui.form.render("select");
-                }
-            });
-        });
+        // form.on('select(placeId)', function (data) {
+        //     $("#studentDiv").show();
+        //     var placeId = $("#placeId").val();
+        //
+        //     $.ajax({
+        //         url: '../student/findStuByPlaceId',
+        //         dataType: 'json',
+        //         data:{'placeId':placeId},
+        //         type: 'post',
+        //         async:false,
+        //         success: function (data1) {
+        //             $('#studentId').empty();
+        //             $.each(data1, function (index, item) {
+        //                 $('#studentId').append(new Option(item.name, item.id));// 下拉菜单里添加元素
+        //             });
+        //
+        //             layui.form.render("select");
+        //         }
+        //     });
+        // });
 
 
         form.on('submit(demo1)', function(data){
@@ -194,7 +204,7 @@
             ,
             yes : function() {
                 layer.closeAll();
-                window.location.reload();
+                window.history.go(-1);
             }
         });
     }
