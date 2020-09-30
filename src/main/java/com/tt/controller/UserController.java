@@ -1,6 +1,7 @@
 package com.tt.controller;
 
 import com.tt.pojo.RoleEntity;
+import com.tt.pojo.StudentEntity;
 import com.tt.pojo.UserEntity;
 import com.tt.service.UserService;
 import org.springframework.data.repository.query.Param;
@@ -82,8 +83,13 @@ public class UserController {
      * @return 更新的用户信息条数
      */
     @PostMapping("/user/update")
-    public int updateUser(UserEntity userEntity) {
-        return this.userService.updateUser(userEntity);
+    public String updateUser(UserEntity userEntity) {
+        UserEntity userEntity1 = this.userService.saveUser(userEntity);
+        if(userEntity1!=null){
+            return "0";
+        }else{
+            return "1";
+        }
     }
 
     /**
@@ -91,8 +97,13 @@ public class UserController {
      * @return 保存的用户信息条数
      */
     @PostMapping("/user/add")
-    public int saveUser(UserEntity userEntity) {
-        return this.userService.saveUser(userEntity);
+    public String saveUser(UserEntity userEntity) {
+        UserEntity userEntity1 = this.userService.saveUser(userEntity);
+        if(userEntity1!=null){
+            return "0";
+        }else{
+            return "1";
+        }
     }
 
     /**
