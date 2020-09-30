@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header::header-css">
+    <title>用户信息管理</title>
+</head>
+
+<style>
+    .login-button { /* 按钮美化 */
+        width: 70px; /* 宽度 */
+        height: 28px; /* 高度 */
+        border-width: 0px; /* 边框宽度 */
+        border-radius: 3px; /* 边框半径 */
+        background: #1E90FF; /* 背景颜色 */
+        cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+        outline: none; /* 不显示轮廓线 */
+        font-family: Microsoft YaHei; /* 设置字体 */
+        color: white; /* 字体颜色 */
+        font-size: 17px; /* 字体大小 */
+    }
+
+    .login-button:hover { /* 鼠标移入按钮范围时改变颜色 */
+        background: #5599FF;
+    }
+</style>
+
+<body class="hold-transition skin-blue sidebar-mini">
+<div th:replace="fragments/header::header-body"/>
+
+<div class="content-wrapper">
+    <section class="content-header">
+        <h1>
+            用户信息管理
+        </h1>
+        <br/>
+        <ol class="breadcrumb">
+            <li><a href="../index"><i class="fa fa-dashboard"></i>首页</a></li>
+            <li class="active">用户信息管理</li>
+        </ol>
+    </section>
+
+    <div class="layui-fluid">
+        <div class="layui-row layui-col-space15">
+            <div class="layui-col-md12">
+                <div class="layui-card">
+
+                    <div class="layui-card-body" >
+                        <div class="layui-card-body" >
+                            <table class="layui-show" id="standardTaskExeTable" lay-filter="standardTaskExeTable" ></table>
+
+                            <script type="text/html" id="toolbarDemo">
+                                <div class="layui-btn-container">
+                                    <button class="layui-btn layui-btn-sm" lay-event="getCheckData">添加</button>
+                                </div>
+                            </script>
+
+                            <script type="text/html" id="barDemo">
+                                <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+                                <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.container -->
+<script>
+    $(document).ready(function(){
+        // var uuid = '${uuid}';
+        loadStandardTaskExeTable();
+    });
+
+    layui.use(['form' ], function() {
+        var form = layui.form;
+
+        form.on('submit(sreach)', function(data) {
+            loadStandardTaskExeTable();
+            return false;
+        });
+
+        form.render();
+    });
+
+
+    function loadStandardTaskExeTable(){
+
+        layui.use(['table'], function () {
+            var table = layui.table;
+
+            table.render({
+                elem: "#standardTaskExeTable",
+                url: '../user/allPage',
+                even: true,
+                toolbar: '#toolbarDemo', //开启头部工具栏，并为其绑定左侧模板
+                page:{ //支持传入 laypage 组件的所有参数（某些参数除外，如：jump/elem） - 详见文档
+                    layout: ['limit', 'count', 'prev', 'page', 'next', 'skip'] //自定义分页布局
+                    //,curr: 5 //设定初始在第 5 页
+                    ,groups: 1 //只显示 1 个连续页码
+                    ,first: false //不显示首页
+                    ,last: false //不显示尾页
+                    ,limits:[5, 10, 20, 30, 40]
+                    ,limit:5
+
+                },
+                cols: [
+                    [
+                        {field: "xuhao", title: "序号", width: '8%',align:"center",templet:setXuHao,fixed:'left'},
+                        {field: "userName", title: "用户名", width: '15%',align:"center",fixed:'left'},
+                        {field: "name", title: "姓名", width: '20%',align:"center"},
+                        {field: "cellphoneNumber", title: "手机号", width: '15%',align:"center"}
+                    ]
+                ],
+                done: function (res, curr, count) {
+                    table = res.data;
+                }
+            });
+
+
+            //监听行单击事件（双击事件为：rowDouble）
+            table.on('toolbar(standardTaskExeTable)', function(obj){
+                if(obj.event==='getCheckData'){
+                    var url = '../user/toadd';
+                    openWin("添加用户",url);
+                }
+            });
+
+            //监听行工具事件
+            table.on('tool(standardTaskExeTable)', function(obj){
+                var data = obj.data;
+                if(obj.event === 'del'){
+                    layer.confirm('真的删除行么', {
+                        btn: ['确认']
+                    }, function(index) {
+                        obj.del(); //删除对应行（tr）的DOM结构，并更新缓存
+                        layer.close(index);
+
+                        $.ajax({
+                            url: '../student/delete',
+                            method: 'post',
+                            data: {
+                                'id': data.id
+                            },
+                            dataType: 'JSON',
+                            success: function (res) {
+                                if (res == "1") {
+                                    layuiOpen("结果", "删除成功");
+                                } else {
+                                    layuiOpen("结果", "删除失败");
+                                }
+                                loadStandardTaskExeTable();
+                            },
+                            error: function (res) {
+                                layuiOpen("结果", "请求异常");
+                            }
+                        });
+
+                    });
+                } else if(obj.event === 'edit'){
+                    var url = '../user/toupdate?userId='+data.id;
+                    openWin("修改用户",url);
+                }
+            });
+
+        });
+    }
+
+    function setPlace(data){
+        var placeId = data.placeId;
+        // if(inSchool=="1"){
+        //     return "<span>校内</span>";
+        // }else if(inSchool=="2"){
+        //     return "<span>校外</span>";
+        // }else{
+        //     return "<span></span>";
+        // }
+        return placeId;
+    }
+
+
+
+
+    //序号
+    function setXuHao(data){
+        return data.LAY_INDEX;
+    }
+
+    //提示框
+    function layuiOpen(id, text) {
+        layer.open({
+            type : 1,
+            offset : 'auto',
+            id : id //防止重复弹出
+            ,
+            content : '<div style="padding: 20px 100px;">' + text
+                + '</div>',
+            btn : '确定',
+            btnAlign : 'c' //按钮居中
+            ,
+            shade : 0.2 //不显示遮罩
+            ,
+            yes : function() {
+                layer.closeAll();
+            }
+        });
+    }
+
+</script>
+
+<footer th:replace="fragments/footer::footer"/>
+
+<aside th:replace="fragments/menu"/>
+</body>
+</html>

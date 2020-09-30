@@ -1,0 +1,121 @@
+<html>
+
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../layui/layui.js"></script>
+    <script src="../js/baseutil.js"></script>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+
+
+<div class="content-wrapper">
+    <form class="layui-form" action="">
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">用户名</label>
+            <div class="layui-input-block">
+                <input type="text" name="userName" lay-verify="userName" placeholder="请输入系统用户名" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">姓名</label>
+            <div class="layui-input-block">
+                <input type="text" name="name" lay-verify="name" placeholder="请输入姓名" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">手机号</label>
+            <div class="layui-input-block">
+                <input type="text" name="cellphoneNumber" lay-verify="cellphoneNumber" placeholder="请输入手机号" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button type="submit" class="layui-btn" lay-submit=""
+                        lay-filter="demo1" id="commit">立即提交</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- /.container -->
+<script>
+    $(document).ready(function(){
+        // var uuid = '${uuid}';
+
+    });
+
+    layui.use(['form', 'layedit', 'laydate','upload'], function(){
+        var form = layui.form
+        ,laydate = layui.laydate
+        var $ = layui.jquery;
+        $(this).removeAttr("lay-key");
+        //日期
+        laydate.render({
+            elem : '#date'
+            ,trigger : 'click'
+        });
+
+        //自定义验证规则
+        form.verify({
+
+        });
+
+
+        form.on('submit(demo1)', function(data){
+            $.ajax({
+                url:'../user/add',
+                method : 'post',
+                data : data.field,
+                dataType : 'JSON',
+                async:false,
+                success : function(res) {
+                    if(res==0){
+                        layuiOpen("结果","添加成功");
+                    }else{
+                        layuiOpen("结果","添加失败");
+                    }
+                },
+                error : function(res) {
+                    layuiOpen("结果","请求异常");
+                }
+            });
+
+            return false;
+        });
+    });
+
+    //提示框
+    function layuiOpen(id, text) {
+        layer.open({
+            type : 1,
+            offset : 'auto',
+            id : id //防止重复弹出
+            ,
+            content : '<div style="padding: 20px 100px;">' + text
+                + '</div>',
+            btn : '确定',
+            btnAlign : 'c' //按钮居中
+            ,
+            shade : 0.2 //不显示遮罩
+            ,
+            yes : function() {
+                layer.closeAll();
+                window.parent.location.reload();
+            }
+        });
+    }
+
+</script>
+
+</body>
+</html>
