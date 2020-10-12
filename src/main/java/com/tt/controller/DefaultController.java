@@ -3,6 +3,7 @@ package com.tt.controller;
 import com.tt.pojo.UserEntity;
 import com.tt.pojo.vo.HomeVO;
 import com.tt.service.HomeService;
+import com.tt.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -25,6 +26,8 @@ public class DefaultController {
 
     @Autowired
     private HomeService homeService;
+    @Autowired
+    private UserService userService;
 
     /**
      * 页面跳转到 初始页面
@@ -116,8 +119,8 @@ public class DefaultController {
                          @RequestParam(value = "password", required = false) String password, HttpSession session, HttpServletResponse response, RedirectAttributes attributes, Map<String,Object> map) throws IOException {
         ModelAndView model = new ModelAndView();
         String url = (String) session.getAttribute("url");
-
-        if(username.equals("admin") && password.equals("123456")){
+        UserEntity userEntity = this.userService.findUserByName(username);
+        if(userEntity!=null && userEntity.getAuthenticationString().equals(password)){
             Cookie c1 = new Cookie("loginName", username);
             c1.setPath("/");
             response.addCookie(c1);
@@ -127,11 +130,11 @@ public class DefaultController {
             }else{
                 model.setViewName("home");
             }
-
         }else{
             model.addObject("error", "不正确的用户名和密码");
             model.setViewName("login");
         }
+
 
         return model;
     }

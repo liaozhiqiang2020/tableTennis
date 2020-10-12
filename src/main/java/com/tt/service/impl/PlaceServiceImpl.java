@@ -23,7 +23,7 @@ public class PlaceServiceImpl implements PlaceService {
     @Override
     public Map<String, Object> findPlaceByPage(int page, int pageSize) {
         Map<String,Object> result = new HashedMap();
-        List<PlaceEntity> list = this.placeRepository.findAllPlaceByPage((page-1)*10,pageSize);
+        List<PlaceEntity> list = this.placeRepository.findAllPlaceByPage((page-1)*pageSize,pageSize);
         int total = this.placeRepository.findAllPlaceTotal();
         result.put("code", 0);
         result.put("data", list);

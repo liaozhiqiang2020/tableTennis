@@ -23,7 +23,7 @@ public class CourseServiceImpl implements CourseService {
     @Override
     public Map<String,Object> findCourseByPage(int page, int pageSize) {
         Map<String,Object> result = new HashedMap();
-        List<CourseEntity> list = this.courseRepository.findAllCourseByPage((page-1)*10,pageSize);
+        List<CourseEntity> list = this.courseRepository.findAllCourseByPage((page-1)*pageSize,pageSize);
         int total = this.courseRepository.findAllCourseTotal();
         result.put("code", 0);
         result.put("data", list);

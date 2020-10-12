@@ -1,10 +1,12 @@
 package com.tt.repository;
 
 import com.tt.pojo.UserEntity;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -65,7 +67,7 @@ public interface UserRepository extends BaseRepository<UserEntity, Long>, Paging
      * @param pageSize 截至个数
      * @return 用户集合
      */
-    @Query(value = "select * from mc_user as u where u.status = 1 LIMIT :offset,:pageSize", nativeQuery = true)
+    @Query(value = "select * from mc_user as u LIMIT :offset,:pageSize", nativeQuery = true)
     List<UserEntity> findAllUserByPage(@Param("offset") Integer page, @Param("pageSize") Integer pageSize);
 
     /**
@@ -74,4 +76,9 @@ public interface UserRepository extends BaseRepository<UserEntity, Long>, Paging
      */
     @Query(value = "select count(*) from mc_user as u where u.status= 1", nativeQuery = true)
     int findPriceTotal();
+
+    @Transactional
+    @Modifying
+    @Query(value = "delete from mc_user where id=:id", nativeQuery = true)
+    int deleteById(@Param("id") int id);
 }

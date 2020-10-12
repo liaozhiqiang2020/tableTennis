@@ -174,9 +174,9 @@
                 async:false,
                 success : function(res) {
                     if(res==0){
-                        layuiOpen("结果","添加成功");
+                        layuiOpen("结果","签到成功");
                     }else{
-                        layuiOpen("结果","添加失败");
+                        layuiOpen("结果","签到失败");
                     }
                 },
                 error : function(res) {
@@ -204,7 +204,15 @@
             ,
             yes : function() {
                 layer.closeAll();
-                window.history.go(-1);
+
+                var studentId = $("#studentId").val();
+                $(window.parent.$("#"+studentId+"")[0]).css("color","red");
+                $(window.parent.$("#"+studentId+"")[0]).val("已签到");
+
+                var index = window.parent.parent.layer.getFrameIndex(window.name);
+                parent.layer.close(index);
+
+
             }
         });
     }

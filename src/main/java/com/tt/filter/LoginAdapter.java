@@ -20,7 +20,6 @@ public class LoginAdapter implements WebMvcConfigurer {
         registry.addInterceptor(LoginInterceptor).addPathPatterns("/**")
                 .excludePathPatterns("/css/**","/js/**","/img/**","/layui/**","/fonts/**")//排除样式、脚本、图片等资源文件
                 .excludePathPatterns("/login")//排除用户点击登录按钮
-                .excludePathPatterns("/")
                 .excludePathPatterns("/login.html")
                 .excludePathPatterns("/toLogin");
 

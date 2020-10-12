@@ -106,9 +106,13 @@
                 cols: [
                     [
                         {field: "xuhao", title: "序号", width: '8%',align:"center",templet:setXuHao,fixed:'left'},
-                        {field: "userName", title: "用户名", width: '15%',align:"center",fixed:'left'},
+                        {field: "userName", title: "用户名", width: '15%',align:"center"},
                         {field: "name", title: "姓名", width: '20%',align:"center"},
-                        {field: "cellphoneNumber", title: "手机号", width: '15%',align:"center"}
+                        {field: "cellphoneNumber", title: "手机号", width: '15%',align:"center"},
+                        {field: "createDatetime", title: "创建时间", width: '15%',align:"center"},
+                        {field: "latestLoginDatetime", title: "上次登录时间", width: '15%',align:"center"},
+                        {field: "latestLoginIp", title: "上次登录ip", width: '15%',align:"center"},
+                        {fixed: 'right', title:'操作', toolbar: '#barDemo', width:150}
                     ]
                 ],
                 done: function (res, curr, count) {
@@ -136,7 +140,7 @@
                         layer.close(index);
 
                         $.ajax({
-                            url: '../student/delete',
+                            url: '../user/delete',
                             method: 'post',
                             data: {
                                 'id': data.id

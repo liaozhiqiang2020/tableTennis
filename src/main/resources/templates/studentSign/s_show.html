@@ -24,7 +24,7 @@
 <div class="content-wrapper">
     <form class="layui-form" action="">
         <div class="layui-form-item" >
-            <div class="layui-input-block" style="margin-left:1%;margin-right: 1%;">
+            <div class="layui-input-block" id="placeDiv" style="margin-left:1%;margin-right: 1%;">
                 <select id="placeId" name="placeId" lay-filter="placeId">
                     <option value="">请选择场地---</option>
                 </select>
@@ -65,18 +65,21 @@
 
         form.on('select(placeId)', function (data) {
             var placeId = $("#placeId").val();
+            $(".layui-form").hide();
             var limit = 5;
+
 
             flow.load({
                 elem: '#LAY_demo1' //指定列表容器
+                ,isAuto:false
                 ,done: function(page, next){ //到达临界点（默认滚动触发），触发下一页
                     var lis = [];
                     //以jQuery的Ajax请求为例，请求下一页数据（注意：page是从2开始返回）
                     $.post('../student/getListByPageAndPlace',{page:page,limit:limit,placeId:placeId},function(res){
                         //假设你的列表返回在data集合中
                         layui.each(res.data, function(index, item){
-                            lis.push("<div class='list-group' style='border-radius:10px;border:solid 1px #000;margin-bottom: 5px;'>" +
-                                "<a href='#' class='list-group-item' onclick='details(\""+item.id+"\",\""+item.name+"\",\""+item.place_id+"\",\""+item.place_name+"\")'><p class='list-group-item-text'>" +item.name+" +</p></a>"+
+                            lis.push("<div class='list-group' style='border-radius:10px;border:solid 1px #000;margin-bottom: 5px;height: 30px'>" +
+                                "<a href='#' id='"+item.id+"' class='list-group-item' onclick='details(\""+item.id+"\",\""+item.name+"\",\""+item.place_id+"\",\""+item.place_name+"\")'><p class='list-group-item-text'>" +item.name+" +</p></a>"+
                                 "</div>");
                         });
 
@@ -87,13 +90,18 @@
                 }
             });
         });
-
-
     });
 
 
     function details(id,name,placeId,placeName){
-        window.location.href='../studentSign/toadd?id='+id+'&name='+name+'&placeId='+placeId+'&placeName='+placeName;
+        var qiandao = $("#"+id+"").val();
+        if(qiandao=="已签到"){
+
+        }else{
+            var url = '../studentSign/toadd?id='+id+'&name='+name+'&placeId='+placeId+'&placeName='+placeName;
+            openWin("签到",url);
+        }
+
     }
 
 
@@ -107,13 +115,36 @@
                 title: title,
                 closeBtn: 1, //不显示关闭按钮
                 anim: 2,
-                area: ['950px', '600px'],
+                area: ['90%', '80%'],
                 shadeClose: true, //开启遮罩关闭
                 content: url
             });
         });
-
     }
+
+
+    //提示框
+    function layuiOpen(id, text) {
+        layer.open({
+            type : 1,
+            offset : 'auto',
+            id : id //防止重复弹出
+            ,
+            content : '<div style="padding: 20px 100px;">' + text
+                + '</div>',
+            btn : '确定',
+            btnAlign : 'c' //按钮居中
+            ,
+            shade : 0.2 //不显示遮罩
+            ,
+            yes : function() {
+                layer.closeAll();
+            }
+        });
+    }
+
+
+
 </script>
 
 </body>

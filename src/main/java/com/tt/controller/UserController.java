@@ -26,7 +26,7 @@ public class UserController {
     UserService userService;
 
     @GetMapping("/user/allPage")
-    public Map<String,Object> findAllUserPage(@Param("page") String page, @Param("limit") String pageSize) {
+    public Map<String,Object> findAllUserPage(@RequestParam("page") String page, @RequestParam("limit") String pageSize) {
         return this.userService.findEntitiesPager(Integer.parseInt(page), Integer.parseInt(pageSize));
     }
 
@@ -90,6 +90,6 @@ public class UserController {
     @ResponseBody
     @RequestMapping(value = "/user/delete")
     public int delete(int id){
-        return this.userService.deleteUserById(id);
+        return this.userService.deleteUser(id);
     }
 }

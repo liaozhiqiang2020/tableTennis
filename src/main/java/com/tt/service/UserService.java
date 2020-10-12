@@ -45,7 +45,10 @@ public interface UserService<T>  {
      */
     UserEntity findUserByName(String username);
 
-    int deleteUserById(int userId);
 
+    UserEntity saveUser(UserEntity userEntity);
 
+    UserEntity updateUser(UserEntity userEntity);
+
+    int deleteUser(int userId);
 }

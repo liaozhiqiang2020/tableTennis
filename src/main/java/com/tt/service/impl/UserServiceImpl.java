@@ -1,29 +1,20 @@
 package com.tt.service.impl;
 
-import com.tt.pojo.RoleEntity;
 import com.tt.pojo.UserEntity;
-import com.tt.repository.RoleRepository;
 import com.tt.repository.UserRepository;
 import com.tt.service.UserService;
-import com.tt.util.DateJsonValueProcessor;
-import com.tt.util.MD5Util;
-import net.sf.json.JSONArray;
-import net.sf.json.JSONObject;
-import net.sf.json.JsonConfig;
 import org.apache.commons.collections.map.HashedMap;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-import java.sql.Timestamp;
-import java.util.ArrayList;
+import javax.jws.soap.SOAPBinding;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
+
 
 @Service
 public class UserServiceImpl implements UserService<UserEntity> {
@@ -46,31 +37,46 @@ public class UserServiceImpl implements UserService<UserEntity> {
         int total = this.userRepository.findPriceTotal();
         List<UserEntity> userList = this.userRepository.findAllUserByPage(offset, pageSize);
 
+        map.put("code", 0);
         map.put("data", userList);
-        map.put("total", total);
+        map.put("count", total);
         return map;
     }
 
-    /**
-     * 查询所有用户
-     * @return 所有用户集合
-     */
     @Override
-    @Transactional
-    public List<UserEntity> findAllUser() {
-        return this.userRepository.findAll();
+    public UserEntity findUserById(int userId) {
+        return this.userRepository.findUserById(userId);
     }
-
-    /**
-
 
     @Override
     public UserEntity findUserByName(String username) {
         return this.userRepository.findUserByUserName(username);
     }
 
+
     @Override
-    public int deleteUserById(int userId) {
-        return 0;
+    public UserEntity saveUser(UserEntity userEntity) {
+        Date date = new Date();
+        SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String time = sf.format(date);
+
+        userEntity.setAuthenticationString("123456");
+        userEntity.setCreateDatetime(time);
+        return this.userRepository.save(userEntity);
     }
+
+    @Override
+    public UserEntity updateUser(UserEntity userEntity) {
+        UserEntity userEntity1 = this.userRepository.findUserById(userEntity.getId());
+        String pwd = userEntity1.getAuthenticationString();
+        userEntity.setAuthenticationString(pwd);
+        return this.userRepository.save(userEntity);
+    }
+
+    @Override
+    public int deleteUser(int userId) {
+        return this.userRepository.deleteById(userId);
+    }
+
+
 }

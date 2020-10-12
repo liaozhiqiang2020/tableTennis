@@ -25,7 +25,7 @@ public class StudentSignServiceImpl implements StudentSignService {
     @Override
     public Map<String, Object> findStudentSignByPage2(int page, int pageSize) {
         Map<String,Object> result = new HashedMap();
-        List<Map<String,Object>> list = this.studentSignRepository.findAllStudentSignByPage2((page-1)*10,pageSize);
+        List<Map<String,Object>> list = this.studentSignRepository.findAllStudentSignByPage2((page-1)*pageSize,pageSize);
         int total = this.studentSignRepository.findAllStudentSignTotal();
         result.put("code", 0);
         result.put("data", list);
