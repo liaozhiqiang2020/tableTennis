@@ -45,6 +45,11 @@
 
                     <div class="layui-card-body" >
                         <div class="layui-card-body" >
+                            <div class="layui-card-body">
+                                场地：<select id="placeId" name="placeId" lay-filter="placeId" onchange="func();">
+                                    <option value="">请选择场地---</option>
+                                </select>
+                            </div>
                             <table class="layui-show" id="standardTaskExeTable" lay-filter="standardTaskExeTable" ></table>
 
                             <script type="text/html" id="toolbarDemo">
@@ -67,31 +72,45 @@
 <!-- /.container -->
 <script>
     $(document).ready(function(){
-        // var uuid = '${uuid}';
-        loadStandardTaskExeTable();
-    });
+        $.ajax({
+            url: '../place/getList',
+            dataType: 'json',
+            data: {},
+            type: 'post',
+            success: function (data) {
+                $.each(data, function (index, item) {
+                    $('#placeId').append(new Option(item.name, item.id));// 下拉菜单里添加元素
+                });
 
-    layui.use(['form' ], function() {
-        var form = layui.form;
-
-        form.on('submit(sreach)', function(data) {
-            loadStandardTaskExeTable();
-            return false;
+                layui.form.render("select");
+            }
         });
 
-        form.render();
+
+        loadStandardTaskExeTable("");
     });
 
+    function func() {
+        var placeId = $("#placeId").val();
 
-    function loadStandardTaskExeTable(){
+        loadStandardTaskExeTable(placeId);
+    }
+
+
+
+
+    function loadStandardTaskExeTable(placeId){
 
         layui.use(['table'], function () {
             var table = layui.table;
 
             table.render({
                 elem: "#standardTaskExeTable",
-                url: '../student/getList',
+                url: '../student/getListByPageAndPlace',
                 even: true,
+                where: {
+                    placeId: placeId,
+                },
                 toolbar: '#toolbarDemo', //开启头部工具栏，并为其绑定左侧模板
                 page:{ //支持传入 laypage 组件的所有参数（某些参数除外，如：jump/elem） - 详见文档
                     layout: ['limit', 'count', 'prev', 'page', 'next', 'skip'] //自定义分页布局
@@ -100,20 +119,24 @@
                     ,first: false //不显示首页
                     ,last: false //不显示尾页
                     ,limits:[5, 10, 20, 30, 40]
-                    ,limit:5
+                    ,limit:15
 
                 },
                 cols: [
                     [
                         {field: "xuhao", title: "序号", width: '8%',align:"center",templet:setXuHao,fixed:'left'},
+                        // {field: "sn", title: "学号", width: '15%',align:"center",fixed:'left'},
                         {field: "name", title: "姓名", width: '15%',align:"center",fixed:'left'},
-                        {field: "age", title: "年龄", width: '15%',align:"center"},
-                        {field: "parentName", title: "家长姓名", width: '35%',align:"center"},
-                        {field: "parentTel", title: "家长手机", width: '20%',align:"center"},
+                        {field: "id_card", title: "身份证号", width: '20%',align:"center"},
+                        {field: "parent_name", title: "家长姓名", width: '35%',align:"center"},
+                        {field: "parent_tel", title: "家长电话", width: '20%',align:"center"},
+                        {field: "class_hours", title: "剩余课时数", width: '20%',align:"center"},
+                        {field: "money", title: "剩余金额", width: '20%',align:"center"},
                         {field: "tel", title: "手机", width: '20%',align:"center"},
                         {field: "address", title: "家庭住址", width: '15%',align:"center"},
-                        {field: "registrTime", title: "报名时间", width: '20%',align:"center"},
-                        {field: "placeId", title: "上课场地", width: '20%',align:"center",templet:setPlace},
+                        {field: "registr_time", title: "报名时间", width: '20%',align:"center"},
+                        {field: "place_name", title: "上课场地", width: '20%',align:"center"},
+                        // {field: "sale_name", title: "销售名称", width: '20%',align:"center"},
                         {fixed: 'right', title:'操作', toolbar: '#barDemo', width:150}
                     ]
                 ],
@@ -127,7 +150,7 @@
             table.on('toolbar(standardTaskExeTable)', function(obj){
                 if(obj.event==='getCheckData'){
                     var url = '../student/toadd';
-                    openWin("添加课程",url);
+                    openWin("添加学员信息",url);
                 }
             });
 
@@ -135,7 +158,7 @@
             table.on('tool(standardTaskExeTable)', function(obj){
                 var data = obj.data;
                 if(obj.event === 'del'){
-                    layer.confirm('真的删除行么', {
+                    layer.confirm('真的删除该学员吗', {
                         btn: ['确认']
                     }, function(index) {
                         obj.del(); //删除对应行（tr）的DOM结构，并更新缓存
@@ -164,7 +187,7 @@
                     });
                 } else if(obj.event === 'edit'){
                     var url = '../student/toupdate?studentId='+data.id;
-                    openWin("修改课程",url);
+                    openWin("修改学员信息",url);
                 }
             });
 

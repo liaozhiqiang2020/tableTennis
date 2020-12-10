@@ -48,4 +48,12 @@ public interface StudentSignRepository extends BaseRepository<StudentSignEntity,
      */
     @Query(value = "select count(*) from tt_student_sign as u", nativeQuery = true)
     int findAllStudentSignTotal();
+
+    /**
+     * 查询当天是否签到
+     * @param id
+     * @return
+     */
+    @Query(value = "select * from tt_student_sign as u where u.student_id=:id and u.sign_time LIKE CONCAT('',:signTime,'%')", nativeQuery = true)
+    StudentSignEntity querySign(int id,String signTime);
 }

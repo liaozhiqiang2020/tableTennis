@@ -60,6 +60,8 @@ public class UserServiceImpl implements UserService<UserEntity> {
         SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String time = sf.format(date);
 
+        userEntity.setType(0);
+        userEntity.setStatus(0);
         userEntity.setAuthenticationString("123456");
         userEntity.setCreateDatetime(time);
         return this.userRepository.save(userEntity);

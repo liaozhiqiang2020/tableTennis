@@ -1,13 +1,14 @@
 package com.tt.service.impl;
 
 import com.tt.pojo.StudentSignEntity;
-import com.tt.repository.StudentRepository;
 import com.tt.repository.StudentSignRepository;
 import com.tt.service.StudentSignService;
 import org.apache.commons.collections.map.HashedMap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -61,5 +62,12 @@ public class StudentSignServiceImpl implements StudentSignService {
     @Override
     public List<StudentSignEntity> findStudentSignByPlaceId(int placeId) {
         return null;
+    }
+
+    @Override
+    public StudentSignEntity querySign(int id) {
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");//设置日期格式
+        String signtime = df.format(new Date());
+        return this.studentSignRepository.querySign(id,signtime);
     }
 }

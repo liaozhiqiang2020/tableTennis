@@ -59,4 +59,10 @@ public interface StudentSignService<T> {
      */
     List<StudentSignEntity> findStudentSignByPlaceId(int placeId);
 
+    /**
+     * 查询当天是否签到
+     * @param id
+     * @return
+     */
+    public StudentSignEntity querySign(int id);
 }

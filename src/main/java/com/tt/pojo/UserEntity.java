@@ -15,7 +15,7 @@ import java.util.Set;
  * @author 魏帅志
  */
 @Entity
-@Table(name = "mc_user", schema = "mc", catalog = "")
+@Table(name = "mc_user", schema = "tt", catalog = "")
 public class UserEntity {
     /**
      * 主键Id
@@ -57,6 +57,7 @@ public class UserEntity {
      * 状态
      */
     private int status;
+    private int type;//用户类型  0 系统用户  1  家长
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -165,5 +166,13 @@ public class UserEntity {
         this.status = status;
     }
 
+    @Basic
+    @Column(name = "type")
+    public int getType() {
+        return type;
+    }
 
+    public void setType(int type) {
+        this.type = type;
+    }
 }

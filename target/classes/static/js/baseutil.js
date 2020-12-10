@@ -1,21 +1,13 @@
-//µ¯³ö´°¿ÚÍ¨ÓÃ·½·¨£¬²ÎÊı1£º´°¿ÚÃû³Æ£»²ÎÊı2£º´°¿Úurl
 function openWin(title,url){
-	layui.use(['layer'], function(){
-		layer.open({
-	         type: 2,
-	         maxmin: true,
-	         title: title,
-	         cellMinWidth: 80,
-	         shadeClose: false,
-	         shade: 0.4,
-	         area: ['50%', '70%'],
-	         content: url,
-	         end:function(){
-	         	
-	         }
-	     });
-	 })
+
+    layer.open({
+        type: 2,
+        skin: 'layui-layer-demo', //æ ·å¼ç±»å
+        title: title,
+        closeBtn: 1, //ä¸æ˜¾ç¤ºå…³é—­æŒ‰é’®
+        anim: 2,
+        area: ['950px', '700px'],
+        shadeClose: true, //å¼€å¯é®ç½©å…³é—­
+        content: url
+    });
 }
-
-
-

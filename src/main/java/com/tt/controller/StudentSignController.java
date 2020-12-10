@@ -1,7 +1,9 @@
 package com.tt.controller;
 
+import com.tt.pojo.StudentEntity;
 import com.tt.pojo.StudentSignEntity;
 import com.tt.pojo.UserEntity;
+import com.tt.service.StudentService;
 import com.tt.service.StudentSignService;
 import com.tt.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
+import org.weixin4j.User;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -25,6 +28,8 @@ public class StudentSignController {
 	private StudentSignService studentSignService;
 	@Autowired
 	private UserService userService;
+	@Autowired
+	private StudentService studentService;
 
 	@RequestMapping("/toStudentSignMgr")
 	public ModelAndView dataList(ModelAndView model) {
@@ -48,7 +53,8 @@ public class StudentSignController {
 	@RequestMapping(value = "/toadd")
 	public ModelAndView toadd(HttpServletRequest request,int id,String name,int placeId,String placeName) {
 		HttpSession session   =   request.getSession();
-		String userName = (String) session.getAttribute("user");
+		UserEntity userEntity2 = (UserEntity) session.getAttribute("user");
+		String userName = userEntity2.getUserName();
 		UserEntity userEntity = this.userService.findUserByName(userName);
 		ModelAndView model = new ModelAndView("/studentSign/s_add");
 		model.addObject("userId",userEntity.getId());
@@ -63,13 +69,36 @@ public class StudentSignController {
 	@ResponseBody
 	@RequestMapping(value = "/add")
 	public String add(StudentSignEntity studentSignEntity){
-		StudentSignEntity studentSignEntity1 = this.studentSignService.saveStudentSign(studentSignEntity);
-		if(studentSignEntity1!=null){
+		try {
+			StudentSignEntity studentSignEntity1 = this.studentSignService.saveStudentSign(studentSignEntity);
+			StudentEntity studentEntity = this.studentService.findStudentById(studentSignEntity1.getStudentId());
+			studentEntity.setClassHours(String.valueOf(Integer.parseInt(studentEntity.getClassHours())-1));
+			this.studentService.updateStudent(studentEntity);
+			if(studentSignEntity1!=null){
+				return "0";
+			}else{
+				return "1";
+			}
+		}catch (Exception e){
+			return "1";
+		}
+
+	}
+
+	/**
+	 * 查询学员当天是否签到
+	 * @param
+	 * @return
+	 */
+	@ResponseBody
+	@RequestMapping(value = "/querySign")
+	public String querySign(int id){
+		StudentSignEntity studentSignEntity = this.studentSignService.querySign(id);
+		if(studentSignEntity!=null){
 			return "0";
 		}else{
 			return "1";
 		}
-
 	}
 
 }

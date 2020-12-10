@@ -49,7 +49,7 @@ public interface UserRepository extends BaseRepository<UserEntity, Long>, Paging
      * 查询所有状态正常的用户
      * @return 用户信息集合
      */
-    @Query("from UserEntity as u where u.status = 1")
+    @Query("from UserEntity as u")
     List<UserEntity> findAllByStatus();
 
     /**
@@ -67,7 +67,7 @@ public interface UserRepository extends BaseRepository<UserEntity, Long>, Paging
      * @param pageSize 截至个数
      * @return 用户集合
      */
-    @Query(value = "select * from mc_user as u LIMIT :offset,:pageSize", nativeQuery = true)
+    @Query(value = "select * from mc_user as u where u.status= 0 LIMIT :offset,:pageSize", nativeQuery = true)
     List<UserEntity> findAllUserByPage(@Param("offset") Integer page, @Param("pageSize") Integer pageSize);
 
     /**

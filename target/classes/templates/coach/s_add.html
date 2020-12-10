@@ -1,0 +1,219 @@
+<html>
+
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../layui/layui.js"></script>
+    <script src="../js/baseutil.js"></script>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+
+
+<div class="content-wrapper">
+    <form class="layui-form" action="">
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">教练名称</label>
+            <div class="layui-input-block">
+                <input type="text" name="name" lay-verify="name" placeholder="请输入教练名称" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">身份证号</label>
+            <div class="layui-input-block">
+                <input type="text" name="idCard" lay-verify="idCard" placeholder="请输入身份证号" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">上课场地</label>
+            <div class="layui-input-block">
+                <select id="placeId" name="placeId" lay-filter="placeId">
+                    <option value="">请选择场地---</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">联系电话</label>
+            <div class="layui-input-block">
+                <input type="text" name="tel" lay-verify="tel" placeholder="请输入联系电话" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">职位类型</label>
+            <div class="layui-input-block">
+                <select name="isFullTime" lay-filter="isFullTime">
+                    <option value="">请选择---</option>
+                    <option value="0">全职</option>
+                    <option value="1">兼职</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">入职日期</label>
+            <div class="layui-input-block">
+                <input type="text" class="layui-input" id="entryDate" name="entryDate" lay-verify="entryDate" placeholder="yyyy-MM-dd HH:mm:ss">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <input type="hidden" id="imgUrl" name="imgUrl" lay-verify="imgUrl">
+            <label class="layui-form-label">上传照片</label>
+            <div class="layui-input-inline uploadHeadImage">
+                <div class="layui-upload-drag" id="headImg">
+                    <i class="layui-icon"></i>
+                    <p>点击上传图片，或将图片拖拽到此处</p>
+                </div>
+            </div>
+            <div class="layui-input-inline">
+                <div class="layui-upload-list">
+                    <img class="layui-upload-img headImage" width="120" height="150" src="" id="demoImg">
+                    <p id="demoText"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">简单描述</label>
+            <div class="layui-input-block">
+                <textarea name="remarks" type="text/plain" style="width:99%;height:100px"></textarea>
+            </div>
+        </div>
+
+
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button type="submit" class="layui-btn" lay-submit=""
+                        lay-filter="demo1" id="commit">立即提交</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- /.container -->
+<script>
+    $(document).ready(function(){
+        // var uuid = '${uuid}';
+
+        $.ajax({
+            url: '../place/getList',
+            dataType: 'json',
+            data:{},
+            type: 'post',
+            success: function (data) {
+                $.each(data, function (index, item) {
+                    $('#placeId').append(new Option(item.name, item.id));// 下拉菜单里添加元素
+                });
+
+                layui.form.render("select");
+            }
+        });
+    });
+
+    layui.use(['form', 'layedit', 'laydate','upload',"element"], function(){
+        var form = layui.form
+        ,laydate = layui.laydate
+        ,upload = layui.upload
+        ,element = layui.element;
+        var $ = layui.jquery;
+        $(this).removeAttr("lay-key");
+        //日期
+        laydate.render({
+            elem : '#entryDate'
+            ,trigger : 'click'
+        });
+
+        //自定义验证规则
+        form.verify({
+
+        });
+
+        //拖拽上传
+        var uploadInst = upload.render({
+            elem: '#headImg'
+            , url: '../coach/uploadImg'
+            , size: 500
+            , before: function (obj) {
+                //预读本地文件示例，不支持ie8
+                obj.preview(function (index, file, result) {
+                    $('#demoImg').attr('src', result); //图片链接（base64）
+                });
+            }
+            , done: function (res) {
+                //如果上传失败
+                if (res.code > 0) {
+                    return layer.msg('上传失败');
+                }
+                //上传成功
+                //打印后台传回的地址: 把地址放入一个隐藏的input中, 和表单一起提交到后台, 此处略..
+                /*   console.log(res.data.src);*/
+                $("#imgUrl").val(res.data.src);
+                window.parent.uploadHeadImage(res.data.src);
+                var demoText = $('#demoText');
+                demoText.html('<span style="color: #8f8f8f;">上传成功!!!</span>');
+            }
+            , error: function () {
+                //演示失败状态，并实现重传
+                var demoText = $('#demoText');
+                demoText.html('<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-mini demo-reload">重试</a>');
+                demoText.find('.demo-reload').on('click', function () {
+                    uploadInst.upload();
+                });
+            }
+        });
+        element.init();
+
+        form.on('submit(demo1)', function(data){
+            $.ajax({
+                url:'../coach/add',
+                method : 'post',
+                data : data.field,
+                dataType : 'JSON',
+                async:false,
+                success : function(res) {
+                    if(res==0){
+                        layuiOpen("结果","添加成功");
+                    }else{
+                        layuiOpen("结果","添加失败");
+                    }
+                },
+                error : function(res) {
+                    layuiOpen("结果","请求异常");
+                }
+            });
+
+            return false;
+        });
+    });
+
+    //提示框
+    function layuiOpen(id, text) {
+        layer.open({
+            type : 1,
+            offset : 'auto',
+            id : id //防止重复弹出
+            ,
+            content : '<div style="padding: 20px 100px;">' + text
+                + '</div>',
+            btn : '确定',
+            btnAlign : 'c' //按钮居中
+            ,
+            shade : 0.2 //不显示遮罩
+            ,
+            yes : function() {
+                layer.closeAll();
+                window.parent.location.reload();
+            }
+        });
+    }
+
+</script>
+
+</body>
+</html>

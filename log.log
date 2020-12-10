@@ -308,3 +308,1259 @@
 [DEBUG] 2020-09-24 17:13:53,965 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
 [INFO ] 2020-09-24 17:13:53,966 com.tt.TTApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-09-24 17:13:58,720 com.tt.TTApplication - Started TTApplication in 5.105 seconds (JVM running for 6.038)
+[INFO ] 2020-10-13 02:01:37,760 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 1592 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-13 02:01:37,784 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-13 02:01:37,784 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-13 02:05:03,724 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 7052 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-13 02:05:03,728 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-13 02:05:03,728 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-13 02:06:37,059 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 6804 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-13 02:06:37,064 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-13 02:06:37,066 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-13 02:10:05,766 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 5132 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-13 02:10:05,771 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-13 02:10:05,771 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-13 02:11:30,247 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 10028 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-13 02:11:30,251 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-13 02:11:30,252 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-13 02:11:38,091 com.tt.TTApplication - Started TTApplication in 8.167 seconds (JVM running for 9.658)
+[INFO ] 2020-10-13 02:13:35,608 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 12252 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-13 02:13:35,612 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-13 02:13:35,613 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-13 02:13:42,132 com.tt.TTApplication - Started TTApplication in 6.798 seconds (JVM running for 8.344)
+[INFO ] 2020-10-13 03:14:29,513 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 4916 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-13 03:14:29,517 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-13 03:14:29,518 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-13 03:14:36,934 com.tt.TTApplication - Started TTApplication in 7.769 seconds (JVM running for 9.801)
+[INFO ] 2020-10-13 06:14:10,607 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 8736 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-13 06:14:10,611 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-13 06:14:10,612 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-13 06:14:16,779 com.tt.TTApplication - Started TTApplication in 6.461 seconds (JVM running for 7.828)
+[INFO ] 2020-10-13 06:16:05,060 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 8800 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-13 06:16:05,066 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-13 06:16:05,067 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-13 06:16:12,458 com.tt.TTApplication - Started TTApplication in 7.77 seconds (JVM running for 9.365)
+[INFO ] 2020-10-13 06:17:53,832 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 10904 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-13 06:17:53,838 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-13 06:17:53,839 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-13 06:18:01,488 com.tt.TTApplication - Started TTApplication in 7.987 seconds (JVM running for 9.556)
+[INFO ] 2020-10-13 06:22:29,824 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 336 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-13 06:22:29,828 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-13 06:22:29,828 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-13 06:22:35,883 com.tt.TTApplication - Started TTApplication in 6.351 seconds (JVM running for 7.675)
+[INFO ] 2020-10-13 06:24:46,157 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 12956 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-13 06:24:46,162 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-13 06:24:46,162 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-13 06:24:52,260 com.tt.TTApplication - Started TTApplication in 6.4 seconds (JVM running for 7.738)
+[INFO ] 2020-10-13 06:25:26,152 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 3428 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-13 06:25:26,156 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-13 06:25:26,158 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-13 06:25:58,504 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 11452 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-13 06:25:58,507 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-13 06:25:58,508 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-13 06:26:20,522 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 6840 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-13 06:26:20,526 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-13 06:26:20,527 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-13 06:26:26,694 com.tt.TTApplication - Started TTApplication in 6.463 seconds (JVM running for 7.809)
+[INFO ] 2020-10-13 06:26:37,749 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 13944 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-13 06:26:37,752 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-13 06:26:37,753 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-13 06:26:44,039 com.tt.TTApplication - Started TTApplication in 6.583 seconds (JVM running for 7.912)
+[INFO ] 2020-10-13 06:27:12,639 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 8948 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-13 06:27:12,644 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-13 06:27:12,644 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-13 06:27:18,760 com.tt.TTApplication - Started TTApplication in 6.413 seconds (JVM running for 7.746)
+[INFO ] 2020-10-13 06:30:11,429 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 6072 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-13 06:30:11,433 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-13 06:30:11,433 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-13 06:30:17,554 com.tt.TTApplication - Started TTApplication in 6.419 seconds (JVM running for 7.777)
+[INFO ] 2020-10-13 07:01:53,391 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 3220 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-13 07:01:53,395 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-13 07:01:53,396 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-13 07:02:01,187 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 14332 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-13 07:02:01,191 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-13 07:02:01,191 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-13 07:02:07,371 com.tt.TTApplication - Started TTApplication in 6.487 seconds (JVM running for 7.954)
+[INFO ] 2020-10-13 07:05:50,270 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 1440 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-13 07:05:50,274 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-13 07:05:50,275 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-13 07:05:56,412 com.tt.TTApplication - Started TTApplication in 6.435 seconds (JVM running for 7.866)
+[INFO ] 2020-10-13 07:07:46,590 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 7324 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-13 07:07:46,594 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-13 07:07:46,595 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-13 07:07:53,072 com.tt.TTApplication - Started TTApplication in 6.78 seconds (JVM running for 8.205)
+[INFO ] 2020-10-13 07:08:32,496 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 12424 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-13 07:08:32,501 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-13 07:08:32,501 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-13 07:08:38,809 com.tt.TTApplication - Started TTApplication in 6.609 seconds (JVM running for 7.952)
+[INFO ] 2020-10-13 07:09:15,911 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 9056 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-13 07:09:15,918 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-13 07:09:15,918 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-13 07:09:23,768 com.tt.TTApplication - Started TTApplication in 8.197 seconds (JVM running for 9.811)
+[INFO ] 2020-10-13 07:12:00,637 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 5164 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-13 07:12:00,641 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-13 07:12:00,641 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-13 07:12:06,798 com.tt.TTApplication - Started TTApplication in 6.451 seconds (JVM running for 7.814)
+[INFO ] 2020-10-13 07:13:48,849 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 8124 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-13 07:13:48,853 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-13 07:13:48,854 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-13 07:13:55,091 com.tt.TTApplication - Started TTApplication in 6.532 seconds (JVM running for 7.905)
+[INFO ] 2020-10-13 07:14:21,370 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 11820 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-13 07:14:21,375 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-13 07:14:21,376 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-13 07:14:30,668 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 8364 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-13 07:14:30,672 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-13 07:14:30,673 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-13 07:14:36,810 com.tt.TTApplication - Started TTApplication in 6.446 seconds (JVM running for 7.802)
+[INFO ] 2020-10-14 20:51:50,637 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 12556 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 20:51:50,641 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 20:51:50,641 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 20:51:58,352 com.tt.TTApplication - Started TTApplication in 8.073 seconds (JVM running for 9.929)
+[INFO ] 2020-10-14 20:57:49,752 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 7736 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 20:57:49,756 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 20:57:49,757 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 20:57:56,143 com.tt.TTApplication - Started TTApplication in 6.727 seconds (JVM running for 8.142)
+[INFO ] 2020-10-14 21:00:25,943 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 10968 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 21:00:25,948 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 21:00:25,949 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 21:00:32,363 com.tt.TTApplication - Started TTApplication in 6.73 seconds (JVM running for 8.067)
+[INFO ] 2020-10-14 21:02:01,588 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 11124 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 21:02:01,592 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 21:02:01,593 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 21:02:08,204 com.tt.TTApplication - Started TTApplication in 6.917 seconds (JVM running for 8.279)
+[INFO ] 2020-10-14 21:12:44,542 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 596 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 21:12:44,546 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 21:12:44,547 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 21:12:51,036 com.tt.TTApplication - Started TTApplication in 6.817 seconds (JVM running for 8.172)
+[INFO ] 2020-10-14 21:14:06,427 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 12716 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 21:14:06,431 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 21:14:06,431 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 21:14:12,840 com.tt.TTApplication - Started TTApplication in 6.727 seconds (JVM running for 8.083)
+[INFO ] 2020-10-14 21:15:22,463 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 13948 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 21:15:22,467 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 21:15:22,467 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 21:15:28,725 com.tt.TTApplication - Started TTApplication in 6.563 seconds (JVM running for 7.898)
+[INFO ] 2020-10-14 21:23:13,459 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 13060 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 21:23:13,463 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 21:23:13,463 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 21:23:19,713 com.tt.TTApplication - Started TTApplication in 6.551 seconds (JVM running for 7.939)
+[INFO ] 2020-10-14 21:24:20,541 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 15328 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 21:24:20,545 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 21:24:20,546 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 21:24:27,037 com.tt.TTApplication - Started TTApplication in 6.806 seconds (JVM running for 8.216)
+[INFO ] 2020-10-14 21:26:00,876 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 1316 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 21:26:00,880 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 21:26:00,881 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 21:26:07,299 com.tt.TTApplication - Started TTApplication in 6.735 seconds (JVM running for 8.172)
+[INFO ] 2020-10-14 21:31:38,632 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 14368 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 21:31:38,637 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 21:31:38,637 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 21:31:45,035 com.tt.TTApplication - Started TTApplication in 6.699 seconds (JVM running for 8.034)
+[INFO ] 2020-10-14 21:34:35,935 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 9840 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 21:34:35,939 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 21:34:35,940 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 21:34:42,025 com.tt.TTApplication - Started TTApplication in 6.429 seconds (JVM running for 7.762)
+[INFO ] 2020-10-14 21:38:27,355 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 4984 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 21:38:27,360 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 21:38:27,360 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 21:38:34,995 com.tt.TTApplication - Started TTApplication in 7.994 seconds (JVM running for 10.021)
+[INFO ] 2020-10-14 21:40:30,748 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 13856 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 21:40:30,753 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 21:40:30,754 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 21:40:38,131 com.tt.TTApplication - Started TTApplication in 7.715 seconds (JVM running for 9.328)
+[INFO ] 2020-10-14 21:41:58,001 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 1420 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 21:41:58,005 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 21:41:58,006 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 21:42:05,365 com.tt.TTApplication - Started TTApplication in 7.689 seconds (JVM running for 9.255)
+[INFO ] 2020-10-14 21:48:33,000 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 10156 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 21:48:33,005 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 21:48:33,005 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 21:48:40,582 com.tt.TTApplication - Started TTApplication in 7.922 seconds (JVM running for 9.511)
+[INFO ] 2020-10-14 21:49:39,379 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 7796 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 21:49:39,384 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 21:49:39,385 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 21:49:47,029 com.tt.TTApplication - Started TTApplication in 7.987 seconds (JVM running for 9.56)
+[INFO ] 2020-10-14 21:52:40,180 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 3328 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 21:52:40,185 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 21:52:40,185 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 21:52:47,733 com.tt.TTApplication - Started TTApplication in 7.889 seconds (JVM running for 9.509)
+[INFO ] 2020-10-14 21:57:19,291 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 3256 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 21:57:19,296 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 21:57:19,297 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 21:57:26,774 com.tt.TTApplication - Started TTApplication in 7.818 seconds (JVM running for 9.393)
+[INFO ] 2020-10-14 21:59:05,727 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 13032 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 21:59:05,732 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 21:59:05,733 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 21:59:13,272 com.tt.TTApplication - Started TTApplication in 7.886 seconds (JVM running for 9.439)
+[INFO ] 2020-10-14 22:07:28,305 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 14660 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 22:07:28,310 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 22:07:28,310 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 22:07:35,693 com.tt.TTApplication - Started TTApplication in 7.734 seconds (JVM running for 9.275)
+[INFO ] 2020-10-14 22:24:19,923 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 3308 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 22:24:19,927 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 22:24:19,928 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 22:24:26,012 com.tt.TTApplication - Started TTApplication in 6.382 seconds (JVM running for 7.738)
+[INFO ] 2020-10-14 22:26:22,104 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 7188 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 22:26:22,112 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 22:26:22,113 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 22:26:29,669 com.tt.TTApplication - Started TTApplication in 7.915 seconds (JVM running for 9.538)
+[INFO ] 2020-10-14 22:27:24,603 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 9388 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 22:27:24,608 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 22:27:24,608 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 22:27:31,918 com.tt.TTApplication - Started TTApplication in 7.655 seconds (JVM running for 9.236)
+[INFO ] 2020-10-14 22:29:27,014 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 1428 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 22:29:27,019 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 22:29:27,019 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 22:29:34,484 com.tt.TTApplication - Started TTApplication in 7.801 seconds (JVM running for 9.363)
+[INFO ] 2020-10-14 22:47:07,900 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 6472 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 22:47:07,906 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 22:47:07,907 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 22:47:15,292 com.tt.TTApplication - Started TTApplication in 7.732 seconds (JVM running for 9.348)
+[INFO ] 2020-10-14 22:52:45,012 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 3620 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 22:52:45,017 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 22:52:45,018 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 22:52:52,357 com.tt.TTApplication - Started TTApplication in 7.693 seconds (JVM running for 9.289)
+[INFO ] 2020-10-14 22:54:37,568 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 2204 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 22:54:37,572 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 22:54:37,573 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 22:54:45,041 com.tt.TTApplication - Started TTApplication in 7.805 seconds (JVM running for 9.422)
+[INFO ] 2020-10-14 22:56:03,250 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 12336 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 22:56:03,256 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 22:56:03,257 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 22:56:10,584 com.tt.TTApplication - Started TTApplication in 7.671 seconds (JVM running for 9.246)
+[INFO ] 2020-10-14 22:56:41,846 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 14764 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 22:56:41,851 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 22:56:41,852 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 22:56:49,269 com.tt.TTApplication - Started TTApplication in 7.758 seconds (JVM running for 9.363)
+[INFO ] 2020-10-14 22:57:47,376 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 6460 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 22:57:47,381 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 22:57:47,382 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 22:57:55,682 com.tt.TTApplication - Started TTApplication in 8.656 seconds (JVM running for 10.252)
+[INFO ] 2020-10-14 22:58:21,305 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 10856 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 22:58:21,310 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 22:58:21,311 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 22:58:28,671 com.tt.TTApplication - Started TTApplication in 7.71 seconds (JVM running for 9.322)
+[INFO ] 2020-10-14 23:00:05,017 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 12216 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 23:00:05,022 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 23:00:05,023 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 23:00:12,383 com.tt.TTApplication - Started TTApplication in 7.717 seconds (JVM running for 9.32)
+[INFO ] 2020-10-14 23:00:44,626 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 1792 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 23:00:44,632 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 23:00:44,633 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 23:00:52,007 com.tt.TTApplication - Started TTApplication in 7.723 seconds (JVM running for 9.324)
+[INFO ] 2020-10-14 23:17:41,603 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 10656 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 23:17:41,607 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 23:17:41,608 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 23:17:49,079 com.tt.TTApplication - Started TTApplication in 7.81 seconds (JVM running for 9.497)
+[INFO ] 2020-10-14 23:18:26,593 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 4368 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 23:18:26,598 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 23:18:26,599 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 23:18:34,024 com.tt.TTApplication - Started TTApplication in 7.785 seconds (JVM running for 9.356)
+[INFO ] 2020-10-14 23:19:24,132 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 7732 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 23:19:24,136 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 23:19:24,137 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 23:19:31,892 com.tt.TTApplication - Started TTApplication in 8.088 seconds (JVM running for 9.615)
+[INFO ] 2020-10-14 23:20:01,310 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 5808 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 23:20:01,315 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 23:20:01,316 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 23:20:08,663 com.tt.TTApplication - Started TTApplication in 7.691 seconds (JVM running for 9.258)
+[INFO ] 2020-10-14 23:23:00,683 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 6660 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 23:23:00,688 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 23:23:00,689 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 23:23:12,361 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 13124 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 23:23:12,366 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 23:23:12,367 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 23:23:19,739 com.tt.TTApplication - Started TTApplication in 7.714 seconds (JVM running for 9.266)
+[INFO ] 2020-10-14 23:26:31,173 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 11124 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 23:26:31,179 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 23:26:31,179 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 23:26:38,672 com.tt.TTApplication - Started TTApplication in 7.838 seconds (JVM running for 9.374)
+[INFO ] 2020-10-14 23:27:50,594 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 13772 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 23:27:50,598 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 23:27:50,598 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 23:27:56,784 com.tt.TTApplication - Started TTApplication in 6.48 seconds (JVM running for 7.798)
+[INFO ] 2020-10-14 23:30:23,410 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 14496 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 23:30:23,414 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 23:30:23,415 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 23:30:30,992 com.tt.TTApplication - Started TTApplication in 7.918 seconds (JVM running for 9.47)
+[INFO ] 2020-10-14 23:41:26,320 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 2624 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 23:41:26,325 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 23:41:26,326 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 23:41:33,904 com.tt.TTApplication - Started TTApplication in 7.928 seconds (JVM running for 9.537)
+[INFO ] 2020-10-14 23:41:50,242 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 5132 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 23:41:50,247 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 23:41:50,247 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 23:41:58,076 com.tt.TTApplication - Started TTApplication in 8.174 seconds (JVM running for 9.756)
+[INFO ] 2020-10-14 23:44:39,930 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 3344 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 23:44:39,937 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 23:44:39,937 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 23:44:47,328 com.tt.TTApplication - Started TTApplication in 7.727 seconds (JVM running for 9.331)
+[INFO ] 2020-10-14 23:49:16,904 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 15352 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 23:49:16,909 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 23:49:16,910 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 23:49:42,319 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 1152 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 23:49:42,325 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 23:49:42,326 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 23:49:49,925 com.tt.TTApplication - Started TTApplication in 7.955 seconds (JVM running for 9.606)
+[INFO ] 2020-10-14 23:50:15,199 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 9976 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 23:50:15,204 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 23:50:15,205 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 23:50:22,685 com.tt.TTApplication - Started TTApplication in 7.82 seconds (JVM running for 9.384)
+[INFO ] 2020-10-14 23:51:14,526 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 14464 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 23:51:14,531 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 23:51:14,531 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 23:51:22,180 com.tt.TTApplication - Started TTApplication in 7.987 seconds (JVM running for 9.607)
+[INFO ] 2020-10-14 23:53:48,460 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 4660 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 23:53:48,466 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 23:53:48,467 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 23:53:56,131 com.tt.TTApplication - Started TTApplication in 8.02 seconds (JVM running for 9.585)
+[INFO ] 2020-10-14 23:54:22,665 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 5956 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-14 23:54:22,671 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-14 23:54:22,672 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-14 23:54:30,087 com.tt.TTApplication - Started TTApplication in 7.758 seconds (JVM running for 9.327)
+[INFO ] 2020-10-15 00:02:35,455 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 11372 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 00:02:35,461 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 00:02:35,462 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 00:02:43,080 com.tt.TTApplication - Started TTApplication in 7.979 seconds (JVM running for 9.603)
+[INFO ] 2020-10-15 00:03:58,045 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 2336 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 00:03:58,051 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 00:03:58,052 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 00:04:05,543 com.tt.TTApplication - Started TTApplication in 7.844 seconds (JVM running for 9.484)
+[INFO ] 2020-10-15 00:05:48,215 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 9368 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 00:05:48,220 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 00:05:48,220 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 00:05:55,807 com.tt.TTApplication - Started TTApplication in 7.927 seconds (JVM running for 9.492)
+[INFO ] 2020-10-15 00:07:10,007 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 12512 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 00:07:10,012 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 00:07:10,013 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 00:07:17,698 com.tt.TTApplication - Started TTApplication in 8.029 seconds (JVM running for 9.614)
+[INFO ] 2020-10-15 00:08:27,924 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 14720 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 00:08:27,930 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 00:08:27,931 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 00:08:35,919 com.tt.TTApplication - Started TTApplication in 8.356 seconds (JVM running for 10.023)
+[INFO ] 2020-10-15 00:11:52,168 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 5152 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 00:11:52,174 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 00:11:52,174 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 00:11:59,863 com.tt.TTApplication - Started TTApplication in 8.025 seconds (JVM running for 9.624)
+[INFO ] 2020-10-15 00:16:52,202 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 7524 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 00:16:52,206 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 00:16:52,207 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 00:16:59,653 com.tt.TTApplication - Started TTApplication in 7.785 seconds (JVM running for 9.444)
+[INFO ] 2020-10-15 01:13:03,260 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 13132 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 01:13:03,266 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 01:13:03,267 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 01:13:11,220 com.tt.TTApplication - Started TTApplication in 8.352 seconds (JVM running for 10.046)
+[INFO ] 2020-10-15 01:18:41,950 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 11528 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 01:18:41,955 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 01:18:41,956 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 01:18:49,671 com.tt.TTApplication - Started TTApplication in 8.075 seconds (JVM running for 9.672)
+[INFO ] 2020-10-15 01:19:14,736 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 9252 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 01:19:14,742 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 01:19:14,743 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 01:19:22,569 com.tt.TTApplication - Started TTApplication in 8.177 seconds (JVM running for 9.807)
+[INFO ] 2020-10-15 01:19:41,919 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 6872 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 01:19:41,924 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 01:19:41,925 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 01:19:49,995 com.tt.TTApplication - Started TTApplication in 8.435 seconds (JVM running for 10.106)
+[INFO ] 2020-10-15 01:20:39,808 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 1048 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 01:20:39,814 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 01:20:39,814 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 01:20:47,719 com.tt.TTApplication - Started TTApplication in 8.29 seconds (JVM running for 9.953)
+[INFO ] 2020-10-15 01:23:06,668 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 7336 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 01:23:06,674 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 01:23:06,674 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 01:23:14,312 com.tt.TTApplication - Started TTApplication in 7.992 seconds (JVM running for 9.729)
+[INFO ] 2020-10-15 01:25:53,509 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 2592 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 01:25:53,514 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 01:25:53,515 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 01:26:01,384 com.tt.TTApplication - Started TTApplication in 8.241 seconds (JVM running for 9.97)
+[INFO ] 2020-10-15 01:26:34,602 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 11180 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 01:26:34,607 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 01:26:34,608 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 01:26:54,533 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 11096 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 01:26:54,540 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 01:26:54,541 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 01:27:02,203 com.tt.TTApplication - Started TTApplication in 8.043 seconds (JVM running for 9.726)
+[INFO ] 2020-10-15 01:27:35,144 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 1056 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 01:27:35,150 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 01:27:35,151 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 01:27:43,009 com.tt.TTApplication - Started TTApplication in 8.231 seconds (JVM running for 9.884)
+[INFO ] 2020-10-15 01:30:49,658 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 9288 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 01:30:49,663 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 01:30:49,664 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 01:30:57,154 com.tt.TTApplication - Started TTApplication in 7.845 seconds (JVM running for 9.361)
+[INFO ] 2020-10-15 01:37:05,987 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 2296 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 01:37:05,992 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 01:37:05,993 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 01:37:13,550 com.tt.TTApplication - Started TTApplication in 7.897 seconds (JVM running for 9.601)
+[INFO ] 2020-10-15 01:39:00,825 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 12456 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 01:39:00,831 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 01:39:00,832 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 01:39:43,793 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 14796 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 01:39:43,799 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 01:39:43,800 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 01:39:51,789 com.tt.TTApplication - Started TTApplication in 8.355 seconds (JVM running for 10.008)
+[INFO ] 2020-10-15 01:44:12,044 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 9084 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 01:44:12,050 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 01:44:12,051 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 01:44:20,010 com.tt.TTApplication - Started TTApplication in 8.312 seconds (JVM running for 9.941)
+[INFO ] 2020-10-15 01:45:26,413 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 14176 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 01:45:26,418 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 01:45:26,419 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 01:45:34,122 com.tt.TTApplication - Started TTApplication in 8.061 seconds (JVM running for 9.689)
+[INFO ] 2020-10-15 01:46:50,558 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 14332 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 01:46:50,564 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 01:46:50,564 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 01:46:58,431 com.tt.TTApplication - Started TTApplication in 8.218 seconds (JVM running for 9.851)
+[INFO ] 2020-10-15 01:47:44,425 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 2644 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 01:47:44,432 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 01:47:44,433 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 01:47:56,042 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 7608 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 01:47:56,047 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 01:47:56,048 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 01:48:03,751 com.tt.TTApplication - Started TTApplication in 8.057 seconds (JVM running for 9.7)
+[INFO ] 2020-10-15 01:49:26,224 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 13864 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 01:49:26,229 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 01:49:26,230 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 01:49:33,968 com.tt.TTApplication - Started TTApplication in 8.085 seconds (JVM running for 9.71)
+[INFO ] 2020-10-15 01:50:59,013 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 9636 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 01:50:59,018 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 01:50:59,019 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 01:51:06,630 com.tt.TTApplication - Started TTApplication in 7.972 seconds (JVM running for 9.625)
+[INFO ] 2020-10-15 01:51:34,445 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 4404 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 01:51:34,450 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 01:51:34,451 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 01:51:42,504 com.tt.TTApplication - Started TTApplication in 8.396 seconds (JVM running for 10.082)
+[INFO ] 2020-10-15 01:52:31,243 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 7448 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 01:52:31,249 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 01:52:31,249 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 01:52:39,085 com.tt.TTApplication - Started TTApplication in 8.209 seconds (JVM running for 9.896)
+[INFO ] 2020-10-15 01:54:26,264 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 8260 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 01:54:26,270 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 01:54:26,270 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 01:54:34,303 com.tt.TTApplication - Started TTApplication in 8.432 seconds (JVM running for 10.101)
+[INFO ] 2020-10-15 01:55:55,532 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 10248 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 01:55:55,537 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 01:55:55,537 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 01:56:03,394 com.tt.TTApplication - Started TTApplication in 8.207 seconds (JVM running for 9.888)
+[INFO ] 2020-10-15 01:56:12,703 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 14616 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 01:56:12,708 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 01:56:12,709 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 01:56:25,155 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 6360 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 01:56:25,160 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 01:56:25,160 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 01:56:33,014 com.tt.TTApplication - Started TTApplication in 8.219 seconds (JVM running for 9.93)
+[INFO ] 2020-10-15 01:57:07,535 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 14668 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 01:57:07,540 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 01:57:07,540 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 01:57:15,273 com.tt.TTApplication - Started TTApplication in 8.094 seconds (JVM running for 9.681)
+[INFO ] 2020-10-15 01:57:42,050 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 12124 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 01:57:42,056 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 01:57:42,056 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 01:57:49,717 com.tt.TTApplication - Started TTApplication in 8.025 seconds (JVM running for 9.641)
+[INFO ] 2020-10-15 01:58:48,648 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 5936 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 01:58:48,655 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 01:58:48,655 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 01:58:56,385 com.tt.TTApplication - Started TTApplication in 8.089 seconds (JVM running for 9.682)
+[INFO ] 2020-10-15 02:08:04,595 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 8404 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 02:08:04,600 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 02:08:04,601 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 02:08:12,319 com.tt.TTApplication - Started TTApplication in 8.069 seconds (JVM running for 9.703)
+[INFO ] 2020-10-15 02:17:27,820 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 6524 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 02:17:27,825 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 02:17:27,825 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 02:17:35,607 com.tt.TTApplication - Started TTApplication in 8.134 seconds (JVM running for 9.709)
+[INFO ] 2020-10-15 02:20:58,766 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 15204 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 02:20:58,771 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 02:20:58,772 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 02:21:06,544 com.tt.TTApplication - Started TTApplication in 8.113 seconds (JVM running for 9.72)
+[INFO ] 2020-10-15 02:24:47,380 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 8432 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 02:24:47,385 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 02:24:47,385 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 02:24:54,787 com.tt.TTApplication - Started TTApplication in 7.734 seconds (JVM running for 9.409)
+[INFO ] 2020-10-15 02:29:40,971 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 13064 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 02:29:40,976 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 02:29:40,977 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 02:29:52,323 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 6832 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 02:29:52,329 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 02:29:52,330 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 02:30:05,491 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 9008 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 02:30:05,498 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 02:30:05,499 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 02:30:13,304 com.tt.TTApplication - Started TTApplication in 8.182 seconds (JVM running for 9.771)
+[INFO ] 2020-10-15 02:30:52,929 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 14912 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 02:30:52,935 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 02:30:52,936 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 02:31:00,750 com.tt.TTApplication - Started TTApplication in 8.166 seconds (JVM running for 9.872)
+[INFO ] 2020-10-15 02:32:15,790 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 7000 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 02:32:15,796 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 02:32:15,796 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 02:32:23,757 com.tt.TTApplication - Started TTApplication in 8.339 seconds (JVM running for 9.933)
+[INFO ] 2020-10-15 02:32:52,538 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 14580 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 02:32:52,543 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 02:32:52,544 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 02:33:00,267 com.tt.TTApplication - Started TTApplication in 8.061 seconds (JVM running for 9.677)
+[INFO ] 2020-10-15 02:35:36,428 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 9004 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 02:35:36,433 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 02:35:36,434 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 02:35:44,703 com.tt.TTApplication - Started TTApplication in 8.646 seconds (JVM running for 10.268)
+[INFO ] 2020-10-15 02:35:50,029 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 11296 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 02:35:50,034 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 02:35:50,034 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 02:35:57,795 com.tt.TTApplication - Started TTApplication in 8.11 seconds (JVM running for 9.753)
+[INFO ] 2020-10-15 02:36:36,998 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 5136 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 02:36:37,003 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 02:36:37,003 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 02:36:44,725 com.tt.TTApplication - Started TTApplication in 8.072 seconds (JVM running for 9.714)
+[INFO ] 2020-10-15 02:39:03,018 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 5788 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 02:39:03,024 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 02:39:03,024 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 02:39:10,643 com.tt.TTApplication - Started TTApplication in 7.971 seconds (JVM running for 9.595)
+[INFO ] 2020-10-15 02:42:07,565 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 764 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 02:42:07,573 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 02:42:07,573 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 02:42:15,382 com.tt.TTApplication - Started TTApplication in 8.172 seconds (JVM running for 9.773)
+[INFO ] 2020-10-15 02:43:15,534 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 9288 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 02:43:15,540 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 02:43:15,540 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 02:43:23,410 com.tt.TTApplication - Started TTApplication in 8.223 seconds (JVM running for 9.826)
+[INFO ] 2020-10-15 02:52:02,412 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 4400 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 02:52:02,417 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 02:52:02,418 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 02:52:09,832 com.tt.TTApplication - Started TTApplication in 7.766 seconds (JVM running for 9.319)
+[INFO ] 2020-10-15 02:57:02,424 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 9056 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 02:57:02,430 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 02:57:02,431 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 02:57:09,956 com.tt.TTApplication - Started TTApplication in 7.883 seconds (JVM running for 9.483)
+[INFO ] 2020-10-15 02:59:07,180 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 5492 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 02:59:07,186 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 02:59:07,187 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 02:59:14,849 com.tt.TTApplication - Started TTApplication in 7.999 seconds (JVM running for 9.62)
+[INFO ] 2020-10-15 03:02:06,460 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 7652 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 03:02:06,465 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 03:02:06,466 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 03:02:13,891 com.tt.TTApplication - Started TTApplication in 7.771 seconds (JVM running for 9.42)
+[INFO ] 2020-10-15 03:04:00,003 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 9444 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 03:04:00,009 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 03:04:00,010 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 03:04:07,496 com.tt.TTApplication - Started TTApplication in 7.831 seconds (JVM running for 9.427)
+[INFO ] 2020-10-15 03:06:12,689 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 14420 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 03:06:12,695 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 03:06:12,696 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 03:06:20,138 com.tt.TTApplication - Started TTApplication in 7.793 seconds (JVM running for 9.334)
+[INFO ] 2020-10-15 03:13:17,141 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 9548 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 03:13:17,146 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 03:13:17,146 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 03:13:25,511 com.tt.TTApplication - Started TTApplication in 8.714 seconds (JVM running for 10.486)
+[INFO ] 2020-10-15 03:14:02,036 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 8204 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 03:14:02,043 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 03:14:02,044 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 03:14:09,424 com.tt.TTApplication - Started TTApplication in 7.772 seconds (JVM running for 9.541)
+[INFO ] 2020-10-15 03:16:03,460 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 10828 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 03:16:03,466 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 03:16:03,466 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 03:16:11,279 com.tt.TTApplication - Started TTApplication in 8.176 seconds (JVM running for 9.9)
+[INFO ] 2020-10-15 03:18:35,720 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 8504 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 03:18:35,725 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 03:18:35,726 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 03:18:43,829 com.tt.TTApplication - Started TTApplication in 8.448 seconds (JVM running for 10.077)
+[INFO ] 2020-10-15 03:19:24,193 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 1272 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 03:19:24,198 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 03:19:24,198 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 03:19:30,682 com.tt.TTApplication - Started TTApplication in 6.794 seconds (JVM running for 8.243)
+[INFO ] 2020-10-15 03:20:01,486 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 13864 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 03:20:01,492 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 03:20:01,492 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 03:20:09,345 com.tt.TTApplication - Started TTApplication in 8.22 seconds (JVM running for 9.855)
+[INFO ] 2020-10-15 03:21:33,717 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 14980 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 03:21:33,723 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 03:21:33,725 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 03:21:41,860 com.tt.TTApplication - Started TTApplication in 8.524 seconds (JVM running for 10.182)
+[INFO ] 2020-10-15 03:27:42,838 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 11076 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 03:27:42,844 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 03:27:42,844 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 03:27:50,396 com.tt.TTApplication - Started TTApplication in 7.888 seconds (JVM running for 9.491)
+[INFO ] 2020-10-15 03:38:26,591 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 12960 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 03:38:26,599 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 03:38:26,599 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 03:38:34,514 com.tt.TTApplication - Started TTApplication in 8.305 seconds (JVM running for 9.996)
+[INFO ] 2020-10-15 03:47:30,370 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 12036 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 03:47:30,376 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 03:47:30,376 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 03:47:38,420 com.tt.TTApplication - Started TTApplication in 8.41 seconds (JVM running for 9.936)
+[INFO ] 2020-10-15 20:08:59,899 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 8024 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 20:08:59,905 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 20:08:59,906 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 20:09:09,873 com.tt.TTApplication - Started TTApplication in 10.408 seconds (JVM running for 12.515)
+[INFO ] 2020-10-15 20:13:56,223 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 6292 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 20:13:56,229 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 20:13:56,229 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 20:14:03,862 com.tt.TTApplication - Started TTApplication in 7.982 seconds (JVM running for 10.027)
+[INFO ] 2020-10-15 20:20:09,246 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 1324 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 20:20:09,251 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 20:20:09,252 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 20:20:16,886 com.tt.TTApplication - Started TTApplication in 7.986 seconds (JVM running for 9.638)
+[INFO ] 2020-10-15 20:22:19,497 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 648 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 20:22:19,504 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 20:22:19,504 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 20:22:27,079 com.tt.TTApplication - Started TTApplication in 7.927 seconds (JVM running for 9.553)
+[INFO ] 2020-10-15 20:30:53,072 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 14848 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 20:30:53,078 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 20:30:53,078 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 20:31:00,725 com.tt.TTApplication - Started TTApplication in 7.979 seconds (JVM running for 9.638)
+[INFO ] 2020-10-15 20:32:03,107 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 15136 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 20:32:03,112 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 20:32:03,113 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 20:32:10,628 com.tt.TTApplication - Started TTApplication in 7.848 seconds (JVM running for 9.389)
+[INFO ] 2020-10-15 20:34:08,100 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 5676 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 20:34:08,105 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 20:34:08,106 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 20:34:15,601 com.tt.TTApplication - Started TTApplication in 7.839 seconds (JVM running for 9.433)
+[INFO ] 2020-10-15 20:35:29,609 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 1920 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 20:35:29,615 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 20:35:29,615 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 20:35:37,479 com.tt.TTApplication - Started TTApplication in 8.205 seconds (JVM running for 9.8)
+[INFO ] 2020-10-15 20:47:29,509 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 14492 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 20:47:29,514 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 20:47:29,515 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 20:47:37,263 com.tt.TTApplication - Started TTApplication in 8.095 seconds (JVM running for 9.894)
+[INFO ] 2020-10-15 20:49:13,885 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 10752 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 20:49:13,890 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 20:49:13,891 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 20:49:21,454 com.tt.TTApplication - Started TTApplication in 7.906 seconds (JVM running for 9.564)
+[INFO ] 2020-10-15 20:50:15,581 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 4516 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 20:50:15,586 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 20:50:15,587 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 20:50:23,198 com.tt.TTApplication - Started TTApplication in 7.948 seconds (JVM running for 9.521)
+[INFO ] 2020-10-15 20:54:41,453 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 16232 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-15 20:54:41,458 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-15 20:54:41,458 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-15 20:54:49,113 com.tt.TTApplication - Started TTApplication in 7.99 seconds (JVM running for 9.573)
+[INFO ] 2020-10-16 05:16:16,503 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 13932 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-16 05:16:16,512 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-16 05:16:16,513 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-16 05:16:30,445 com.tt.TTApplication - Started TTApplication in 14.899 seconds (JVM running for 22.13)
+[INFO ] 2020-10-17 23:17:15,626 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 10652 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-17 23:17:15,632 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-17 23:17:15,632 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-17 23:26:18,609 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 10304 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-17 23:26:18,614 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-17 23:26:18,615 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-17 23:26:52,252 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 5112 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-17 23:26:52,260 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-17 23:26:52,261 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-17 23:27:00,342 com.tt.TTApplication - Started TTApplication in 8.48 seconds (JVM running for 10.209)
+[INFO ] 2020-10-17 23:30:24,968 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 11512 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-17 23:30:24,974 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-17 23:30:24,975 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-17 23:30:33,123 com.tt.TTApplication - Started TTApplication in 8.531 seconds (JVM running for 10.935)
+[INFO ] 2020-10-17 23:37:32,420 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 8512 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-17 23:37:32,428 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-17 23:37:32,429 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-17 23:37:40,433 com.tt.TTApplication - Started TTApplication in 8.372 seconds (JVM running for 10.0)
+[INFO ] 2020-10-17 23:43:17,420 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 2156 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-17 23:43:17,426 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-17 23:43:17,427 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-17 23:43:25,624 com.tt.TTApplication - Started TTApplication in 8.561 seconds (JVM running for 10.221)
+[INFO ] 2020-10-17 23:49:30,675 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 14244 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-17 23:49:30,681 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-17 23:49:30,682 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-17 23:49:47,476 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 8880 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-17 23:49:47,481 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-17 23:49:47,482 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-17 23:49:55,711 com.tt.TTApplication - Started TTApplication in 8.584 seconds (JVM running for 10.266)
+[INFO ] 2020-10-17 23:53:30,402 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 2324 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-17 23:53:30,408 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-17 23:53:30,408 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-17 23:53:38,627 com.tt.TTApplication - Started TTApplication in 8.58 seconds (JVM running for 10.224)
+[INFO ] 2020-10-17 23:58:02,933 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 8052 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-17 23:58:02,939 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-17 23:58:02,939 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-17 23:58:11,159 com.tt.TTApplication - Started TTApplication in 8.602 seconds (JVM running for 10.254)
+[INFO ] 2020-10-18 00:01:36,553 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 2992 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 00:01:36,559 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 00:01:36,560 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 00:01:44,716 com.tt.TTApplication - Started TTApplication in 8.518 seconds (JVM running for 10.186)
+[INFO ] 2020-10-18 00:04:07,825 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 1200 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 00:04:07,831 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 00:04:07,832 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 00:04:16,073 com.tt.TTApplication - Started TTApplication in 8.616 seconds (JVM running for 10.305)
+[INFO ] 2020-10-18 00:06:22,557 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 10288 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 00:06:22,562 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 00:06:22,563 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 00:06:30,943 com.tt.TTApplication - Started TTApplication in 8.754 seconds (JVM running for 10.434)
+[INFO ] 2020-10-18 00:09:58,565 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 100 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 00:09:58,571 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 00:09:58,572 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 00:10:06,778 com.tt.TTApplication - Started TTApplication in 8.579 seconds (JVM running for 10.291)
+[INFO ] 2020-10-18 00:13:26,515 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 776 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 00:13:26,522 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 00:13:26,523 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 00:13:34,618 com.tt.TTApplication - Started TTApplication in 8.49 seconds (JVM running for 10.237)
+[INFO ] 2020-10-18 00:15:30,957 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 4552 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 00:15:30,962 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 00:15:30,963 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 00:15:39,202 com.tt.TTApplication - Started TTApplication in 8.605 seconds (JVM running for 10.272)
+[INFO ] 2020-10-18 00:19:00,302 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 12336 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 00:19:00,308 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 00:19:00,309 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 00:19:09,372 com.tt.TTApplication - Started TTApplication in 9.451 seconds (JVM running for 11.116)
+[INFO ] 2020-10-18 00:20:45,355 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 2440 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 00:20:45,362 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 00:20:45,363 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 00:20:53,439 com.tt.TTApplication - Started TTApplication in 8.468 seconds (JVM running for 10.262)
+[INFO ] 2020-10-18 00:34:06,589 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 7104 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 00:34:06,595 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 00:34:06,596 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 00:34:14,617 com.tt.TTApplication - Started TTApplication in 8.372 seconds (JVM running for 10.025)
+[INFO ] 2020-10-18 00:47:07,826 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 2016 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 00:47:07,834 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 00:47:07,835 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 00:47:16,348 com.tt.TTApplication - Started TTApplication in 8.896 seconds (JVM running for 10.539)
+[INFO ] 2020-10-18 00:52:22,128 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 4520 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 00:52:22,133 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 00:52:22,134 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 00:52:30,444 com.tt.TTApplication - Started TTApplication in 8.69 seconds (JVM running for 10.841)
+[INFO ] 2020-10-18 01:02:15,426 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 5636 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 01:02:15,435 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 01:02:15,437 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 01:02:23,928 com.tt.TTApplication - Started TTApplication in 9.023 seconds (JVM running for 10.898)
+[INFO ] 2020-10-18 01:03:59,504 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 2940 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 01:03:59,511 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 01:03:59,512 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 01:04:07,943 com.tt.TTApplication - Started TTApplication in 8.826 seconds (JVM running for 10.576)
+[INFO ] 2020-10-18 01:05:16,346 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 10912 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 01:05:16,352 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 01:05:16,353 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 01:05:24,533 com.tt.TTApplication - Started TTApplication in 8.56 seconds (JVM running for 10.227)
+[INFO ] 2020-10-18 01:07:02,219 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 8808 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 01:07:02,225 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 01:07:02,226 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 01:07:10,268 com.tt.TTApplication - Started TTApplication in 8.428 seconds (JVM running for 10.145)
+[INFO ] 2020-10-18 01:13:46,711 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 8632 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 01:13:46,717 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 01:13:46,718 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 01:13:54,963 com.tt.TTApplication - Started TTApplication in 8.651 seconds (JVM running for 10.362)
+[INFO ] 2020-10-18 01:29:24,331 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 10288 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 01:29:24,336 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 01:29:24,337 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 01:29:32,432 com.tt.TTApplication - Started TTApplication in 8.454 seconds (JVM running for 10.098)
+[INFO ] 2020-10-18 02:13:45,105 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 14212 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 02:13:45,110 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 02:13:45,111 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 02:13:53,405 com.tt.TTApplication - Started TTApplication in 8.657 seconds (JVM running for 10.33)
+[INFO ] 2020-10-18 10:50:41,399 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 12684 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 10:50:41,408 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 10:50:41,409 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 10:54:58,732 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 10652 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 10:54:58,740 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 10:54:58,741 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 10:55:07,297 com.tt.TTApplication - Started TTApplication in 9.04 seconds (JVM running for 10.949)
+[INFO ] 2020-10-18 11:02:05,549 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 3576 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 11:02:05,554 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 11:02:05,555 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 11:02:13,665 com.tt.TTApplication - Started TTApplication in 8.468 seconds (JVM running for 10.178)
+[INFO ] 2020-10-18 13:07:14,942 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 8776 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 13:07:14,948 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 13:07:14,949 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 13:07:23,034 com.tt.TTApplication - Started TTApplication in 8.488 seconds (JVM running for 10.661)
+[INFO ] 2020-10-18 17:34:24,376 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 7560 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 17:34:24,385 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 17:34:24,386 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 17:34:33,743 com.tt.TTApplication - Started TTApplication in 10.035 seconds (JVM running for 12.146)
+[INFO ] 2020-10-18 17:38:49,462 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 4000 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 17:38:49,467 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 17:38:49,468 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 17:38:57,508 com.tt.TTApplication - Started TTApplication in 8.419 seconds (JVM running for 10.164)
+[INFO ] 2020-10-18 17:44:55,287 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 10504 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 17:44:55,293 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 17:44:55,293 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 17:45:03,380 com.tt.TTApplication - Started TTApplication in 8.479 seconds (JVM running for 10.236)
+[INFO ] 2020-10-18 17:48:08,331 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 11876 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 17:48:08,337 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 17:48:08,338 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 17:48:16,418 com.tt.TTApplication - Started TTApplication in 8.471 seconds (JVM running for 10.112)
+[INFO ] 2020-10-18 18:13:37,012 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 5840 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 18:13:37,018 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 18:13:37,019 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 18:13:45,063 com.tt.TTApplication - Started TTApplication in 8.422 seconds (JVM running for 10.108)
+[INFO ] 2020-10-18 18:15:53,067 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 6360 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 18:15:53,073 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 18:15:53,073 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 18:16:01,446 com.tt.TTApplication - Started TTApplication in 8.758 seconds (JVM running for 10.395)
+[INFO ] 2020-10-18 18:18:47,621 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 11036 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 18:18:47,627 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 18:18:47,627 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 18:18:55,667 com.tt.TTApplication - Started TTApplication in 8.409 seconds (JVM running for 10.075)
+[INFO ] 2020-10-18 18:23:18,088 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 10808 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 18:23:18,097 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 18:23:18,098 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 18:23:26,477 com.tt.TTApplication - Started TTApplication in 8.81 seconds (JVM running for 10.526)
+[INFO ] 2020-10-18 18:27:33,015 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 15236 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 18:27:33,023 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 18:27:33,023 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 18:27:41,268 com.tt.TTApplication - Started TTApplication in 8.629 seconds (JVM running for 10.364)
+[INFO ] 2020-10-18 18:52:02,181 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 14072 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 18:52:02,186 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 18:52:02,187 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 18:52:10,296 com.tt.TTApplication - Started TTApplication in 8.491 seconds (JVM running for 10.227)
+[INFO ] 2020-10-18 21:39:57,654 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 2460 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 21:39:57,660 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 21:39:57,661 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 21:40:06,170 com.tt.TTApplication - Started TTApplication in 8.926 seconds (JVM running for 10.785)
+[INFO ] 2020-10-18 21:42:41,997 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 14008 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 21:42:42,003 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 21:42:42,004 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 21:42:50,297 com.tt.TTApplication - Started TTApplication in 8.669 seconds (JVM running for 10.541)
+[INFO ] 2020-10-18 21:44:12,100 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 11036 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 21:44:12,106 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 21:44:12,106 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 21:44:20,427 com.tt.TTApplication - Started TTApplication in 8.689 seconds (JVM running for 10.358)
+[INFO ] 2020-10-18 21:45:28,584 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 6272 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 21:45:28,591 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 21:45:28,591 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 21:45:36,739 com.tt.TTApplication - Started TTApplication in 8.541 seconds (JVM running for 10.412)
+[INFO ] 2020-10-18 21:48:26,182 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 15124 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 21:48:26,187 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 21:48:26,188 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 21:48:34,343 com.tt.TTApplication - Started TTApplication in 8.534 seconds (JVM running for 10.283)
+[INFO ] 2020-10-18 21:49:03,612 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 4080 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 21:49:03,617 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 21:49:03,618 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 21:49:11,717 com.tt.TTApplication - Started TTApplication in 8.483 seconds (JVM running for 10.273)
+[INFO ] 2020-10-18 21:49:55,499 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 4368 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 21:49:55,504 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 21:49:55,505 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 21:50:03,820 com.tt.TTApplication - Started TTApplication in 8.691 seconds (JVM running for 10.414)
+[INFO ] 2020-10-18 21:51:01,694 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 15320 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 21:51:01,699 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 21:51:01,700 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 21:51:09,896 com.tt.TTApplication - Started TTApplication in 8.571 seconds (JVM running for 10.374)
+[INFO ] 2020-10-18 21:51:42,511 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 14880 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-18 21:51:42,516 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-18 21:51:42,517 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-18 21:51:50,658 com.tt.TTApplication - Started TTApplication in 8.538 seconds (JVM running for 10.19)
+[INFO ] 2020-10-19 00:50:20,141 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 14908 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-19 00:50:20,147 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-19 00:50:20,148 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-19 00:50:28,391 com.tt.TTApplication - Started TTApplication in 8.603 seconds (JVM running for 10.438)
+[INFO ] 2020-10-19 00:53:02,540 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 9988 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-19 00:53:02,546 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-19 00:53:02,546 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-19 00:53:10,584 com.tt.TTApplication - Started TTApplication in 8.394 seconds (JVM running for 10.113)
+[INFO ] 2020-10-19 00:59:20,953 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 5496 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-19 00:59:20,964 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-19 00:59:20,965 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-19 00:59:30,723 com.tt.TTApplication - Started TTApplication in 10.228 seconds (JVM running for 12.54)
+[INFO ] 2020-10-19 14:03:58,473 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 8840 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-19 14:03:58,479 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-19 14:03:58,479 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-19 14:04:05,309 com.tt.TTApplication - Started TTApplication in 7.187 seconds (JVM running for 8.433)
+[INFO ] 2020-10-19 23:09:25,987 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 13384 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-19 23:09:25,993 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-19 23:09:25,994 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-19 23:09:34,054 com.tt.TTApplication - Started TTApplication in 8.468 seconds (JVM running for 10.192)
+[INFO ] 2020-10-19 23:10:51,588 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 4896 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-19 23:10:51,594 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-19 23:10:51,595 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-19 23:10:59,563 com.tt.TTApplication - Started TTApplication in 8.347 seconds (JVM running for 10.047)
+[INFO ] 2020-10-19 23:13:24,963 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 8196 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-19 23:13:24,969 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-19 23:13:24,970 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-19 23:13:33,075 com.tt.TTApplication - Started TTApplication in 8.492 seconds (JVM running for 10.096)
+[INFO ] 2020-10-19 23:18:43,307 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 4504 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-19 23:18:43,312 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-19 23:18:43,313 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-19 23:18:51,192 com.tt.TTApplication - Started TTApplication in 8.259 seconds (JVM running for 10.025)
+[INFO ] 2020-10-19 23:19:36,347 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 3576 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-19 23:19:36,353 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-19 23:19:36,353 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-19 23:19:44,660 com.tt.TTApplication - Started TTApplication in 8.684 seconds (JVM running for 10.325)
+[INFO ] 2020-10-19 23:23:23,303 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 11972 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-19 23:23:23,310 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-19 23:23:23,311 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-19 23:23:31,532 com.tt.TTApplication - Started TTApplication in 8.64 seconds (JVM running for 10.366)
+[INFO ] 2020-10-19 23:26:09,072 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 12380 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-19 23:26:09,078 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-19 23:26:09,079 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-19 23:26:16,996 com.tt.TTApplication - Started TTApplication in 8.293 seconds (JVM running for 9.929)
+[INFO ] 2020-10-19 23:48:49,300 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 3700 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-19 23:48:49,306 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-19 23:48:49,307 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-19 23:48:57,263 com.tt.TTApplication - Started TTApplication in 8.33 seconds (JVM running for 10.0)
+[INFO ] 2020-10-20 01:53:34,900 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 13796 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-20 01:53:34,905 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-20 01:53:34,906 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-20 01:53:42,951 com.tt.TTApplication - Started TTApplication in 8.403 seconds (JVM running for 10.133)
+[INFO ] 2020-10-20 01:56:28,733 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 13732 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-20 01:56:28,739 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-20 01:56:28,740 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-20 01:56:36,773 com.tt.TTApplication - Started TTApplication in 8.385 seconds (JVM running for 10.037)
+[INFO ] 2020-10-20 01:58:42,346 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 4248 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-20 01:58:42,353 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-20 01:58:42,354 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-20 01:58:50,530 com.tt.TTApplication - Started TTApplication in 8.563 seconds (JVM running for 10.254)
+[INFO ] 2020-10-20 02:00:09,750 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 10884 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-20 02:00:09,755 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-20 02:00:09,756 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-20 02:00:17,727 com.tt.TTApplication - Started TTApplication in 8.336 seconds (JVM running for 10.345)
+[INFO ] 2020-10-20 02:07:38,040 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 2280 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-20 02:07:38,045 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-20 02:07:38,046 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-20 02:07:45,955 com.tt.TTApplication - Started TTApplication in 8.291 seconds (JVM running for 9.947)
+[INFO ] 2020-10-20 02:12:32,233 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 4432 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-20 02:12:32,238 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-20 02:12:32,239 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-20 02:12:40,218 com.tt.TTApplication - Started TTApplication in 8.34 seconds (JVM running for 9.978)
+[INFO ] 2020-10-20 02:13:44,796 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 4012 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-20 02:13:44,802 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-20 02:13:44,803 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-20 02:13:53,467 com.tt.TTApplication - Started TTApplication in 9.033 seconds (JVM running for 11.205)
+[INFO ] 2020-10-20 02:15:55,803 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 1800 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-20 02:15:55,809 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-20 02:15:55,810 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-20 02:16:03,941 com.tt.TTApplication - Started TTApplication in 8.514 seconds (JVM running for 10.372)
+[INFO ] 2020-10-20 02:17:15,383 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 1800 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-20 02:17:15,383 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-20 02:17:15,383 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-20 02:17:18,814 com.tt.TTApplication - Started TTApplication in 3.518 seconds (JVM running for 85.246)
+[INFO ] 2020-10-20 02:21:09,685 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 7008 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-20 02:21:09,691 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-20 02:21:09,692 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-20 02:21:17,972 com.tt.TTApplication - Started TTApplication in 8.651 seconds (JVM running for 10.443)
+[INFO ] 2020-10-20 02:22:36,596 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 11760 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-20 02:22:36,602 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-20 02:22:36,602 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-20 02:22:44,727 com.tt.TTApplication - Started TTApplication in 8.491 seconds (JVM running for 10.207)
+[INFO ] 2020-10-20 02:25:09,838 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 2636 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-20 02:25:09,844 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-20 02:25:09,845 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-20 02:25:18,060 com.tt.TTApplication - Started TTApplication in 8.575 seconds (JVM running for 10.336)
+[INFO ] 2020-10-20 02:31:59,273 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 1508 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-20 02:31:59,279 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-20 02:31:59,279 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-20 02:32:07,745 com.tt.TTApplication - Started TTApplication in 8.823 seconds (JVM running for 10.584)
+[INFO ] 2020-10-20 02:36:26,249 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 11428 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-20 02:36:26,256 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-20 02:36:26,257 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-20 02:36:34,430 com.tt.TTApplication - Started TTApplication in 8.543 seconds (JVM running for 10.246)
+[INFO ] 2020-10-20 02:37:16,871 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 9556 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-20 02:37:16,877 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-20 02:37:16,878 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-20 02:37:24,931 com.tt.TTApplication - Started TTApplication in 8.43 seconds (JVM running for 10.113)
+[INFO ] 2020-10-20 03:36:02,950 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 2012 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-20 03:36:02,955 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-20 03:36:02,956 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-20 03:36:11,240 com.tt.TTApplication - Started TTApplication in 8.646 seconds (JVM running for 10.473)
+[INFO ] 2020-10-20 03:54:26,390 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 944 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-20 03:54:26,398 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-20 03:54:26,400 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-20 03:54:34,685 com.tt.TTApplication - Started TTApplication in 8.791 seconds (JVM running for 10.723)
+[INFO ] 2020-10-20 03:58:45,320 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 12732 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-20 03:58:45,327 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-20 03:58:45,328 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-20 03:58:53,831 com.tt.TTApplication - Started TTApplication in 8.896 seconds (JVM running for 10.741)
+[INFO ] 2020-10-20 04:02:40,228 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 1208 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-20 04:02:40,234 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-20 04:02:40,234 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-20 04:02:48,439 com.tt.TTApplication - Started TTApplication in 8.58 seconds (JVM running for 10.296)
+[INFO ] 2020-10-20 04:05:03,746 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 8804 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-20 04:05:03,754 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-20 04:05:03,755 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-20 04:05:12,407 com.tt.TTApplication - Started TTApplication in 9.083 seconds (JVM running for 10.963)
+[INFO ] 2020-10-20 04:07:15,275 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 3332 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-20 04:07:15,281 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-20 04:07:15,282 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-20 04:07:23,321 com.tt.TTApplication - Started TTApplication in 8.405 seconds (JVM running for 10.134)
+[INFO ] 2020-10-20 04:08:56,700 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 2896 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-20 04:08:56,706 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-20 04:08:56,706 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-20 04:09:04,771 com.tt.TTApplication - Started TTApplication in 8.445 seconds (JVM running for 10.071)
+[INFO ] 2020-10-20 04:11:14,179 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 10728 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-20 04:11:14,184 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-20 04:11:14,184 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-20 04:11:22,346 com.tt.TTApplication - Started TTApplication in 8.527 seconds (JVM running for 10.177)
+[INFO ] 2020-10-20 04:11:57,640 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 14268 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-20 04:11:57,646 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-20 04:11:57,646 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-20 04:12:05,701 com.tt.TTApplication - Started TTApplication in 8.42 seconds (JVM running for 10.181)
+[INFO ] 2020-10-20 04:18:35,950 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 13872 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-20 04:18:35,957 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-20 04:18:35,958 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-20 04:18:44,479 com.tt.TTApplication - Started TTApplication in 8.878 seconds (JVM running for 10.623)
+[INFO ] 2020-10-20 04:22:48,655 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 11512 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-20 04:22:48,660 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-20 04:22:48,661 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-20 04:22:56,947 com.tt.TTApplication - Started TTApplication in 8.667 seconds (JVM running for 10.311)
+[INFO ] 2020-10-20 04:27:35,316 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 11512 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-20 04:27:35,316 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-20 04:27:35,316 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-20 04:27:43,232 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 11428 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-20 04:27:43,237 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-20 04:27:43,238 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-20 04:27:51,448 com.tt.TTApplication - Started TTApplication in 8.57 seconds (JVM running for 10.168)
+[INFO ] 2020-10-20 05:07:46,703 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 13400 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-20 05:07:46,709 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-20 05:07:46,710 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-20 05:07:55,485 com.tt.TTApplication - Started TTApplication in 9.141 seconds (JVM running for 11.005)
+[INFO ] 2020-10-20 05:09:09,134 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 1304 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-20 05:09:09,139 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-20 05:09:09,140 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-20 05:09:17,541 com.tt.TTApplication - Started TTApplication in 8.787 seconds (JVM running for 10.462)
+[INFO ] 2020-10-21 22:46:48,930 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 9820 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-21 22:46:48,936 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-21 22:46:48,936 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-21 22:46:56,996 com.tt.TTApplication - Started TTApplication in 8.399 seconds (JVM running for 10.109)
+[INFO ] 2020-10-21 22:50:10,230 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 11784 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-21 22:50:10,235 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-21 22:50:10,236 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-21 22:50:18,187 com.tt.TTApplication - Started TTApplication in 8.296 seconds (JVM running for 9.918)
+[INFO ] 2020-10-21 22:51:41,150 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 2800 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-21 22:51:41,155 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-21 22:51:41,156 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-21 22:51:49,085 com.tt.TTApplication - Started TTApplication in 8.278 seconds (JVM running for 9.821)
+[INFO ] 2020-10-21 23:00:01,516 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 11988 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-21 23:00:01,521 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-21 23:00:01,522 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-21 23:00:10,145 com.tt.TTApplication - Started TTApplication in 8.983 seconds (JVM running for 10.589)
+[INFO ] 2020-10-21 23:01:22,605 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 1232 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-21 23:01:22,611 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-21 23:01:22,612 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-21 23:01:30,564 com.tt.TTApplication - Started TTApplication in 8.329 seconds (JVM running for 10.016)
+[INFO ] 2020-10-21 23:06:32,187 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 4156 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-21 23:06:32,192 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-21 23:06:32,193 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-21 23:06:40,349 com.tt.TTApplication - Started TTApplication in 8.501 seconds (JVM running for 10.158)
+[INFO ] 2020-10-21 23:10:02,400 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 7080 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-21 23:10:02,405 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-21 23:10:02,406 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-21 23:10:10,460 com.tt.TTApplication - Started TTApplication in 8.414 seconds (JVM running for 10.198)
+[INFO ] 2020-10-21 23:10:59,684 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 14940 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-21 23:10:59,691 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-21 23:10:59,692 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-21 23:11:07,845 com.tt.TTApplication - Started TTApplication in 8.543 seconds (JVM running for 10.199)
+[INFO ] 2020-10-21 23:12:46,094 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 15160 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-21 23:12:46,100 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-21 23:12:46,100 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-21 23:12:54,236 com.tt.TTApplication - Started TTApplication in 8.497 seconds (JVM running for 10.176)
+[INFO ] 2020-10-29 04:10:04,217 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 15856 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-29 04:10:04,249 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-29 04:10:04,250 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-29 04:10:15,669 com.tt.TTApplication - Started TTApplication in 12.07 seconds (JVM running for 15.545)
+[INFO ] 2020-10-29 04:14:51,610 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 16200 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-29 04:14:51,615 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-29 04:14:51,616 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-29 04:14:59,994 com.tt.TTApplication - Started TTApplication in 8.76 seconds (JVM running for 10.426)
+[INFO ] 2020-10-29 04:18:40,442 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 7568 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-29 04:18:40,448 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-29 04:18:40,449 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-29 04:18:48,608 com.tt.TTApplication - Started TTApplication in 8.519 seconds (JVM running for 10.207)
+[INFO ] 2020-10-31 21:00:33,995 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 9808 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-31 21:00:34,011 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-31 21:00:34,011 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-31 21:00:44,030 com.tt.TTApplication - Started TTApplication in 10.511 seconds (JVM running for 14.106)
+[INFO ] 2020-10-31 21:14:53,798 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 2096 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-31 21:14:53,807 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-31 21:14:53,809 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-31 21:15:04,249 com.tt.TTApplication - Started TTApplication in 11.04 seconds (JVM running for 17.256)
+[INFO ] 2020-10-31 21:18:11,818 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 13104 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-31 21:18:11,826 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-31 21:18:11,827 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-31 21:18:20,988 com.tt.TTApplication - Started TTApplication in 9.669 seconds (JVM running for 12.484)
+[INFO ] 2020-10-31 22:14:54,010 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 11828 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-31 22:14:54,016 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-31 22:14:54,017 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-31 22:15:02,761 com.tt.TTApplication - Started TTApplication in 9.116 seconds (JVM running for 10.93)
+[INFO ] 2020-10-31 22:25:15,648 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 11916 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-31 22:25:15,657 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-31 22:25:15,657 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-31 22:25:24,305 com.tt.TTApplication - Started TTApplication in 9.034 seconds (JVM running for 10.759)
+[INFO ] 2020-10-31 22:26:16,891 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 7564 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-31 22:26:16,898 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-31 22:26:16,898 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-31 22:26:25,628 com.tt.TTApplication - Started TTApplication in 9.107 seconds (JVM running for 10.829)
+[INFO ] 2020-10-31 22:55:02,169 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 4104 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-31 22:55:02,178 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-31 22:55:02,179 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-31 22:55:10,861 com.tt.TTApplication - Started TTApplication in 9.111 seconds (JVM running for 10.819)
+[INFO ] 2020-10-31 23:25:06,722 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 4104 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-31 23:25:06,722 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-31 23:25:06,722 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-31 23:31:57,845 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 12508 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-31 23:31:57,850 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-31 23:31:57,851 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-31 23:32:06,331 com.tt.TTApplication - Started TTApplication in 8.844 seconds (JVM running for 10.622)
+[INFO ] 2020-10-31 23:32:54,557 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 8408 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-31 23:32:54,563 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-31 23:32:54,564 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-31 23:33:03,312 com.tt.TTApplication - Started TTApplication in 9.122 seconds (JVM running for 10.757)
+[INFO ] 2020-10-31 23:57:00,835 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 11712 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-10-31 23:57:00,842 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-10-31 23:57:00,843 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-10-31 23:57:09,757 com.tt.TTApplication - Started TTApplication in 9.311 seconds (JVM running for 11.075)
+[INFO ] 2020-11-01 00:07:46,310 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 4528 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-01 00:07:46,317 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-01 00:07:46,318 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-01 00:07:55,056 com.tt.TTApplication - Started TTApplication in 9.136 seconds (JVM running for 10.903)
+[INFO ] 2020-11-01 00:11:23,637 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 12900 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-01 00:11:23,646 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-01 00:11:23,648 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-01 00:11:32,407 com.tt.TTApplication - Started TTApplication in 9.158 seconds (JVM running for 11.006)
+[INFO ] 2020-11-01 00:23:29,405 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 4304 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-01 00:23:29,411 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-01 00:23:29,411 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-01 00:23:36,894 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 15312 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-01 00:23:36,900 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-01 00:23:36,902 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-01 00:23:45,655 com.tt.TTApplication - Started TTApplication in 9.146 seconds (JVM running for 10.9)
+[INFO ] 2020-11-01 00:32:35,768 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 3968 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-01 00:32:35,776 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-01 00:32:35,777 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-01 00:32:46,058 com.tt.TTApplication - Started TTApplication in 10.682 seconds (JVM running for 12.502)
+[INFO ] 2020-11-01 00:34:34,139 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 1048 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-01 00:34:34,147 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-01 00:34:34,148 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-01 00:34:43,677 com.tt.TTApplication - Started TTApplication in 9.934 seconds (JVM running for 11.731)
+[INFO ] 2020-11-01 00:38:31,920 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 6916 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-01 00:38:31,927 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-01 00:38:31,928 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-01 00:38:40,773 com.tt.TTApplication - Started TTApplication in 9.231 seconds (JVM running for 11.051)
+[INFO ] 2020-11-01 00:39:01,899 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 6988 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-01 00:39:01,906 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-01 00:39:01,907 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-01 00:39:10,774 com.tt.TTApplication - Started TTApplication in 9.266 seconds (JVM running for 10.94)
+[INFO ] 2020-11-01 00:40:40,046 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 9604 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-01 00:40:40,053 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-01 00:40:40,054 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-01 00:40:48,849 com.tt.TTApplication - Started TTApplication in 9.184 seconds (JVM running for 10.954)
+[INFO ] 2020-11-01 01:08:56,661 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 15088 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-01 01:08:56,667 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-01 01:08:56,668 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-01 01:09:05,642 com.tt.TTApplication - Started TTApplication in 9.37 seconds (JVM running for 11.166)
+[INFO ] 2020-11-01 01:20:00,787 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 9188 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-01 01:20:00,794 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-01 01:20:00,795 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-01 01:20:09,641 com.tt.TTApplication - Started TTApplication in 9.24 seconds (JVM running for 11.008)
+[INFO ] 2020-11-01 17:05:46,447 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 14360 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-01 17:05:46,457 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-01 17:05:46,458 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-01 17:06:02,574 com.tt.TTApplication - Started TTApplication in 16.672 seconds (JVM running for 20.287)
+[INFO ] 2020-11-01 17:29:57,733 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 9992 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-01 17:29:57,741 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-01 17:29:57,742 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-01 17:30:07,064 com.tt.TTApplication - Started TTApplication in 9.753 seconds (JVM running for 12.193)
+[INFO ] 2020-11-01 17:35:58,159 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 3968 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-01 17:35:58,167 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-01 17:35:58,168 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-01 17:36:08,313 com.tt.TTApplication - Started TTApplication in 10.57 seconds (JVM running for 12.419)
+[INFO ] 2020-11-01 17:39:08,129 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 13292 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-01 17:39:08,137 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-01 17:39:08,138 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-01 17:39:17,184 com.tt.TTApplication - Started TTApplication in 9.45 seconds (JVM running for 11.294)
+[INFO ] 2020-11-01 17:42:24,732 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 8332 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-01 17:42:24,738 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-01 17:42:24,739 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-01 17:42:33,683 com.tt.TTApplication - Started TTApplication in 9.327 seconds (JVM running for 11.015)
+[INFO ] 2020-11-01 17:45:33,578 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 2096 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-01 17:45:33,587 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-01 17:45:33,588 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-01 17:45:42,370 com.tt.TTApplication - Started TTApplication in 9.193 seconds (JVM running for 10.928)
+[INFO ] 2020-11-01 18:06:23,695 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 3260 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-01 18:06:23,702 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-01 18:06:23,703 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-01 18:06:32,714 com.tt.TTApplication - Started TTApplication in 9.416 seconds (JVM running for 11.199)
+[INFO ] 2020-11-01 18:12:54,711 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 15488 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-01 18:12:54,719 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-01 18:12:54,720 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-01 18:13:04,009 com.tt.TTApplication - Started TTApplication in 9.674 seconds (JVM running for 11.382)
+[INFO ] 2020-11-01 18:22:47,397 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 5768 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-01 18:22:47,404 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-01 18:22:47,405 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-01 18:22:56,721 com.tt.TTApplication - Started TTApplication in 9.696 seconds (JVM running for 11.415)
+[INFO ] 2020-11-01 18:40:13,364 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 2452 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-01 18:40:13,375 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-01 18:40:13,376 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-01 18:40:23,130 com.tt.TTApplication - Started TTApplication in 10.38 seconds (JVM running for 12.326)
+[INFO ] 2020-11-01 19:53:01,727 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 14792 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-01 19:53:01,736 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-01 19:53:01,737 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-01 19:53:10,719 com.tt.TTApplication - Started TTApplication in 9.52 seconds (JVM running for 11.928)
+[INFO ] 2020-11-03 17:31:10,096 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 17316 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-03 17:31:10,125 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-03 17:31:10,126 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-03 17:31:21,041 com.tt.TTApplication - Started TTApplication in 11.47 seconds (JVM running for 14.378)
+[INFO ] 2020-11-06 00:21:07,553 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 2600 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-06 00:21:07,575 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-06 00:21:07,576 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-06 00:21:17,654 com.tt.TTApplication - Started TTApplication in 10.596 seconds (JVM running for 12.717)
+[INFO ] 2020-11-14 21:32:43,119 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 9500 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-14 21:32:43,127 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-14 21:32:43,129 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-14 21:32:54,057 com.tt.TTApplication - Started TTApplication in 11.495 seconds (JVM running for 15.187)
+[INFO ] 2020-11-16 15:42:13,617 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 19804 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-16 15:42:13,625 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-16 15:42:13,626 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-16 15:42:25,941 com.tt.TTApplication - Started TTApplication in 13.032 seconds (JVM running for 21.495)
+[INFO ] 2020-11-27 18:22:36,710 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 5984 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-27 18:22:36,718 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-27 18:22:36,719 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-27 18:22:47,231 com.tt.TTApplication - Started TTApplication in 11.004 seconds (JVM running for 14.625)
+[INFO ] 2020-11-27 18:51:06,559 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 16152 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-27 18:51:06,564 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-27 18:51:06,565 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-27 18:51:14,767 com.tt.TTApplication - Started TTApplication in 8.553 seconds (JVM running for 10.129)
+[INFO ] 2020-11-27 18:52:20,527 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 10384 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-27 18:52:20,533 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-27 18:52:20,533 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-27 18:52:28,592 com.tt.TTApplication - Started TTApplication in 8.413 seconds (JVM running for 9.901)
+[INFO ] 2020-11-27 18:57:16,349 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 8140 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-27 18:57:16,354 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-27 18:57:16,355 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-27 18:57:24,367 com.tt.TTApplication - Started TTApplication in 8.36 seconds (JVM running for 9.841)
+[INFO ] 2020-11-27 19:02:24,932 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 16632 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-27 19:02:24,937 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-27 19:02:24,937 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-27 19:02:33,517 com.tt.TTApplication - Started TTApplication in 8.912 seconds (JVM running for 10.411)
+[INFO ] 2020-11-27 19:16:21,420 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 3700 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-27 19:16:21,425 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-27 19:16:21,426 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-27 19:16:30,108 com.tt.TTApplication - Started TTApplication in 9.041 seconds (JVM running for 10.59)
+[INFO ] 2020-11-27 19:21:54,958 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 16700 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-27 19:21:54,963 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-27 19:21:54,964 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-27 19:22:02,941 com.tt.TTApplication - Started TTApplication in 8.32 seconds (JVM running for 9.828)
+[INFO ] 2020-11-27 19:30:09,957 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 12276 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-11-27 19:30:09,962 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-11-27 19:30:09,963 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-11-27 19:30:17,291 com.tt.TTApplication - Started TTApplication in 7.632 seconds (JVM running for 8.948)
+[INFO ] 2020-12-01 09:03:58,639 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 16464 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-12-01 09:03:58,645 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-01 09:03:58,646 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-01 09:04:07,163 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 2932 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-12-01 09:04:07,258 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-01 09:04:07,259 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-01 09:04:21,421 com.tt.TTApplication - Started TTApplication in 14.625 seconds (JVM running for 16.004)
+[INFO ] 2020-12-01 09:44:10,176 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 8312 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-12-01 09:44:10,181 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-01 09:44:10,182 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-01 09:44:17,476 com.tt.TTApplication - Started TTApplication in 7.631 seconds (JVM running for 8.874)
+[INFO ] 2020-12-01 09:50:03,417 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 12016 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-12-01 09:50:03,421 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-01 09:50:03,421 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-01 09:50:09,779 com.tt.TTApplication - Started TTApplication in 6.655 seconds (JVM running for 8.101)
+[INFO ] 2020-12-01 09:53:20,253 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 6428 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-12-01 09:53:20,257 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-01 09:53:20,258 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-01 09:53:26,747 com.tt.TTApplication - Started TTApplication in 6.832 seconds (JVM running for 8.064)
+[INFO ] 2020-12-07 10:33:52,062 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 21432 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-12-07 10:33:52,081 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-07 10:33:52,082 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-07 10:34:06,864 com.tt.TTApplication - Started TTApplication in 15.694 seconds (JVM running for 20.903)
+[INFO ] 2020-12-09 16:45:43,612 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 11616 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-12-09 16:45:43,639 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-09 16:45:43,640 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-09 16:45:58,399 com.tt.TTApplication - Started TTApplication in 15.495 seconds (JVM running for 20.15)
+[INFO ] 2020-12-09 16:50:36,962 com.tt.TTApplication - Starting TTApplication on TCR37CQOCE8RA6D with PID 5632 (started by Administrator in E:\卓悦\tableTennis)
+[DEBUG] 2020-12-09 16:50:36,967 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-09 16:50:36,968 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-09 16:50:45,835 com.tt.TTApplication - Started TTApplication in 9.324 seconds (JVM running for 11.512)

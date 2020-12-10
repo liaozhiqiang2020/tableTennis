@@ -107,9 +107,8 @@
                     [
                         {field: "xuhao", title: "序号", width: '8%',align:"center",templet:setXuHao,fixed:'left'},
                         {field: "name", title: "名称", width: '15%',align:"center",fixed:'left'},
-                        {field: "type", title: "课程类型", width: '15%',align:"center",templet:setType},
-                        {field: "inSchool", title: "是否在校", width: '15%',align:"center",templet:setInSchool},
-                        {field: "classHours", title: "课时数", width: '35%',align:"center"},
+                        {field: "place_name", title: "场地名", width: '30%',align:"center"},
+                        {field: "class_hours", title: "课时数", width: '20%',align:"center"},
                         {field: "money", title: "课时费", width: '20%',align:"center"},
                         {fixed: 'right', title:'操作', toolbar: '#barDemo', width:150}
                     ]
@@ -168,32 +167,7 @@
         });
     }
 
-    //数据库类型
-    function setInSchool(data){
-        var inSchool = data.inSchool;
-        if(inSchool=="1"){
-            return "<span>校内</span>";
-        }else if(inSchool=="2"){
-            return "<span>校外</span>";
-        }else{
-            return "<span></span>";
-        }
-    }
 
-    function setType(data){
-        var type = data.type;
-        if(type=="1"){
-            return "<span>社团(免费)</span>";
-        }else if(type=="2"){
-            return "<span>社团(收费)</span>";
-        }else if(type=="3"){
-            return "<span>收费培训(基础)</span>";
-        }else if(type=="4"){
-            return "<span>收费培训(高级)</span>";
-        }else{
-            return "<span></span>";
-        }
-    }
 
 
     //序号

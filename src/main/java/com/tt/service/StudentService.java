@@ -25,7 +25,7 @@ public interface StudentService<T> {
      */
     Map<String,Object> findStudentByPage(int page, int pageSize);
     Map<String,Object> findStudentByPage2(int page, int pageSize);
-    Map<String,Object> findStudentByPage2(int page, int pageSize,int placeId);
+    Map<String,Object> findStudentByPage2(int page, int pageSize,String placeId);
 
     /**
      * 不分页查询所有Student
@@ -61,6 +61,13 @@ public interface StudentService<T> {
      */
     StudentEntity findStudentById(int studentId);
 
-    List<StudentEntity> findStudentByPlaceId(int placeId);
+    List<StudentEntity> findStudentByPlaceId(String placeId);
+
+    /**
+     * 查询学号是否存在
+     * @param sn
+     * @return
+     */
+    StudentEntity findSn(String sn);
 
 }

@@ -23,9 +23,9 @@
         </div>
 
         <div class="layui-form-item">
-            <label class="layui-form-label">学员年龄</label>
+            <label class="layui-form-label">身份证号</label>
             <div class="layui-input-block">
-                <input type="text" name="age" lay-verify="age" th:value="*{studentEntity.age}" autocomplete="off" class="layui-input">
+                <input type="text" name="idCard" lay-verify="idCard" th:value="*{studentEntity.idCard}" autocomplete="off" class="layui-input">
             </div>
         </div>
 
@@ -55,9 +55,46 @@
             </div>
         </div>
         <div class="layui-form-item">
+            <label class="layui-form-label">家庭地址</label>
+            <div class="layui-input-block">
+                <input type="text" name="address" lay-verify="address" th:value="*{studentEntity.address}" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
             <label class="layui-form-label">上课场地</label>
             <div class="layui-input-block">
-                <input type="text" name="placeId" lay-verify="placeId" th:value="*{studentEntity.placeId}" autocomplete="off" class="layui-input">
+                <input type="hidden" id="place" th:value="*{studentEntity.placeId}">
+                <select id="placeId" name="placeId" lay-filter="placeId">
+                    <option value="">请选择场地---</option>
+                </select>
+            </div>
+        </div>
+
+        <!--<div class="layui-form-item">
+            <label class="layui-form-label">学号</label>
+            <div class="layui-input-block">
+                <input type="text" name="sn" lay-verify="sn" th:value="*{studentEntity.sn}" readonly="readonly" autocomplete="off" class="layui-input">
+            </div>
+        </div>-->
+
+        <!--<div class="layui-form-item">
+            <label class="layui-form-label">销售名称</label>
+            <div class="layui-input-block">
+                <input type="text" name="saleName" lay-verify="saleName" th:value="*{studentEntity.saleName}" autocomplete="off" class="layui-input">
+            </div>
+        </div>-->
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">剩余金额</label>
+            <div class="layui-input-block">
+                <input type="text" name="money" lay-verify="money" th:value="*{studentEntity.money}" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">剩余课时</label>
+            <div class="layui-input-block">
+                <input type="text" name="classHours" lay-verify="classHours" th:value="*{studentEntity.classHours}" autocomplete="off" class="layui-input">
             </div>
         </div>
 
@@ -73,7 +110,25 @@
 <!-- /.container -->
 <script>
     $(document).ready(function(){
+        $("select[name='placeId']").val($("#place").val());
+        var placeId = $("#place").val();
 
+        $.ajax({
+            url: '../place/getList',
+            dataType: 'json',
+            data:{},
+            type: 'post',
+            success: function (data) {
+                $.each(data, function (index, item) {
+                    $('#placeId').append(new Option(item.name, item.id));// 下拉菜单里添加元素
+                });
+
+                if(placeId!=""){
+                    $("select[name='placeId']").val(placeId);
+                }
+                layui.form.render("select");
+            }
+        });
     });
 
     layui.use(['form', 'layedit', 'laydate','upload'], function(){

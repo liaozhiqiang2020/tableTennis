@@ -28,12 +28,15 @@ public interface CourseService<T> {
      */
     Map<String,Object> findCourseByPage(int page, int pageSize);
 
+    Map<String,Object> findCourseByPageAndPlace(int page, int pageSize,String placeId);
+
     /**
      * 不分页查询所有Course
      *
      * @return 所有Course
      */
     List<CourseEntity> findAllCourse();
+    List<CourseEntity> findAllCourseByPlace(String placeId);
 
     /**
      * 更新Course对象
