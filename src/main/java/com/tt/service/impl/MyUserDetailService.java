@@ -1,4 +1,4 @@
-//package com.tt.service.impl;
+package com.tt.service.impl;//package com.tt.service.impl;
 //
 //import com.tt.pojo.PermissionEntity;
 //import com.tt.pojo.RoleEntity;

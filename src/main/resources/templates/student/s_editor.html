@@ -23,9 +23,9 @@
         </div>
 
         <div class="layui-form-item">
-            <label class="layui-form-label">学员年龄</label>
+            <label class="layui-form-label">身份证号</label>
             <div class="layui-input-block">
-                <input type="text" name="age" lay-verify="age" th:value="*{studentEntity.age}" autocomplete="off" class="layui-input">
+                <input type="text" name="idCard" lay-verify="idCard" th:value="*{studentEntity.idCard}" autocomplete="off" class="layui-input">
             </div>
         </div>
 
@@ -67,6 +67,41 @@
                 <select id="placeId" name="placeId" lay-filter="placeId">
                     <option value="">请选择场地---</option>
                 </select>
+            </div>
+        </div>
+
+        <!--<div class="layui-form-item">
+            <label class="layui-form-label">学号</label>
+            <div class="layui-input-block">
+                <input type="text" name="sn" lay-verify="sn" th:value="*{studentEntity.sn}" readonly="readonly" autocomplete="off" class="layui-input">
+            </div>
+        </div>-->
+
+        <!--<div class="layui-form-item">
+            <label class="layui-form-label">销售名称</label>
+            <div class="layui-input-block">
+                <input type="text" name="saleName" lay-verify="saleName" th:value="*{studentEntity.saleName}" autocomplete="off" class="layui-input">
+            </div>
+        </div>-->
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">剩余金额</label>
+            <div class="layui-input-block">
+                <input type="text" name="money" lay-verify="money" th:value="*{studentEntity.money}" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">剩余课时</label>
+            <div class="layui-input-block">
+                <input type="text" name="classHours" lay-verify="classHours" th:value="*{studentEntity.classHours}" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">单节价格</label>
+            <div class="layui-input-block">
+                <input type="text" name="unitPrice" lay-verify="unitPrice" th:value="*{studentEntity.unitPrice}" autocomplete="off" class="layui-input">
             </div>
         </div>
 

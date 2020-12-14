@@ -23,8 +23,20 @@ public class CourseServiceImpl implements CourseService {
     @Override
     public Map<String,Object> findCourseByPage(int page, int pageSize) {
         Map<String,Object> result = new HashedMap();
-        List<CourseEntity> list = this.courseRepository.findAllCourseByPage((page-1)*pageSize,pageSize);
+        List<Map<String,Object>> list = this.courseRepository.findAllCourseByPage((page-1)*pageSize,pageSize);
+        //List<CourseEntity> list = this.courseRepository.findAllCourseByPage((page-1)*pageSize,pageSize);
         int total = this.courseRepository.findAllCourseTotal();
+        result.put("code", 0);
+        result.put("data", list);
+        result.put("count", total);
+        return result;
+    }
+
+    @Override
+    public Map<String, Object> findCourseByPageAndPlace(int page, int pageSize, String placeId) {
+        Map<String,Object> result = new HashedMap();
+        List<Map<String,Object>> list = this.courseRepository.findAllCourseByPageAndPlaceId((page-1)*pageSize,pageSize,placeId);
+        int total = this.courseRepository.findAllCourseTotalByPlaceId(placeId);
         result.put("code", 0);
         result.put("data", list);
         result.put("count", total);
@@ -35,6 +47,11 @@ public class CourseServiceImpl implements CourseService {
     @Override
     public List<CourseEntity> findAllCourse() {
         return this.courseRepository.findAllCourse();
+    }
+
+    @Override
+    public List<CourseEntity> findAllCourseByPlace(String placeId) {
+        return this.courseRepository.findAllCourseByPlace(placeId);
     }
 
     @Override

@@ -156,7 +156,8 @@
     <orderEntry type="library" name="Maven: stax:stax-api:1.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.poi:poi-ooxml:3.15" level="project" />
     <orderEntry type="library" name="Maven: com.github.virtuald:curvesapi:1.04" level="project" />
-    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:6.0.6" level="project" />
+    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:8.0.12" level="project" />
+    <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:2.6.0" level="project" />
     <orderEntry type="library" name="Maven: com.alipay.sdk:alipay-sdk-java:3.7.110.ALL" level="project" />
     <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.2" level="project" />
   </component>

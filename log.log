@@ -308,3 +308,85 @@
 [DEBUG] 2020-09-24 17:13:53,965 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
 [INFO ] 2020-09-24 17:13:53,966 com.tt.TTApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-09-24 17:13:58,720 com.tt.TTApplication - Started TTApplication in 5.105 seconds (JVM running for 6.038)
+[INFO ] 2020-12-10 16:34:18,466 com.tt.TTApplication - Starting TTApplication on lzq with PID 5732 (started by Administrator in F:\卓悦\tableTennis)
+[DEBUG] 2020-12-10 16:34:18,483 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-10 16:34:18,483 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-10 16:35:29,599 com.tt.TTApplication - Starting TTApplication on lzq with PID 7256 (started by Administrator in F:\卓悦\tableTennis)
+[DEBUG] 2020-12-10 16:35:29,604 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-10 16:35:29,605 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-10 16:36:31,324 com.tt.TTApplication - Starting TTApplication on lzq with PID 12852 (started by Administrator in F:\卓悦\tableTennis)
+[DEBUG] 2020-12-10 16:36:31,328 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-10 16:36:31,328 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-10 16:37:16,680 com.tt.TTApplication - Starting TTApplication on lzq with PID 2720 (started by Administrator in F:\卓悦\tableTennis)
+[DEBUG] 2020-12-10 16:37:16,683 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-10 16:37:16,684 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-10 16:38:09,906 com.tt.TTApplication - Starting TTApplication on lzq with PID 5336 (started by Administrator in F:\卓悦\tableTennis)
+[DEBUG] 2020-12-10 16:38:09,910 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-10 16:38:09,910 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-10 16:38:39,419 com.tt.TTApplication - Starting TTApplication on lzq with PID 4128 (started by Administrator in F:\卓悦\tableTennis)
+[DEBUG] 2020-12-10 16:38:39,423 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-10 16:38:39,423 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-10 16:40:10,093 com.tt.TTApplication - Starting TTApplication on lzq with PID 2052 (started by Administrator in F:\卓悦\tableTennis)
+[DEBUG] 2020-12-10 16:40:10,097 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-10 16:40:10,097 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-10 16:42:56,859 com.tt.TTApplication - Starting TTApplication on lzq with PID 2756 (started by Administrator in F:\卓悦\tableTennis)
+[DEBUG] 2020-12-10 16:42:56,863 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-10 16:42:56,863 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-10 16:43:39,191 com.tt.TTApplication - Starting TTApplication on lzq with PID 32 (started by Administrator in F:\卓悦\tableTennis)
+[DEBUG] 2020-12-10 16:43:39,194 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-10 16:43:39,194 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-10 16:44:35,800 com.tt.TTApplication - Starting TTApplication on lzq with PID 14672 (started by Administrator in F:\卓悦\tableTennis)
+[DEBUG] 2020-12-10 16:44:35,803 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-10 16:44:35,804 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-10 16:45:07,509 com.tt.TTApplication - Starting TTApplication on lzq with PID 16132 (started by Administrator in F:\卓悦\tableTennis)
+[DEBUG] 2020-12-10 16:45:07,512 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-10 16:45:07,513 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-10 16:47:08,823 com.tt.TTApplication - Starting TTApplication on lzq with PID 3144 (started by Administrator in F:\卓悦\tableTennis)
+[DEBUG] 2020-12-10 16:47:08,826 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-10 16:47:08,827 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-11 15:47:22,107 com.tt.TTApplication - Starting TTApplication on lzq with PID 1876 (started by Administrator in F:\卓悦\tableTennis)
+[DEBUG] 2020-12-11 15:47:22,165 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-11 15:47:22,166 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-11 15:48:45,102 com.tt.TTApplication - Starting TTApplication on lzq with PID 2348 (started by Administrator in F:\卓悦\tableTennis)
+[DEBUG] 2020-12-11 15:48:45,106 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-11 15:48:45,106 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-11 15:50:17,726 com.tt.TTApplication - Starting TTApplication on lzq with PID 4436 (started by Administrator in F:\卓悦\tableTennis)
+[DEBUG] 2020-12-11 15:50:17,731 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-11 15:50:17,731 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-11 15:50:31,025 com.tt.TTApplication - Started TTApplication in 13.561 seconds (JVM running for 14.627)
+[INFO ] 2020-12-11 16:00:26,940 com.tt.TTApplication - Starting TTApplication on lzq with PID 1980 (started by Administrator in F:\卓悦\tableTennis)
+[DEBUG] 2020-12-11 16:00:26,944 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-11 16:00:26,944 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-11 16:00:34,006 com.tt.TTApplication - Started TTApplication in 7.327 seconds (JVM running for 8.483)
+[INFO ] 2020-12-11 16:01:43,751 com.tt.TTApplication - Starting TTApplication on lzq with PID 13184 (started by Administrator in F:\卓悦\tableTennis)
+[DEBUG] 2020-12-11 16:01:43,755 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-11 16:01:43,755 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-11 16:01:50,849 com.tt.TTApplication - Started TTApplication in 7.372 seconds (JVM running for 8.46)
+[INFO ] 2020-12-11 16:38:56,525 com.tt.TTApplication - Starting TTApplication on lzq with PID 13596 (started by Administrator in F:\卓悦\tableTennis)
+[DEBUG] 2020-12-11 16:38:56,528 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-11 16:38:56,529 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-11 16:39:03,654 com.tt.TTApplication - Started TTApplication in 7.448 seconds (JVM running for 8.498)
+[INFO ] 2020-12-11 16:44:19,107 com.tt.TTApplication - Starting TTApplication on lzq with PID 8228 (started by Administrator in F:\卓悦\tableTennis)
+[DEBUG] 2020-12-11 16:44:19,111 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-11 16:44:19,111 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-11 16:44:25,682 com.tt.TTApplication - Started TTApplication in 6.844 seconds (JVM running for 7.926)
+[INFO ] 2020-12-11 16:50:24,044 com.tt.TTApplication - Starting TTApplication on lzq with PID 8892 (started by Administrator in F:\卓悦\tableTennis)
+[DEBUG] 2020-12-11 16:50:24,047 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-11 16:50:24,048 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-11 16:50:30,926 com.tt.TTApplication - Started TTApplication in 7.174 seconds (JVM running for 8.285)
+[INFO ] 2020-12-11 16:57:29,655 com.tt.TTApplication - Starting TTApplication on lzq with PID 7676 (started by Administrator in F:\卓悦\tableTennis)
+[DEBUG] 2020-12-11 16:57:29,659 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-11 16:57:29,660 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-11 16:57:38,750 com.tt.TTApplication - Started TTApplication in 9.356 seconds (JVM running for 11.082)
+[INFO ] 2020-12-11 17:01:13,101 com.tt.TTApplication - Starting TTApplication on lzq with PID 8964 (started by Administrator in F:\卓悦\tableTennis)
+[DEBUG] 2020-12-11 17:01:13,106 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-11 17:01:13,106 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-11 17:01:20,972 com.tt.TTApplication - Started TTApplication in 8.162 seconds (JVM running for 9.381)
+[INFO ] 2020-12-11 17:25:43,192 com.tt.TTApplication - Starting TTApplication on lzq with PID 13148 (started by Administrator in F:\卓悦\tableTennis)
+[DEBUG] 2020-12-11 17:25:43,196 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-11 17:25:43,196 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-11 17:25:50,804 com.tt.TTApplication - Started TTApplication in 7.913 seconds (JVM running for 9.144)
+[INFO ] 2020-12-11 17:58:33,595 com.tt.TTApplication - Starting TTApplication on lzq with PID 12192 (started by Administrator in F:\卓悦\tableTennis)
+[DEBUG] 2020-12-11 17:58:33,599 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2020-12-11 17:58:33,600 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-12-11 17:58:41,233 com.tt.TTApplication - Started TTApplication in 7.939 seconds (JVM running for 9.145)

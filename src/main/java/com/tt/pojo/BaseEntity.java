@@ -1,4 +1,4 @@
-package com.sv.mc.pojo;
+package com.tt.pojo;
 
 public class BaseEntity {
 }

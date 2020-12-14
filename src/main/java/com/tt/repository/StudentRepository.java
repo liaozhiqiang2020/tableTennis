@@ -37,14 +37,14 @@ public interface StudentRepository extends BaseRepository<StudentEntity, Long>, 
      * @param page 起始个数
      * @param pageSize 截至个数
      */
-    @Query(value = "select * from tt_student as u LIMIT :offset,:pageSize", nativeQuery = true)
+    @Query(value = "select * from tt_student as u order by convert(u.name using gbk) LIMIT :offset,:pageSize", nativeQuery = true)
     List<StudentEntity> findAllStudentByPage(@Param("offset") Integer page, @Param("pageSize") Integer pageSize);
 
-    @Query(value = "SELECT s.*,p.name place_name FROM tt_student s,tt_place p where s.place_id=p.id LIMIT :offset,:pageSize", nativeQuery = true)
+    @Query(value = "SELECT s.*,p.name place_name FROM tt_student s,tt_place p where s.place_id=p.id order by convert(s.name using gbk) LIMIT :offset,:pageSize", nativeQuery = true)
     List<Map<String,Object>> findAllStudentByPage2(@Param("offset") Integer page, @Param("pageSize") Integer pageSize);
 
-    @Query(value = "SELECT s.*,p.name place_name FROM tt_student s,tt_place p where s.place_id=p.id and s.place_id=:placeId LIMIT :offset,:pageSize", nativeQuery = true)
-    List<Map<String,Object>> findAllStudentByPage2(@Param("offset") Integer page, @Param("pageSize") Integer pageSize,@Param("placeId") Integer placeId);
+    @Query(value = "SELECT s.*,p.name place_name FROM tt_student s,tt_place p where s.place_id=p.id and if(IFNULL(:placeId,'')!='',s.place_id=:placeId,1=1) order by convert(s.name using gbk) LIMIT :offset,:pageSize", nativeQuery = true)
+    List<Map<String,Object>> findAllStudentByPage2(@Param("offset") Integer page, @Param("pageSize") Integer pageSize, @Param("placeId") String placeId);
 
     /**
      * 查询数量
@@ -52,8 +52,8 @@ public interface StudentRepository extends BaseRepository<StudentEntity, Long>, 
      */
     @Query(value = "select count(*) from tt_student as u", nativeQuery = true)
     int findAllStudentTotal();
-    @Query(value = "select count(*) from tt_student as u where u.place_id=:placeId", nativeQuery = true)
-    int findAllStudentTotal(@Param("placeId") Integer placeId);
+    @Query(value = "select count(*) from tt_student as u where if(IFNULL(:placeId,'')!='',u.place_id=:placeId,1=1)", nativeQuery = true)
+    int findAllStudentTotal(@Param("placeId") String placeId);
 
     @Transactional
     @Modifying
@@ -61,5 +61,9 @@ public interface StudentRepository extends BaseRepository<StudentEntity, Long>, 
     int deleteById(@Param("id") int id);
 
     @Query(value = "select * from tt_student u where u.place_id=:placeId", nativeQuery = true)
-    List<StudentEntity> findStudentByPlaceId(@Param("placeId") Integer placeId);
+    List<StudentEntity> findStudentByPlaceId(@Param("placeId") String placeId);
+
+    @Query(value = "select * from tt_student u where u.sn=:sn", nativeQuery = true)
+    public StudentEntity findSn(String sn);
+
 }

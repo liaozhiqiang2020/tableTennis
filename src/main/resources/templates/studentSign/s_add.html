@@ -91,21 +91,6 @@
 <!-- /.container -->
 <script>
     $(document).ready(function(){
-        // var uuid = '${uuid}';
-        // $.ajax({
-        //     url: '../place/getList',
-        //     dataType: 'json',
-        //     data:{},
-        //     type: 'post',
-        //     success: function (data) {
-        //         $.each(data, function (index, item) {
-        //             $('#placeId').append(new Option(item.name, item.id));// 下拉菜单里添加元素
-        //         });
-        //
-        //         layui.form.render("select");
-        //     }
-        // });
-
         $.ajax({
             url: '../course/getAll',
             dataType: 'json',
@@ -119,9 +104,6 @@
                 layui.form.render("select");
             }
         });
-
-
-
     });
 
     layui.use(['form', 'layedit', 'laydate','upload'], function(){
@@ -142,28 +124,6 @@
         form.verify({
 
         });
-
-        // form.on('select(placeId)', function (data) {
-        //     $("#studentDiv").show();
-        //     var placeId = $("#placeId").val();
-        //
-        //     $.ajax({
-        //         url: '../student/findStuByPlaceId',
-        //         dataType: 'json',
-        //         data:{'placeId':placeId},
-        //         type: 'post',
-        //         async:false,
-        //         success: function (data1) {
-        //             $('#studentId').empty();
-        //             $.each(data1, function (index, item) {
-        //                 $('#studentId').append(new Option(item.name, item.id));// 下拉菜单里添加元素
-        //             });
-        //
-        //             layui.form.render("select");
-        //         }
-        //     });
-        // });
-
 
         form.on('submit(demo1)', function(data){
             $.ajax({
@@ -205,9 +165,9 @@
             yes : function() {
                 layer.closeAll();
 
-                var studentId = $("#studentId").val();
-                $(window.parent.$("#"+studentId+"")[0]).css("color","red");
-                $(window.parent.$("#"+studentId+"")[0]).val("已签到");
+                /*var studentId = $("#studentId").val();
+                $(window.parent.$("#"+studentId+"")[0]).css("color","green");
+                $(window.parent.$("#"+studentId+"")[0]).val("已签到");*/
 
                 var index = window.parent.parent.layer.getFrameIndex(window.name);
                 parent.layer.close(index);

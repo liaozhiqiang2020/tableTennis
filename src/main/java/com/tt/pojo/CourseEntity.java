@@ -10,8 +10,7 @@ import javax.persistence.*;
 public class CourseEntity {
     private int id;
     private String name;
-    private int type;//1.社团(免费)  2.社团(收费)  3.收费培训(基础)  4.收费培训(高级)
-    private int inSchool;//1.校内  2.校外
+    private String placeId;
     private int classHours; //课时数
     private String money;//单节课时费
 
@@ -37,26 +36,6 @@ public class CourseEntity {
     }
 
     @Basic
-    @Column(name = "type")
-    public int getType() {
-        return type;
-    }
-
-    public void setType(int type) {
-        this.type = type;
-    }
-
-    @Basic
-    @Column(name = "inSchool")
-    public int getInSchool() {
-        return inSchool;
-    }
-
-    public void setInSchool(int inSchool) {
-        this.inSchool = inSchool;
-    }
-
-    @Basic
     @Column(name = "classHours")
     public int getClassHours() {
         return classHours;
@@ -75,4 +54,16 @@ public class CourseEntity {
     public void setMoney(String money) {
         this.money = money;
     }
+
+    @Basic
+    @Column(name = "place_id")
+    public String getPlaceId() {
+        return placeId;
+    }
+
+    public void setPlaceId(String placeId) {
+        this.placeId = placeId;
+    }
+
+
 }

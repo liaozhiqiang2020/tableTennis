@@ -1,0 +1,278 @@
+/* 左滑模块 */
+.mui-table-view {
+    margin: 0rem;
+    padding: 0rem;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.mui-table-view-cell {
+    margin: 0rem;
+    padding: 0rem;
+    width: 22rem;
+    height: 9rem;
+    margin: 0.7rem;
+    margin-bottom: 0rem;
+    padding: 15px 0px;
+    background-color: white;
+    border-bottom: 1px solid #f0f0f0;
+    border-radius: 0.5rem;
+}
+
+.mui-slider-right mui-disabled {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+/*编辑按钮*/
+.mui-pull-right {
+    line-height: 45px;
+    color: #929292;
+    font-size: 14px;
+}
+
+/* 每项商品卡 */
+.shopCartItem {
+    float: left;
+    width: 22rem;
+    height: 9rem;
+}
+
+/*复选框*/
+.shopCartItem .box {
+    margin: 0rem;
+    padding: 0rem;
+    float: left;
+    margin: 1rem;
+    bottom: 1rem;
+    overflow: visible;
+    position: relative;
+}
+
+.iptSelect {
+    position: absolute;
+    top: 1.3rem !important;
+    left: -0.9rem !important;
+}
+
+.iptSelect:checked:before {
+    color: #f60 !important;
+}
+
+/*商品图片*/
+.shopCartItem img {
+    float: left;
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 0.3rem;
+}
+
+/*商品信息*/
+.goodsInfo {
+    position: relative;
+    float: left;
+    width: 60%;
+    height: 100%;
+    padding-left: 8px;
+    margin-left: 10%;
+}
+
+/* 商品价格 */
+.shopPrice {
+    float: left;
+    margin: 0rem;
+    padding: 0rem;
+    margin-top: 1.3rem;
+    color: #f60;
+}
+
+/* 加减商品 */
+.product_num {
+    float: right;
+    padding: 0rem;
+    margin-top: 1.3rem;
+    margin-right: 1rem;
+    width: 5.6rem;
+    height: 1.5rem;
+    border: 0.05rem solid #dbdbdb;
+    border-radius: 0.3rem;
+    /* 把底下.product_num .num多出来的部分隐藏掉 */
+    overflow: hidden;
+}
+
+.product_num em {
+    display: block;
+    height: 1.4rem;
+    width: 1.5rem;
+    float: left;
+    color: #7A7979;
+    border-right: 0.05rem solid #dbdbdb;
+    text-align: center;
+    cursor: pointer;
+}
+
+.product_num .num {
+    display: block;
+    padding-top: 0.75rem;
+    padding-left: 0.79rem;
+    float: left;
+    text-align: center;
+    width: 2.5rem;
+    height: 1rem;
+    font-style: normal;
+    font-size: 0.3rem;
+    border-radius: 0rem;
+    border: 0rem;
+}
+
+.product_num em.add {
+    float: right;
+    border-right: 0;
+    border-left: 0.05rem solid #dbdbdb;
+}
+
+/*商品操作*/
+.goodsOpreation {
+    float: left;
+    display: none;
+    width: 60%;
+    height: 80px;
+    padding-left: 5px;
+}
+
+.goodsCount {
+    display: inline-block;
+    width: 50%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+}
+
+/*删除商品*/
+.shopDel {
+    float: right;
+    display: inline-block;
+    width: 40%;
+    height: 80px;
+    font-size: 18px;
+    color: red;
+    text-align: center;
+    line-height: 80px;
+}
+
+/* 底线 */
+.details-title {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    clear: both;
+}
+
+.details-title-dash {
+    color: #E8E8E8
+}
+
+.details-title-word {
+    color: grey;
+    font-size: 0.9rem;
+}
+
+/*总计*/
+.btm {
+    height: 5rem;
+    box-shadow: 0 0 0;
+    background: #fff;
+}
+
+.qx {
+    position: absolute;
+    top: 0.6rem;
+    /*left: 1.2rem;*/
+    margin: 0rem;
+    padding: 0rem;
+    padding-bottom: 0.8rem;
+    color: grey;
+    height: 5rem;
+    width: 60%;
+}
+
+.qx .circle {
+    display: inline-block;
+    margin: 0rem;
+    padding: 0rem;
+    /*width: 1.6rem;*/
+    height: 5rem;
+    position: relative;
+}
+
+.qx .word {
+    position: absolute;
+    display: inline-block;
+    margin: 0rem;
+    padding: 0rem;
+    top: 0.2rem;
+    left: 1.6rem;
+    bottom: -1rem;
+    font-size: 1rem;
+    width: 3rem;
+    height: 1.5rem;
+
+}
+
+.circle .circleCK {
+    left: -0.1rem !important;
+    top: -0.1rem !important;
+
+    border: 0.1rem solid grey;
+    color: #f60 !important;
+}
+
+.circle .circleCK:checked:before {
+    color: #f60 !important;
+}
+
+.btm > p {
+    float: right;
+}
+
+.totalPrice {
+    height: 2rem;
+    margin: 0rem;
+    padding-bottom: 0.5rem;
+    margin-top: 1.4rem;
+    margin-right: 0.5rem;
+    /* 合计: */
+    font-size: 1rem;
+    color: black;
+}
+
+.totalPrice span {
+    font-size: 0.9rem;
+    color: grey;
+}
+
+.totalPrice #totalPrice {
+    color: #f60;
+}
+
+.totalPrice #totalPrice span {
+    color: #f60;
+}
+
+.totalPrice #totalPrice .big {
+    font-size: 1.1rem;
+}
+
+.buyNowBtn {
+    margin-top: 1.5rem;
+    margin-right: 0.8rem;
+    width: 7rem;
+    height: 2.7rem;
+    color: white;
+    font-size: 1rem;
+    background-image: linear-gradient(to right, #ff9000 0, #ff5000 100%);
+    border-radius: 5rem;
+}
+
+.mui-bar-tab{
+    bottom: 10%;
+}

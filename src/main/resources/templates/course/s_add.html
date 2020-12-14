@@ -24,25 +24,10 @@
         </div>
 
         <div class="layui-form-item">
-            <label class="layui-form-label">课程类型</label>
+            <label class="layui-form-label">上课场地</label>
             <div class="layui-input-block">
-                <select name="type" lay-filter="type">
-                    <option value="">请选择---</option>
-                    <option value="1">社团(免费)</option>
-                    <option value="2">社团(收费)</option>
-                    <option value="3">收费培训(基础)</option>
-                    <option value="4">收费培训(高级)</option>
-                </select>
-            </div>
-        </div>
-
-        <div class="layui-form-item">
-            <label class="layui-form-label">是否在校</label>
-            <div class="layui-input-block">
-                <select name="inSchool" lay-filter="inSchool">
-                    <option value="">请选择---</option>
-                    <option value="1">校内</option>
-                    <option value="2">校外</option>
+                <select id="placeId" name="placeId" lay-filter="placeId">
+                    <option value="">请选择场地---</option>
                 </select>
             </div>
         </div>
@@ -75,6 +60,19 @@
     $(document).ready(function(){
         // var uuid = '${uuid}';
 
+        $.ajax({
+            url: '../place/getList',
+            dataType: 'json',
+            data:{},
+            type: 'post',
+            success: function (data) {
+                $.each(data, function (index, item) {
+                    $('#placeId').append(new Option(item.name, item.id));// 下拉菜单里添加元素
+                });
+
+                layui.form.render("select");
+            }
+        });
     });
 
     layui.use(['form', 'layedit', 'laydate','upload'], function(){

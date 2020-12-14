@@ -40,6 +40,9 @@
 <!-- /.container -->
 <script>
     $(document).ready(function(){
+        var top = $(document).scrollTop();
+        $("body").css("height",top);
+
         $.ajax({
             url: '../place/getList',
             dataType: 'json',
@@ -66,20 +69,20 @@
         form.on('select(placeId)', function (data) {
             var placeId = $("#placeId").val();
             $(".layui-form").hide();
-            var limit = 5;
+            var limit = 10;
 
 
             flow.load({
                 elem: '#LAY_demo1' //指定列表容器
-                ,isAuto:false
                 ,done: function(page, next){ //到达临界点（默认滚动触发），触发下一页
                     var lis = [];
                     //以jQuery的Ajax请求为例，请求下一页数据（注意：page是从2开始返回）
                     $.post('../student/getListByPageAndPlace',{page:page,limit:limit,placeId:placeId},function(res){
                         //假设你的列表返回在data集合中
                         layui.each(res.data, function(index, item){
-                            lis.push("<div class='list-group' style='border-radius:10px;border:solid 1px #000;margin-bottom: 5px;height: 30px'>" +
-                                "<a href='#' id='"+item.id+"' class='list-group-item' onclick='details(\""+item.id+"\",\""+item.name+"\",\""+item.place_id+"\",\""+item.place_name+"\")'><p class='list-group-item-text'>" +item.name+" +</p></a>"+
+                            lis.push("<div class='list-group' style='border-radius:10px;border:solid 1px #000;margin-bottom: 5px;height: 30px;text-align: center' onclick='details(\""+item.id+"\",\""+item.name+"\",\""+item.place_id+"\",\""+item.place_name+"\")'>" +
+                                /*"<a href='#' id='"+item.id+"' class='list-group-item' style='line-height: 30px;'><p class='list-group-item-text'>" +querySn(item.id,item.name)+" </p></a>"+*/
+                                "<a href='#' id='"+item.id+"' class='list-group-item' style='line-height: 30px;'><p class='list-group-item-text'>" +item.name+" </p></a>"+
                                 "</div>");
                         });
 
@@ -92,6 +95,25 @@
         });
     });
 
+    function querySn(id,name){
+        $.ajax({
+            url: '../studentSign/querySign',
+            dataType: 'json',
+            data:{
+                id:id
+            },
+            type: 'post',
+            success: function (data) {
+                if(data==0){
+                    $("#"+id+"").css("color","green");
+                    $("#"+id+"").text(name);
+                    $("#"+id+"").val("已签到");
+                }else{
+                    $("#"+id+"").text(name);
+                }
+            }
+        });
+    }
 
     function details(id,name,placeId,placeName){
         var qiandao = $("#"+id+"").val();
@@ -115,7 +137,7 @@
                 title: title,
                 closeBtn: 1, //不显示关闭按钮
                 anim: 2,
-                area: ['90%', '80%'],
+                area: ['90%', '70%'],
                 shadeClose: true, //开启遮罩关闭
                 content: url
             });

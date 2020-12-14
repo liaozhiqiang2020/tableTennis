@@ -41,6 +41,13 @@ public class CourseController {
 	public List<CourseEntity> getAll(){
 		return this.courseService.findAllCourse();
 	}
+
+
+	@ResponseBody
+	@RequestMapping(value="/getAllByPlace")
+	public List<CourseEntity> getAllByPlace(@RequestParam(value = "placeId") String placeId){
+		return this.courseService.findAllCourseByPlace(placeId);
+	}
 	
 	@RequestMapping(value = "/toadd")
 	public ModelAndView toadd() {

@@ -9,6 +9,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * 课程dao
@@ -36,8 +37,11 @@ public interface CourseRepository extends BaseRepository<CourseEntity, Long>, Pa
      * @param page 起始个数
      * @param pageSize 截至个数
      */
-    @Query(value = "select * from tt_course as u LIMIT :offset,:pageSize", nativeQuery = true)
-    List<CourseEntity> findAllCourseByPage(@Param("offset") Integer page, @Param("pageSize") Integer pageSize);
+    @Query(value = "select u.*,p.name place_name from tt_course u,tt_place p where u.place_id=p.id LIMIT :offset,:pageSize", nativeQuery = true)
+    List<Map<String,Object>> findAllCourseByPage(@Param("offset") Integer page, @Param("pageSize") Integer pageSize);
+
+    @Query(value="select c.*,p.name place_name from tt_course c,tt_place p where c.place_id=p.id and if(IFNULL(:placeId,'')!='',c.place_id=:placeId,1=1) LIMIT :offset,:pageSize",nativeQuery = true)
+    List<Map<String,Object>> findAllCourseByPageAndPlaceId(@Param("offset") Integer page, @Param("pageSize") Integer pageSize, @Param("placeId") String placeId);
 
     /**
      * 查询数量
@@ -45,6 +49,12 @@ public interface CourseRepository extends BaseRepository<CourseEntity, Long>, Pa
      */
     @Query(value = "select count(*) from tt_course as u", nativeQuery = true)
     int findAllCourseTotal();
+
+    @Query(value = "select count(*) from tt_course as u where if(IFNULL(:placeId,'')!='',u.place_id=:placeId,1=1)", nativeQuery = true)
+    int findAllCourseTotalByPlaceId(@Param("placeId") String placeId);
+
+    @Query(value = "select * from tt_course as u where u.place_id=:placeId", nativeQuery = true)
+    List<CourseEntity> findAllCourseByPlace(@Param("placeId") String placeId);
 
     @Transactional
     @Modifying
