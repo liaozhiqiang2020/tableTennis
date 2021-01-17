@@ -39,7 +39,7 @@ public interface StudentSignRepository extends BaseRepository<StudentSignEntity,
     List<StudentSignEntity> findAllStudentSignByPage(@Param("offset") Integer page, @Param("pageSize") Integer pageSize);
 
 
-    @Query(value = "select ss.*,s.name student_name,p.name place_name,c.name course_name,u.name user_name from tt_student_sign ss,tt_student s,tt_place p,tt_course c,mc_user u where ss.student_id=s.id and ss.place_id=p.id and ss.course_id=c.id and ss.user_id=u.id LIMIT :offset,:pageSize", nativeQuery = true)
+    @Query(value = "select ss.*,s.name student_name,p.name place_name,c.name course_name,u.name user_name from tt_student_sign ss,tt_student s,tt_place p,tt_course c,mc_user u where ss.student_id=s.id and ss.place_id=p.id and ss.course_id=c.id and ss.user_id=u.id order by ss.id desc LIMIT :offset,:pageSize", nativeQuery = true)
     List<Map<String,Object>> findAllStudentSignByPage2(@Param("offset") Integer page, @Param("pageSize") Integer pageSize);
 
     /**

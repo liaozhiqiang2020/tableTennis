@@ -24,9 +24,9 @@
         </div>
 
         <div class="layui-form-item">
-            <label class="layui-form-label">学员年龄</label>
+            <label class="layui-form-label">身份证号</label>
             <div class="layui-input-block">
-                <input type="text" name="age" lay-verify="age" placeholder="请输入学员年龄" autocomplete="off" class="layui-input">
+                <input type="text" name="idCard" lay-verify="idCard" placeholder="请输入学员身份证号" autocomplete="off" class="layui-input">
             </div>
         </div>
 
@@ -56,9 +56,51 @@
             </div>
         </div>
         <div class="layui-form-item">
+            <label class="layui-form-label">家庭地址</label>
+            <div class="layui-input-block">
+                <input type="text" name="address" lay-verify="address" placeholder="请输入家庭地址" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
             <label class="layui-form-label">上课场地</label>
             <div class="layui-input-block">
-                <input type="text" name="placeId" lay-verify="placeId" placeholder="请输入上课场地" autocomplete="off" class="layui-input">
+                <select id="placeId" name="placeId" lay-filter="placeId">
+                    <option value="">请选择场地---</option>
+                </select>
+            </div>
+        </div>
+        <!--<div class="layui-form-item">
+            <label class="layui-form-label">学号</label>
+            <div class="layui-input-block">
+                <input type="text" id="sn" name="sn" lay-verify="sn" placeholder="请输入学号" autocomplete="off" class="layui-input">
+            </div>
+        </div>-->
+
+        <!--<div class="layui-form-item">
+            <label class="layui-form-label">销售名称</label>
+            <div class="layui-input-block">
+                <input type="text" name="saleName" lay-verify="saleName" placeholder="请输入销售名称" autocomplete="off" class="layui-input">
+            </div>
+        </div>-->
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">剩余金额</label>
+            <div class="layui-input-block">
+                <input type="text" name="money" lay-verify="money" placeholder="请输入剩余金额" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">剩余课时数</label>
+            <div class="layui-input-block">
+                <input type="text" name="classHours" lay-verify="classHours" placeholder="请输入剩余课时数" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">单节价格</label>
+            <div class="layui-input-block">
+                <input type="text" name="unitPrice" lay-verify="unitPrice" placeholder="请输入单价" autocomplete="off" class="layui-input">
             </div>
         </div>
 
@@ -78,7 +120,19 @@
 <script>
     $(document).ready(function(){
         // var uuid = '${uuid}';
+        $.ajax({
+            url: '../place/getList',
+            dataType: 'json',
+            data:{},
+            type: 'post',
+            success: function (data) {
+                $.each(data, function (index, item) {
+                    $('#placeId').append(new Option(item.name, item.id));// 下拉菜单里添加元素
+                });
 
+                layui.form.render("select");
+            }
+        });
     });
 
     layui.use(['form', 'layedit', 'laydate','upload'], function(){
@@ -98,6 +152,33 @@
         });
 
         form.on('submit(demo1)', function(data){
+            var sn = $("#sn").val();
+
+            if(sn==""){
+                alert("请填写学号！");
+                return false;
+            }
+
+            $.ajax({
+                url:'../student/findSn',
+                method : 'post',
+                data : {
+                    sn:sn
+                },
+                dataType : 'JSON',
+                async:false,
+                success : function(res) {
+                    if(res==0){
+                        layuiOpen2("结果","该学号已存在");
+                        return false;
+                    }
+                },
+                error : function(res) {
+                    layuiOpen("结果","请求异常");
+                    return false;
+                }
+            });
+
             $.ajax({
                 url:'../student/add',
                 method : 'post',
@@ -137,6 +218,25 @@
             yes : function() {
                 layer.closeAll();
                 window.parent.location.reload();
+            }
+        });
+    }
+
+    function layuiOpen2(id, text) {
+        layer.open({
+            type : 1,
+            offset : 'auto',
+            id : id //防止重复弹出
+            ,
+            content : '<div style="padding: 20px 100px;">' + text
+                + '</div>',
+            btn : '确定',
+            btnAlign : 'c' //按钮居中
+            ,
+            shade : 0.2 //不显示遮罩
+            ,
+            yes : function() {
+                layer.closeAll();
             }
         });
     }

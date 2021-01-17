@@ -59,11 +59,11 @@
 <header class="main-header" th:fragment="header-body">
 
     <!-- Logo -->
-    <a href="/mc/index" class="logo">
+    <a href="/tt/index" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini"><b>卓悦乒乓</b>后台管理</span>
+        <span class="logo-mini"><b>零之启</b>后台管理</span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><b>卓悦乒乓</b>后台管理</span>
+        <span class="logo-lg"><b>零之启</b>后台管理</span>
     </a>
 
     <!-- Header Navbar: style can be found in header.less -->
@@ -74,8 +74,8 @@
         </a>
         <div style="float: left; padding-top: 12px; color: #ffffff; font-size: 18px;" class="main-header">
             您好，<span  class="hidden-xs">
-                            <span>管理员</span>
-                        </span>，您的所属公司为：<span style="color: darkcyan"></span>青岛总公司</div>
+                            <span>[[${session.user.name}]]</span>
+                        </span>，您所属为：<span style="color: darkcyan"></span>星光岛店</div>
         <!-- Navbar Right Menu -->
         <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
@@ -92,7 +92,7 @@
                                 <a th:href="@{/logout}" class="btn btn-default btn-flat">注销</a>
                             </div>
                             <div class="pull-right">
-                                <a href="/mc/userc/change" class="btn btn-default btn-flat">修改密码</a>
+                                <a href="/tt/userc/change" class="btn btn-default btn-flat">修改密码</a>
                             </div>
                         </li>
                     </ul>
