@@ -50,6 +50,17 @@ public class StudentSignController {
         return this.studentSignService.findStudentSignByPage2(page,limit);
 	}
 
+	@ResponseBody
+	@RequestMapping(value="/getListByPageAndOther")
+	public Map<String,Object> getListByPage(@RequestParam(value = "page", defaultValue = "1") int page,
+											@RequestParam(value = "limit", defaultValue = "5") int limit,
+											@RequestParam(value = "name") String name,
+											@RequestParam(value = "studentName") String studentName,
+											@RequestParam(value = "startTime") String startTime,
+											@RequestParam(value = "endTime") String endTime){
+		return this.studentSignService.getListByPageAndOther(page,limit,name,studentName,startTime,endTime);
+	}
+
 	@RequestMapping(value = "/toadd")
 	public ModelAndView toadd(HttpServletRequest request,int id,String name,int placeId,String placeName) {
 		HttpSession session   =   request.getSession();

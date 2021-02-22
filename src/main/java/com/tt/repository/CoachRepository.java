@@ -38,4 +38,12 @@ public interface CoachRepository extends BaseRepository<CoachEntity, Long>, Pagi
 
     @Query(value="select * from tt_coach as c where c.on_work = :onWork",nativeQuery = true)
     List<Map<String,Object>> findCoachEntityByOnWork2(@Param("onWork") Integer onWork);
+
+    /**
+     *根据名字查询
+     * @param name
+     * @return
+     */
+    @Query(value="select * from tt_coach as c where c.name = :name order by id desc limit 1",nativeQuery = true)
+    CoachEntity findCoachEntityByName(@Param("name") String name);
 }

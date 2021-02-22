@@ -2,6 +2,9 @@ package com.tt.pojo;
 
 import javax.persistence.*;
 
+/**
+ * 缴费管理
+ */
 @Entity
 @Table(name = "tt_tuition", schema = "tt", catalog = "")
 public class TuitionEntity {
