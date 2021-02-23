@@ -1,8 +1,10 @@
 package com.tt.controller;
 
+import com.tt.pojo.CourseEntity;
 import com.tt.pojo.StudentEntity;
 import com.tt.pojo.StudentSignEntity;
 import com.tt.pojo.UserEntity;
+import com.tt.service.CourseService;
 import com.tt.service.StudentService;
 import com.tt.service.StudentSignService;
 import com.tt.service.UserService;
@@ -30,6 +32,8 @@ public class StudentSignController {
 	private UserService userService;
 	@Autowired
 	private StudentService studentService;
+	@Autowired
+	private CourseService courseService;
 
 	@RequestMapping("/toStudentSignMgr")
 	public ModelAndView dataList(ModelAndView model) {
@@ -81,10 +85,13 @@ public class StudentSignController {
 	@RequestMapping(value = "/add")
 	public String add(StudentSignEntity studentSignEntity,HttpServletRequest request){
 		try {
+			CourseEntity courseEntity =this.courseService.findCourseById(studentSignEntity.getCourseId());
+			studentSignEntity.setMoney(Integer.parseInt(courseEntity.getMoney()));//存入本节课价格
 			StudentSignEntity studentSignEntity1 = this.studentSignService.saveStudentSign(studentSignEntity);
 			StudentEntity studentEntity = this.studentService.findStudentById(studentSignEntity1.getStudentId());
+
 			if(!studentEntity.getUnitPrice().equals("") && !studentEntity.getMoney().equals("")){
-				studentEntity.setMoney(String.valueOf(Integer.parseInt(studentEntity.getMoney())-Integer.parseInt(studentEntity.getUnitPrice())));
+				studentEntity.setMoney(String.valueOf(Integer.parseInt(studentEntity.getMoney())-Integer.parseInt(courseEntity.getMoney())));
 			}else{
 				studentEntity.setClassHours(String.valueOf(Integer.parseInt(studentEntity.getClassHours())-1));
 			}

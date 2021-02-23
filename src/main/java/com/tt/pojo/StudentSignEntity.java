@@ -15,6 +15,8 @@ public class StudentSignEntity {
     private int courseId;//课程id
     private int userId;//负责老师
     private int status;//签到状态 1.正常  2.迟到
+    private int money;//本节价格
+    private String remarks;//备注
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
@@ -85,5 +87,25 @@ public class StudentSignEntity {
 
     public void setStatus(int status) {
         this.status = status;
+    }
+
+    @Basic
+    @Column(name = "money")
+    public int getMoney() {
+        return money;
+    }
+
+    public void setMoney(int money) {
+        this.money = money;
+    }
+
+    @Basic
+    @Column(name = "remarks")
+    public String getRemarks() {
+        return remarks;
+    }
+
+    public void setRemarks(String remarks) {
+        this.remarks = remarks;
     }
 }
