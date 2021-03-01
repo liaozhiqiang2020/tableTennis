@@ -1,8 +1,10 @@
 package com.tt.controller;
 
+import com.tt.pojo.CourseEntity;
 import com.tt.pojo.StudentEntity;
 import com.tt.pojo.StudentSignEntity;
 import com.tt.pojo.UserEntity;
+import com.tt.service.CourseService;
 import com.tt.service.StudentService;
 import com.tt.service.StudentSignService;
 import com.tt.service.UserService;
@@ -30,6 +32,8 @@ public class StudentSignController {
 	private UserService userService;
 	@Autowired
 	private StudentService studentService;
+	@Autowired
+	private CourseService courseService;
 
 	@RequestMapping("/toStudentSignMgr")
 	public ModelAndView dataList(ModelAndView model) {
@@ -50,6 +54,17 @@ public class StudentSignController {
         return this.studentSignService.findStudentSignByPage2(page,limit);
 	}
 
+	@ResponseBody
+	@RequestMapping(value="/getListByPageAndOther")
+	public Map<String,Object> getListByPage(@RequestParam(value = "page", defaultValue = "1") int page,
+											@RequestParam(value = "limit", defaultValue = "5") int limit,
+											@RequestParam(value = "name") String name,
+											@RequestParam(value = "studentName") String studentName,
+											@RequestParam(value = "startTime") String startTime,
+											@RequestParam(value = "endTime") String endTime){
+		return this.studentSignService.getListByPageAndOther(page,limit,name,studentName,startTime,endTime);
+	}
+
 	@RequestMapping(value = "/toadd")
 	public ModelAndView toadd(HttpServletRequest request,int id,String name,int placeId,String placeName) {
 		HttpSession session   =   request.getSession();
@@ -68,11 +83,19 @@ public class StudentSignController {
 
 	@ResponseBody
 	@RequestMapping(value = "/add")
-	public String add(StudentSignEntity studentSignEntity){
+	public String add(StudentSignEntity studentSignEntity,HttpServletRequest request){
 		try {
+			CourseEntity courseEntity =this.courseService.findCourseById(studentSignEntity.getCourseId());
+			studentSignEntity.setMoney(Integer.parseInt(courseEntity.getMoney()));//存入本节课价格
 			StudentSignEntity studentSignEntity1 = this.studentSignService.saveStudentSign(studentSignEntity);
 			StudentEntity studentEntity = this.studentService.findStudentById(studentSignEntity1.getStudentId());
-			studentEntity.setClassHours(String.valueOf(Integer.parseInt(studentEntity.getClassHours())-1));
+
+			if(!studentEntity.getUnitPrice().equals("") && !studentEntity.getMoney().equals("")){
+				studentEntity.setMoney(String.valueOf(Integer.parseInt(studentEntity.getMoney())-Integer.parseInt(courseEntity.getMoney())));
+			}else{
+				studentEntity.setClassHours(String.valueOf(Integer.parseInt(studentEntity.getClassHours())-1));
+			}
+
 			this.studentService.updateStudent(studentEntity);
 			if(studentSignEntity1!=null){
 				return "0";

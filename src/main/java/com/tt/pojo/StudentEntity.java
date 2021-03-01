@@ -22,6 +22,7 @@ public class StudentEntity {
     private String idCard;//身份证号
     private String money;//剩余金额
     private String saleName;//销售名称
+    private String unitPrice;//单节价格
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
@@ -162,5 +163,15 @@ public class StudentEntity {
 
     public void setSaleName(String saleName) {
         this.saleName = saleName;
+    }
+
+    @Basic
+    @Column(name = "unit_price")
+    public String getUnitPrice() {
+        return unitPrice;
+    }
+
+    public void setUnitPrice(String unitPrice) {
+        this.unitPrice = unitPrice;
     }
 }

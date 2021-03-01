@@ -6,7 +6,7 @@ function openWin(title,url){
         title: title,
         closeBtn: 1, //不显示关闭按钮
         anim: 2,
-        area: ['950px', '700px'],
+        area: ['950px', '600px'],
         shadeClose: true, //开启遮罩关闭
         content: url
     });
