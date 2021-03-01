@@ -59,8 +59,6 @@ public class UserEntity {
     private int status;
     private int type;//用户类型  0 系统用户  1  家长
 
-    private Set<RoleEntity> roleEntitySet = new HashSet<>();
-
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name = "Id")
@@ -176,19 +174,5 @@ public class UserEntity {
 
     public void setType(int type) {
         this.type = type;
-    }
-
-    @JsonIgnore
-    @ManyToMany(fetch = FetchType.EAGER)
-    @Cascade(value = {org.hibernate.annotations.CascadeType.SAVE_UPDATE})
-    @JoinTable(name = "tt_user_role",                       //指定第三张表
-            joinColumns = {@JoinColumn(name = "user_id")},             //本表与中间表的外键对应
-            inverseJoinColumns = {@JoinColumn(name = "role_id")})  //另一张表与第三张表的外键的对应关系
-    public Set<RoleEntity> getRoleEntitySet() {
-        return roleEntitySet;
-    }
-
-    public void setRoleEntitySet(Set<RoleEntity> roleEntitySet) {
-        this.roleEntitySet = roleEntitySet;
     }
 }

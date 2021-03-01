@@ -44,7 +44,18 @@
                 <div class="layui-card">
 
                     <div class="layui-card-body" >
-                        <div class="layui-card-body" >
+                            <label>学员:</label>
+                            <select id="studentId" name="studentId" style="width: 150px;height: 25px;">
+                                <option value="">请选择学员---</option>
+                            </select>
+                            <label>教练:</label>
+                            <select id="coachId" name="coachId" style="width: 150px;height: 25px;">
+                                <option value="">请选择教练---</option>
+                            </select>
+                            <label>起始时间:</label><input id="start" class="k-textbox" >
+                            <label>结束时间:</label><input id="end" class="k-textbox" >
+                            <button class="k-button  k-primary" onclick="query()">查询</button>
+
                             <table class="layui-show" id="standardTaskExeTable" lay-filter="standardTaskExeTable" ></table>
 
 <!--                            <script type="text/html" id="toolbarDemo">-->
@@ -57,7 +68,7 @@
 <!--                                <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>-->
 <!--                                <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>-->
 <!--                            </script>-->
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -67,31 +78,79 @@
 <!-- /.container -->
 <script>
     $(document).ready(function(){
-        // var uuid = '${uuid}';
-        loadStandardTaskExeTable();
-    });
 
-    layui.use(['form' ], function() {
-        var form = layui.form;
+        $.ajax({
+            url: '../coach/getListByOnWork',
+            dataType: 'json',
+            data:{},
+            type: 'post',
+            success: function (data) {
+                $.each(data, function (index, item) {
+                    $('#coachId').append(new Option(item.name, item.id));// 下拉菜单里添加元素
+                });
 
-        form.on('submit(sreach)', function(data) {
-            loadStandardTaskExeTable();
-            return false;
+                layui.form.render("select");
+            }
         });
 
-        form.render();
+        $.ajax({
+            url: '../student/getList',
+            dataType: 'json',
+            data:{},
+            type: 'post',
+            success: function (data) {
+                $.each(data, function (index, item) {
+                    $('#studentId').append(new Option(item.name, item.id));// 下拉菜单里添加元素
+                });
+
+                layui.form.render("select");
+            }
+        });
+
+        loadStandardTaskExeTable("","","","");
     });
 
+    layui.use(['form', 'layedit', 'laydate','upload'], function(){
+        var form = layui.form
+            ,laydate = layui.laydate
+        var $ = layui.jquery;
+        $(this).removeAttr("lay-key");
+        //日期
+        laydate.render({
+            elem : '#start'
+            ,type: 'date'
+            ,trigger: 'click'
+        });
+        laydate.render({
+            elem : '#end'
+            ,type: 'date'
+            ,trigger: 'click'
+        });
+    });
 
-    function loadStandardTaskExeTable(){
+    function query(){
+        var coachName = $("#coachId").val();
+        var studentName = $("#studentId").val();
+        var startTime=$("#start").val();//开始时间
+        var endTime=$("#end").val();//结束时间
+        loadStandardTaskExeTable(studentName,coachName,startTime,endTime);
+    }
+
+    function loadStandardTaskExeTable(studentName,coachName,startTime,endTime){
 
         layui.use(['table'], function () {
             var table = layui.table;
 
             table.render({
                 elem: "#standardTaskExeTable",
-                url: '../studentSign/getListByPage',
+                url: '../studentSign/getListByPageAndOther',
                 even: true,
+                where: {
+                    studentName:studentName,
+                    name:coachName,
+                    startTime: startTime,
+                    endTime: endTime
+                },
                 toolbar: '#toolbarDemo', //开启头部工具栏，并为其绑定左侧模板
                 page:{ //支持传入 laypage 组件的所有参数（某些参数除外，如：jump/elem） - 详见文档
                     layout: ['limit', 'count', 'prev', 'page', 'next', 'skip'] //自定义分页布局
@@ -100,7 +159,7 @@
                     ,first: false //不显示首页
                     ,last: false //不显示尾页
                     ,limits:[5, 10, 20, 30, 40]
-                    ,limit:5
+                    ,limit:15
 
                 },
                 cols: [
@@ -108,9 +167,10 @@
                         {field: "xuhao", title: "序号", width: '8%',align:"center",templet:setXuHao,fixed:'left'},
                         {field: "student_name", title: "学员姓名", width: '15%',align:"center",fixed:'left'},
                         {field: "sign_time", title: "签到时间", width: '20%',align:"center"},
-                        {field: "place_name", title: "所在场地", width: '15%',align:"center"},
-                        {field: "course_name", title: "课程", width: '35%',align:"center"},
-                        {field: "user_name", title: "教练", width: '20%',align:"center"}
+                        {field: "place_name", title: "所在场地", width: '20%',align:"center"},
+                        {field: "course_name", title: "课程", width: '20%',align:"center"},
+                        {field: "user_name", title: "教练", width: '20%',align:"center"},
+                        {field: "money", title: "本节价格", width: '20%',align:"center"}
                     ]
                 ],
                 done: function (res, curr, count) {

@@ -28,7 +28,7 @@ public interface CourseService<T> {
      */
     Map<String,Object> findCourseByPage(int page, int pageSize);
 
-    Map<String,Object> findCourseByPageAndPlace(int page, int pageSize,String placeId);
+    Map<String,Object> findCourseByPageAndPlace(int page, int pageSize, String placeId);
 
     /**
      * 不分页查询所有Course

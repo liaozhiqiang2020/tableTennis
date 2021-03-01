@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:replace="fragments/header::header-css">
-    <title>场地管理</title>
+    <title>学员管理</title>
 </head>
 
 <style>
@@ -29,12 +29,12 @@
 <div class="content-wrapper">
     <section class="content-header">
         <h1>
-            场地管理
+            会员管理
         </h1>
         <br/>
         <ol class="breadcrumb">
             <li><a href="../index"><i class="fa fa-dashboard"></i>首页</a></li>
-            <li class="active">场地管理</li>
+            <li class="active">会员管理</li>
         </ol>
     </section>
 
@@ -42,21 +42,25 @@
         <div class="layui-row layui-col-space15">
             <div class="layui-col-md12">
                 <div class="layui-card">
-
                     <div class="layui-card-body" >
 
-                            <table class="layui-show" id="standardTaskExeTable" lay-filter="standardTaskExeTable" ></table>
+                            <label>姓名:</label> <input id="name" class="k-textbox"/>
+                            <label>手机号:</label> <input id="tel" class="k-textbox"/>
+                            <button class="k-button  k-primary" onclick="query()">查询</button>
 
-                            <script type="text/html" id="toolbarDemo">
-                                <div class="layui-btn-container">
-                                    <button class="layui-btn layui-btn-sm" lay-event="getCheckData">添加</button>
-                                </div>
-                            </script>
 
-                            <script type="text/html" id="barDemo">
-                                <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
-                                <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
-                            </script>
+                        <table class="layui-show" id="standardTaskExeTable" lay-filter="standardTaskExeTable" ></table>
+
+                        <script type="text/html" id="toolbarDemo">
+                            <div class="layui-btn-container">
+                                <button class="layui-btn layui-btn-sm" lay-event="getCheckData">添加</button>
+                            </div>
+                        </script>
+
+                        <script type="text/html" id="barDemo">
+                            <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+                            <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                        </script>
 
                     </div>
                 </div>
@@ -67,31 +71,28 @@
 <!-- /.container -->
 <script>
     $(document).ready(function(){
-        // var uuid = '${uuid}';
-        loadStandardTaskExeTable();
+        loadStandardTaskExeTable("","");
     });
 
-    layui.use(['form' ], function() {
-        var form = layui.form;
+    function query(){
+        var name = $("#name").val();
+        var tel = $("#tel").val();
+        loadStandardTaskExeTable(name,tel);
+    }
 
-        form.on('submit(sreach)', function(data) {
-            loadStandardTaskExeTable();
-            return false;
-        });
-
-        form.render();
-    });
-
-
-    function loadStandardTaskExeTable(){
+    function loadStandardTaskExeTable(name,tel){
 
         layui.use(['table'], function () {
             var table = layui.table;
 
             table.render({
                 elem: "#standardTaskExeTable",
-                url: '../place/getListByPage',
+                url: '../member/getListByPageAndOther',
                 even: true,
+                where: {
+                    name: name,
+                    tel: tel
+                },
                 toolbar: '#toolbarDemo', //开启头部工具栏，并为其绑定左侧模板
                 page:{ //支持传入 laypage 组件的所有参数（某些参数除外，如：jump/elem） - 详见文档
                     layout: ['limit', 'count', 'prev', 'page', 'next', 'skip'] //自定义分页布局
@@ -101,22 +102,15 @@
                     ,last: false //不显示尾页
                     ,limits:[5, 10, 20, 30, 40]
                     ,limit:5
-
                 },
                 cols: [
                     [
                         {field: "xuhao", title: "序号", width: '8%',align:"center",templet:setXuHao,fixed:'left'},
-                        {field: "name", title: "名称", width: '15%',align:"center",fixed:'left'},
-                        {field: "type", title: "类型", width: '15%',align:"center",templet:setType},
-                        {field: "address", title: "地址", width: '15%',align:"center"},
-                        {field: "startTime", title: "开始时间", width: '35%',align:"center"},
-                        {field: "endTime", title: "结束时间", width: '20%',align:"center"},
-                        {field: "contacts", title: "负责人", width: '20%',align:"center"},
-                        {field: "contactsTel", title: "负责人电话", width: '20%',align:"center"},
-                        {field: "signTime", title: "签约时间", width: '20%',align:"center"},
-                        {field: "rent", title: "租金", width: '20%',align:"center"},
-                        {field: "commission", title: "提成", width: '15%',align:"center"},
-                        {field: "rentType", title: "收租方式", width: '20%',align:"center",templet:setRentType},
+                        {field: "name", title: "姓名", width: '15%',align:"center",fixed:'left'},
+                        {field: "tel", title: "手机号", width: '30%',align:"center"},
+                        {field: "type", title: "类型", width: '20%',align:"center",templet:setType},
+                        {field: "start_time", title: "开卡时间", width: '20%',align:"center"},
+                        {field: "end_time", title: "到期时间", width: '20%',align:"center"},
                         {fixed: 'right', title:'操作', toolbar: '#barDemo', width:150}
                     ]
                 ],
@@ -129,8 +123,8 @@
             //监听行单击事件（双击事件为：rowDouble）
             table.on('toolbar(standardTaskExeTable)', function(obj){
                 if(obj.event==='getCheckData'){
-                    var url = '../place/toadd';
-                    openWin("添加场地",url);
+                    var url = '../member/toadd';
+                    openWin("添加会员",url);
                 }
             });
 
@@ -145,7 +139,7 @@
                         layer.close(index);
 
                         $.ajax({
-                            url: '../place/delete',
+                            url: '../member/delete',
                             method: 'post',
                             data: {
                                 'id': data.id
@@ -157,7 +151,7 @@
                                 } else {
                                     layuiOpen("结果", "删除失败");
                                 }
-                                loadStandardTaskExeTable();
+                                loadStandardTaskExeTable("","");
                             },
                             error: function (res) {
                                 layuiOpen("结果", "请求异常");
@@ -166,45 +160,27 @@
 
                     });
                 } else if(obj.event === 'edit'){
-                    var url = '../place/toupdate?placeId='+data.id;
-                    openWin("修改场地",url);
+                    var url = '../member/toupdate?memberId='+data.id;
+                    openWin("修改会员信息",url);
                 }
             });
 
         });
     }
 
-    //收租方式
-    function setRentType(data){
-        var rentType = data.rentType;
-        if(rentType=="1"){
-            return "<span>月收</span>";
-        }else if(rentType=="2"){
-            return "<span>年收</span>";
-        }else if(rentType=="3"){
-            return "<span>其他</span>";
-        }else{
-            return "<span></span>";
-        }
-        return rentType;
-    }
 
+    //收租方式
     function setType(data){
         var type = data.type;
-        if(type=="1"){
-            return "<span>学校</span>";
-        }else if(type=="2"){
-            return "<span>球馆</span>";
-        }else if(type=="3"){
-            return "<span>其他</span>";
+        if(type=="0"){
+            return "<span>年卡</span>";
+        }else if(type=="1"){
+            return "<span>月卡</span>";
         }else{
             return "<span></span>";
         }
         return type;
     }
-
-
-
 
     //序号
     function setXuHao(data){

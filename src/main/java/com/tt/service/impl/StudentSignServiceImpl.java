@@ -1,7 +1,11 @@
 package com.tt.service.impl;
 
+import com.tt.pojo.CoachEntity;
 import com.tt.pojo.StudentSignEntity;
+import com.tt.pojo.UserEntity;
+import com.tt.repository.CoachRepository;
 import com.tt.repository.StudentSignRepository;
+import com.tt.repository.UserRepository;
 import com.tt.service.StudentSignService;
 import org.apache.commons.collections.map.HashedMap;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +20,10 @@ import java.util.Map;
 public class StudentSignServiceImpl implements StudentSignService {
     @Autowired
     private StudentSignRepository studentSignRepository;
+    @Autowired
+    private CoachRepository coachRepository;
+    @Autowired
+    private UserRepository userRepository;
 
 
     @Override
@@ -30,6 +38,41 @@ public class StudentSignServiceImpl implements StudentSignService {
         int total = this.studentSignRepository.findAllStudentSignTotal();
         result.put("code", 0);
         result.put("data", list);
+        result.put("count", total);
+        return result;
+    }
+
+    @Override
+    public Map<String, Object> getListByPageAndOther(int page, int pageSize, String name,String studentName, String startTime, String endTime) {
+        Map<String,Object> result = new HashedMap();
+        List<Map<String,Object>> list;
+        int total;
+
+        String userId="";
+        String studentId = studentName;
+        if(!name.equals("")){
+            CoachEntity coachEntity = this.coachRepository.findCoachEntityById(Integer.parseInt(name));
+            if(coachEntity!=null){
+                UserEntity userEntity = this.userRepository.findUserByName(coachEntity.getName());
+                userId=String.valueOf(userEntity.getId());
+            }
+        }
+
+        if(startTime.equals("") && endTime.equals("")){
+            list = this.studentSignRepository.getListByPageAndOther((page-1)*pageSize,pageSize,userId,studentId);
+            total = this.studentSignRepository.findAllStudentSignTotal(userId,studentId);
+        }else{
+            list = this.studentSignRepository.getListByPageAndOther2((page-1)*pageSize,pageSize,userId,studentId,startTime,endTime);
+            total = this.studentSignRepository.findAllStudentSignTotal2(userId,studentId,startTime,endTime);
+        }
+
+        int pages=total/pageSize;
+        if(total%pageSize!=0){
+            pages++;
+        }
+        result.put("code", 0);
+        result.put("data", list);
+        result.put("pages", pages);
         result.put("count", total);
         return result;
     }
@@ -68,6 +111,8 @@ public class StudentSignServiceImpl implements StudentSignService {
     public StudentSignEntity querySign(int id) {
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");//设置日期格式
         String signtime = df.format(new Date());
-        return this.studentSignRepository.querySign(id,signtime);
+        //改为一天可以签到多次
+//        return this.studentSignRepository.querySign(id,signtime);
+        return this.studentSignRepository.querySign(id);
     }
 }

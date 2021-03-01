@@ -44,7 +44,7 @@ public interface StudentRepository extends BaseRepository<StudentEntity, Long>, 
     List<Map<String,Object>> findAllStudentByPage2(@Param("offset") Integer page, @Param("pageSize") Integer pageSize);
 
     @Query(value = "SELECT s.*,p.name place_name FROM tt_student s,tt_place p where s.place_id=p.id and if(IFNULL(:placeId,'')!='',s.place_id=:placeId,1=1) order by convert(s.name using gbk) LIMIT :offset,:pageSize", nativeQuery = true)
-    List<Map<String,Object>> findAllStudentByPage2(@Param("offset") Integer page, @Param("pageSize") Integer pageSize,@Param("placeId") String placeId);
+    List<Map<String,Object>> findAllStudentByPage2(@Param("offset") Integer page, @Param("pageSize") Integer pageSize, @Param("placeId") String placeId);
 
     /**
      * 查询数量

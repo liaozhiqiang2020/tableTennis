@@ -21,7 +21,7 @@ public interface ChooseClassService<T> {
     List<ChooseClassEntity> findAllChooseClassByPlaceId(String placeId);
 
     Map<String,Object> findAllChooseClassByPage(int page, int pageSize, String placeId);
-    Map<String,Object> findAllChooseClassByPageAndCourse(int page, int pageSize, String placeId,String courseId);
+    Map<String,Object> findAllChooseClassByPageAndCourse(int page, int pageSize, String placeId, String courseId);
 
     /**
      * 更新ChooseClass对象

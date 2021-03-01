@@ -44,12 +44,11 @@
                 <div class="layui-card">
 
                     <div class="layui-card-body" >
-                        <div class="layui-card-body" >
-                            <div class="layui-card-body">
+
                                 场地：<select id="placeId" name="placeId" lay-filter="placeId" onchange="func();">
                                     <option value="">请选择场地---</option>
                                 </select>
-                            </div>
+
                             <table class="layui-show" id="standardTaskExeTable" lay-filter="standardTaskExeTable" ></table>
 
                             <script type="text/html" id="toolbarDemo">
@@ -62,7 +61,7 @@
                                 <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
                                 <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
                             </script>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -127,16 +126,17 @@
                         {field: "xuhao", title: "序号", width: '8%',align:"center",templet:setXuHao,fixed:'left'},
                         // {field: "sn", title: "学号", width: '15%',align:"center",fixed:'left'},
                         {field: "name", title: "姓名", width: '15%',align:"center",fixed:'left'},
-                        {field: "id_card", title: "身份证号", width: '20%',align:"center"},
-                        {field: "parent_name", title: "家长姓名", width: '35%',align:"center"},
+                        {field: "parent_name", title: "家长姓名", width: '15%',align:"center"},
                         {field: "parent_tel", title: "家长电话", width: '20%',align:"center"},
-                        {field: "class_hours", title: "剩余课时数", width: '20%',align:"center"},
                         {field: "money", title: "剩余金额", width: '20%',align:"center"},
+                        {field: "class_hours", title: "剩余课时数", width: '20%',align:"center"},
+                        {field: "id_card", title: "身份证号", width: '20%',align:"center"},
                         {field: "tel", title: "手机", width: '20%',align:"center"},
                         {field: "address", title: "家庭住址", width: '15%',align:"center"},
                         {field: "registr_time", title: "报名时间", width: '20%',align:"center"},
                         {field: "place_name", title: "上课场地", width: '20%',align:"center"},
                         // {field: "sale_name", title: "销售名称", width: '20%',align:"center"},
+                        {field: "unit_price", title: "单价", width: '15%',align:"center"},
                         {fixed: 'right', title:'操作', toolbar: '#barDemo', width:150}
                     ]
                 ],

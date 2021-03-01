@@ -41,7 +41,7 @@ public interface ChooseClassRepository extends BaseRepository<ChooseClassEntity,
     int findAllChooseClassTotal(@Param("placeId") String placeId);
 
     @Query(value = "select count(*) from tt_choose_class as c where if(IFNULL(:placeId,'')!='',c.place_id=:placeId,1=1) and if(IFNULL(:courseId,'')!='',c.course_id=:courseId,1=1)", nativeQuery = true)
-    int findAllChooseClassTotalAndCourse(@Param("placeId") String placeId,@Param("courseId") String courseId);
+    int findAllChooseClassTotalAndCourse(@Param("placeId") String placeId, @Param("courseId") String courseId);
 
     @Transactional
     @Modifying
@@ -49,5 +49,5 @@ public interface ChooseClassRepository extends BaseRepository<ChooseClassEntity,
     int deleteById(@Param("id") int id);
 
     @Query(value = "select * from tt_choose_class as c where c.coach_id=:coachId and c.week=:week", nativeQuery = true)
-    List<ChooseClassEntity> findChooseClassEntitiesByCoachId(@Param("coachId") int coachId,@Param("week") String week);
+    List<ChooseClassEntity> findChooseClassEntitiesByCoachId(@Param("coachId") int coachId, @Param("week") String week);
 }

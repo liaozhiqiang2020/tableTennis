@@ -41,7 +41,7 @@ public interface CourseRepository extends BaseRepository<CourseEntity, Long>, Pa
     List<Map<String,Object>> findAllCourseByPage(@Param("offset") Integer page, @Param("pageSize") Integer pageSize);
 
     @Query(value="select c.*,p.name place_name from tt_course c,tt_place p where c.place_id=p.id and if(IFNULL(:placeId,'')!='',c.place_id=:placeId,1=1) LIMIT :offset,:pageSize",nativeQuery = true)
-    List<Map<String,Object>> findAllCourseByPageAndPlaceId(@Param("offset") Integer page, @Param("pageSize") Integer pageSize,@Param("placeId") String placeId);
+    List<Map<String,Object>> findAllCourseByPageAndPlaceId(@Param("offset") Integer page, @Param("pageSize") Integer pageSize, @Param("placeId") String placeId);
 
     /**
      * 查询数量

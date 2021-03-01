@@ -1,0 +1,155 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
+
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../layui/layui.js"></script>
+    <script src="../js/baseutil.js"></script>
+</head>
+
+
+<div class="content-wrapper">
+    <form class="layui-form" action="">
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">会员姓名</label>
+            <div class="layui-input-block">
+                <input type="hidden" name="id" lay-verify="id" th:value="*{memberEntity.id}">
+                <input type="text" name="name" lay-verify="name" th:value="*{memberEntity.name}" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">手机号</label>
+            <div class="layui-input-block">
+                <input type="text" name="tel" lay-verify="tel" th:value="*{memberEntity.tel}" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">类型</label>
+            <div class="layui-input-block">
+                <input type="hidden" id="type" lay-verify="type" th:value="*{memberEntity.type}" >
+                <select name="type" lay-filter="type">
+                    <option value="">请选择---</option>
+                    <option value="0">年卡</option>
+                    <option value="1">月卡</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">开始时间</label>
+            <div class="layui-input-block">
+                <input type="text" name="startTime" lay-verify="startTime" th:value="*{memberEntity.startTime}" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">结束时间</label>
+            <div class="layui-input-block">
+                <input type="text" name="endTime" lay-verify="endTime" th:value="*{memberEntity.endTime}" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button type="submit" class="layui-btn" lay-submit=""
+                        lay-filter="demo1" id="commit">立即提交</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- /.container -->
+<script>
+    $(document).ready(function(){
+
+
+        $("select[name='type']").val($("#type").val());
+        var typeId = $("#type").val();
+
+        $.ajax({
+            url: '../place/getList',
+            dataType: 'json',
+            data:{},
+            type: 'post',
+            success: function (data) {
+                $.each(data, function (index, item) {
+                    $('#type').append(new Option(item.name, item.id));// 下拉菜单里添加元素
+                });
+
+                if(typeId!=""){
+                    $("select[name='type']").val(placeId);
+                }
+                layui.form.render("select");
+            }
+        });
+    });
+
+    layui.use(['form', 'layedit', 'laydate','upload'], function(){
+        var form = layui.form
+            ,laydate = layui.laydate
+        var $ = layui.jquery;
+        $(this).removeAttr("lay-key");
+        //日期
+        laydate.render({
+            elem : '#date'
+            ,trigger : 'click'
+        });
+
+        //自定义验证规则
+        form.verify({
+
+        });
+
+        form.on('submit(demo1)', function(data){
+            $.ajax({
+                url:'../member/update',
+                method : 'post',
+                data : data.field,
+                dataType : 'JSON',
+                async:false,
+                success : function(res) {
+                    if(res=="0"){
+                        layuiOpen("结果","修改成功");
+                    }else{
+                        layuiOpen("结果","修改失败");
+                    }
+                },
+                error : function(res) {
+                    layuiOpen("结果","请求异常");
+                }
+            });
+
+
+            return false;
+        });
+    });
+
+    //提示框
+    function layuiOpen(id, text) {
+        layer.open({
+            type : 1,
+            offset : 'auto',
+            id : id //防止重复弹出
+            ,
+            content : '<div style="padding: 20px 100px;">' + text
+                + '</div>',
+            btn : '确定',
+            btnAlign : 'c' //按钮居中
+            ,
+            shade : 0.2 //不显示遮罩
+            ,
+            yes : function() {
+                layer.closeAll();
+                window.parent.location.reload();
+            }
+        });
+    }
+</script>
+
+</body>
+</html>

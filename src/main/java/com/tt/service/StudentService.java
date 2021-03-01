@@ -25,7 +25,7 @@ public interface StudentService<T> {
      */
     Map<String,Object> findStudentByPage(int page, int pageSize);
     Map<String,Object> findStudentByPage2(int page, int pageSize);
-    Map<String,Object> findStudentByPage2(int page, int pageSize,String placeId);
+    Map<String,Object> findStudentByPage2(int page, int pageSize, String placeId);
 
     /**
      * 不分页查询所有Student

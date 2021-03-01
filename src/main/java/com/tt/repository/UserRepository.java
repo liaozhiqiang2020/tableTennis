@@ -33,6 +33,14 @@ public interface UserRepository extends BaseRepository<UserEntity, Long>, Paging
     @Query("from UserEntity as u where u.userName = :userName")
     UserEntity findUserByUserName(@Param("userName") String userName);
 
+    /**
+     *  根据名字查询账户
+     * @param name 用户名
+     * @return 用户信息
+     */
+    @Query("from UserEntity as u where u.name = :name")
+    UserEntity findUserByName(@Param("name") String name);
+
 
 
     /**

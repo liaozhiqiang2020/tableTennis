@@ -40,7 +40,9 @@ public interface TuitionRepository extends BaseRepository<TuitionEntity, Long>, 
     @Query(value = "select * from tt_tuition as u LIMIT :offset,:pageSize", nativeQuery = true)
     List<TuitionEntity> findAllTuitionByPage(@Param("offset") Integer page, @Param("pageSize") Integer pageSize);
 
-    @Query(value="SELECT t.*,s.name student_name,p.name place_name,c.name course_name FROM tt_tuition t,tt_student s,tt_place p,tt_course c where t.student_id=s.id and t.place_id=p.id and t.course_id=c.id LIMIT :offset,:pageSize",nativeQuery = true)
+/*    @Query(value="SELECT t.*,s.name student_name,p.name place_name,c.name course_name FROM tt_tuition t,tt_student s,tt_place p,tt_course c where t.student_id=s.id and t.place_id=p.id and t.course_id=c.id LIMIT :offset,:pageSize",nativeQuery = true)
+    List<Map<String,Object>> findAllTuitionByPage2(@Param("offset") Integer page, @Param("pageSize") Integer pageSize);*/
+    @Query(value="SELECT t.*,s.name student_name,p.name place_name FROM tt_tuition t,tt_student s,tt_place p where t.student_id=s.id and t.place_id=p.id order by t.id LIMIT :offset,:pageSize",nativeQuery = true)
     List<Map<String,Object>> findAllTuitionByPage2(@Param("offset") Integer page, @Param("pageSize") Integer pageSize);
 
     /**

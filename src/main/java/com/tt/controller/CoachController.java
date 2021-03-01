@@ -1,6 +1,7 @@
 package com.tt.controller;
 
 import com.tt.pojo.CoachEntity;
+import com.tt.pojo.PlaceEntity;
 import com.tt.service.CoachService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -38,7 +39,6 @@ public class CoachController {
 											@RequestParam(value = "limit", defaultValue = "7") int limit){
 		return this.coachService.findAllCoachByPage(page,limit);
 	}
-
 
 	@ResponseBody
 	@RequestMapping(value="/getListByOnWork")

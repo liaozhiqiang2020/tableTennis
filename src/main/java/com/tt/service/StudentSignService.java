@@ -19,6 +19,7 @@ public interface StudentSignService<T> {
      */
     Map<String,Object> findStudentSignByPage(int page, int pageSize);
     Map<String,Object> findStudentSignByPage2(int page, int pageSize);
+    Map<String,Object> getListByPageAndOther(int page, int pageSize, String name, String studentName, String startTime, String endTime);
 
     /**
      * 不分页查询所有StudentSign
