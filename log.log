@@ -1564,3 +1564,245 @@
 [DEBUG] 2020-12-09 16:50:36,967 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
 [INFO ] 2020-12-09 16:50:36,968 com.tt.TTApplication - No active profile set, falling back to default profiles: default
 [INFO ] 2020-12-09 16:50:45,835 com.tt.TTApplication - Started TTApplication in 9.324 seconds (JVM running for 11.512)
+[INFO ] 2021-03-01 15:25:02,466 com.tt.TTApplication - Starting TTApplication on DESKTOP-J543EIG with PID 11360 (F:\project\test\tableTennis\target\classes started by DiKai in F:\project\test\tableTennis)
+[DEBUG] 2021-03-01 15:25:02,478 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2021-03-01 15:25:02,479 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-03-01 15:26:00,875 com.tt.TTApplication - Starting TTApplication on DESKTOP-J543EIG with PID 7268 (F:\project\test\tableTennis\target\classes started by DiKai in F:\project\test\tableTennis)
+[DEBUG] 2021-03-01 15:26:00,881 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2021-03-01 15:26:00,881 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[WARN ] 2021-03-01 15:26:07,632 com.tt.filter.MyFilterSecurityInterceptor - Could not validate configuration attributes as the SecurityMetadataSource did not return any attributes from getAllConfigAttributes()
+[INFO ] 2021-03-01 15:26:11,461 com.tt.TTApplication - Started TTApplication in 11.014 seconds (JVM running for 12.603)
+[DEBUG] 2021-03-01 15:26:25,438 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:26:25,465 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:26:25,466 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:26:25,485 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:26:29,063 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:26:29,068 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:26:29,068 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:26:29,073 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[INFO ] 2021-03-01 15:28:12,498 com.tt.TTApplication - Starting TTApplication on DESKTOP-J543EIG with PID 7944 (F:\project\test\tableTennis\target\classes started by DiKai in F:\project\test\tableTennis)
+[DEBUG] 2021-03-01 15:28:12,503 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2021-03-01 15:28:12,503 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[WARN ] 2021-03-01 15:28:18,936 com.tt.filter.MyFilterSecurityInterceptor - Could not validate configuration attributes as the SecurityMetadataSource did not return any attributes from getAllConfigAttributes()
+[INFO ] 2021-03-01 15:28:22,670 com.tt.TTApplication - Started TTApplication in 10.61 seconds (JVM running for 12.186)
+[DEBUG] 2021-03-01 15:28:50,564 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:28:50,586 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:28:50,587 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:28:51,275 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:28:51,278 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:28:51,279 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:28:51,282 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:28:51,291 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:28:51,294 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:28:51,299 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:28:51,322 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:28:51,323 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:28:51,323 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:28:51,323 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:28:51,324 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:28:51,339 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:28:51,342 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:28:51,344 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:28:51,355 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:28:51,355 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:28:51,390 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:28:59,065 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:28:59,066 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:28:59,093 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:28:59,095 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:28:59,102 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:28:59,102 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:28:59,115 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:28:59,115 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:32:20,562 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:32:20,568 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:32:20,568 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:32:20,593 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:32:20,607 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:32:20,610 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:32:20,610 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:32:20,617 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:32:20,617 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:32:20,645 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:32:20,654 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:32:20,655 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:32:20,699 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:32:20,705 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:32:20,707 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:32:20,707 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:32:20,719 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:32:20,719 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:32:24,516 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:32:24,517 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:32:24,538 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:32:24,543 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:32:24,552 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:32:24,552 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:32:24,559 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:32:24,559 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:34:44,500 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:34:44,500 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:34:44,537 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:34:44,540 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:34:44,550 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:34:44,550 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:34:44,558 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:34:44,559 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:35:47,115 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:35:47,115 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:35:47,142 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:35:47,143 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:35:47,165 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:35:47,165 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:35:47,175 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:35:47,175 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:36:03,205 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:36:03,206 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:36:03,225 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:36:03,227 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:36:03,229 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:36:03,229 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:36:03,238 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:36:03,240 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[INFO ] 2021-03-01 15:36:15,865 com.tt.TTApplication - Starting TTApplication on DESKTOP-J543EIG with PID 7400 (F:\project\test\tableTennis\target\classes started by DiKai in F:\project\test\tableTennis)
+[DEBUG] 2021-03-01 15:36:15,870 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2021-03-01 15:36:15,871 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[WARN ] 2021-03-01 15:36:22,451 com.tt.filter.MyFilterSecurityInterceptor - Could not validate configuration attributes as the SecurityMetadataSource did not return any attributes from getAllConfigAttributes()
+[INFO ] 2021-03-01 15:36:26,632 com.tt.TTApplication - Started TTApplication in 11.209 seconds (JVM running for 12.833)
+[DEBUG] 2021-03-01 15:36:32,230 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:36:32,252 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:36:32,253 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:36:32,901 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:36:32,908 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:36:32,916 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:36:32,917 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:36:32,933 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:36:32,935 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:36:36,328 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:36:36,328 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:36:36,353 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:36:36,359 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:36:36,365 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:36:36,366 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:36:36,378 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:36:36,378 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:37:05,120 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:37:05,120 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:37:05,154 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:37:05,159 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:37:05,162 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:37:05,163 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:37:05,170 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:37:05,170 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:38:29,471 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:38:29,471 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:38:29,508 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:38:29,513 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:38:29,520 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:38:29,520 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:38:29,527 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:38:29,528 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:39:17,341 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:39:17,341 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:39:17,367 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:39:17,372 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:39:17,375 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:39:17,375 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:39:17,382 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:39:17,383 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:40:07,587 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:40:07,588 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:40:07,620 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:40:07,628 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:40:07,638 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:40:07,638 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:40:07,646 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:40:07,646 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[INFO ] 2021-03-01 15:40:53,800 com.tt.TTApplication - Starting TTApplication on DESKTOP-J543EIG with PID 15108 (F:\project\test\tableTennis\target\classes started by DiKai in F:\project\test\tableTennis)
+[DEBUG] 2021-03-01 15:40:53,805 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2021-03-01 15:40:53,806 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[WARN ] 2021-03-01 15:41:00,273 com.tt.filter.MyFilterSecurityInterceptor - Could not validate configuration attributes as the SecurityMetadataSource did not return any attributes from getAllConfigAttributes()
+[INFO ] 2021-03-01 15:41:04,090 com.tt.TTApplication - Started TTApplication in 10.742 seconds (JVM running for 12.365)
+[DEBUG] 2021-03-01 15:41:08,384 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:41:08,415 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:41:09,080 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:41:09,083 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:41:09,099 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:41:09,100 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:41:09,114 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:41:09,115 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:41:11,627 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:41:11,629 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:41:11,664 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:41:11,667 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:41:11,670 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:41:11,671 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:41:11,683 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:41:11,684 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:41:17,666 com.tt.filter.LoginSuccessHandler - Redirecting to DefaultSavedRequest Url: http://localhost:8080/tt/layui/layui.js
+[DEBUG] 2021-03-01 15:41:17,698 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:41:17,698 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[INFO ] 2021-03-01 15:42:12,245 com.tt.TTApplication - Starting TTApplication on DESKTOP-J543EIG with PID 16576 (F:\project\test\tableTennis\target\classes started by DiKai in F:\project\test\tableTennis)
+[DEBUG] 2021-03-01 15:42:12,250 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2021-03-01 15:42:12,251 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[WARN ] 2021-03-01 15:42:19,786 com.tt.filter.MyFilterSecurityInterceptor - Could not validate configuration attributes as the SecurityMetadataSource did not return any attributes from getAllConfigAttributes()
+[INFO ] 2021-03-01 15:42:24,088 com.tt.TTApplication - Started TTApplication in 12.274 seconds (JVM running for 14.297)
+[INFO ] 2021-03-01 15:43:51,642 com.tt.TTApplication - Starting TTApplication on DESKTOP-J543EIG with PID 16216 (F:\project\test\tableTennis\target\classes started by DiKai in F:\project\test\tableTennis)
+[DEBUG] 2021-03-01 15:43:51,648 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2021-03-01 15:43:51,648 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[WARN ] 2021-03-01 15:43:58,196 com.tt.filter.MyFilterSecurityInterceptor - Could not validate configuration attributes as the SecurityMetadataSource did not return any attributes from getAllConfigAttributes()
+[INFO ] 2021-03-01 15:44:01,772 com.tt.TTApplication - Started TTApplication in 10.594 seconds (JVM running for 12.243)
+[DEBUG] 2021-03-01 15:44:16,437 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:44:16,443 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:44:16,782 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:44:19,280 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:44:19,281 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:44:19,287 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:44:19,432 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:44:19,432 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:44:19,437 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:44:23,192 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:44:23,210 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:44:23,545 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:44:23,546 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:44:23,553 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:44:23,553 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:44:27,151 com.tt.filter.LoginSuccessHandler - Using default Url: /
+[DEBUG] 2021-03-01 15:44:27,152 com.tt.filter.LoginSuccessHandler - Response has already been committed. Unable to redirect to /
+[DEBUG] 2021-03-01 15:44:27,190 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:44:27,191 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:44:27,196 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:44:31,035 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:44:31,036 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:44:31,043 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[INFO ] 2021-03-01 15:45:52,899 com.tt.TTApplication - Starting TTApplication on DESKTOP-J543EIG with PID 4904 (F:\project\test\tableTennis\target\classes started by DiKai in F:\project\test\tableTennis)
+[DEBUG] 2021-03-01 15:45:52,904 com.tt.TTApplication - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[INFO ] 2021-03-01 15:45:52,905 com.tt.TTApplication - No active profile set, falling back to default profiles: default
+[WARN ] 2021-03-01 15:45:59,039 com.tt.filter.MyFilterSecurityInterceptor - Could not validate configuration attributes as the SecurityMetadataSource did not return any attributes from getAllConfigAttributes()
+[INFO ] 2021-03-01 15:46:02,762 com.tt.TTApplication - Started TTApplication in 10.308 seconds (JVM running for 11.95)
+[DEBUG] 2021-03-01 15:46:18,839 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:46:18,848 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:46:19,538 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:46:21,728 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:46:21,729 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:46:21,744 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:46:27,018 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:46:27,040 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:46:27,085 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:46:27,085 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:46:27,097 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:46:27,099 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:46:27,105 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:46:27,107 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:46:30,937 com.tt.filter.LoginSuccessHandler - Using default Url: /
+[DEBUG] 2021-03-01 15:46:30,937 com.tt.filter.LoginSuccessHandler - Response has already been committed. Unable to redirect to /
+[DEBUG] 2021-03-01 15:46:31,066 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:46:31,066 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:46:31,569 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:46:31,569 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:46:31,580 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:46:31,580 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:46:46,146 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:46:46,147 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:46:46,403 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
+[DEBUG] 2021-03-01 15:46:46,403 com.tt.filter.MyFilterSecurityInterceptor - Public object - authentication not attempted
