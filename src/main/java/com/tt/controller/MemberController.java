@@ -23,7 +23,7 @@ public class MemberController {
 
 	@RequestMapping("/toMemberMgr")
 	public ModelAndView dataList(ModelAndView model) {
-		model.setViewName("/member/s_main");
+		model.setViewName("./member/s_main");
 		return model;
 	}
 	
@@ -52,13 +52,13 @@ public class MemberController {
 	
 	@RequestMapping(value = "/toadd")
 	public ModelAndView toadd() {
-		ModelAndView model = new ModelAndView("/member/s_add");
+		ModelAndView model = new ModelAndView("./member/s_add");
 		return model;
 	}
 	
 	@RequestMapping("/toupdate")
 	public ModelAndView toUpdate(@RequestParam(value = "memberId") int memberId) {
-		ModelAndView mv = new ModelAndView("/member/s_editor");;
+		ModelAndView mv = new ModelAndView("./member/s_editor");;
 		MemberEntity MemberEntity = this.MemberService.findMemberById(memberId);
 		mv.addObject("memberEntity", MemberEntity);
 		mv.addObject("memberId", memberId);

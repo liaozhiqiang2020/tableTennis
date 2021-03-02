@@ -25,7 +25,7 @@ public class CourseController {
 
 	@RequestMapping("/toCourseMgr")
 	public ModelAndView dataList(ModelAndView model) {
-		model.setViewName("/course/s_main");
+		model.setViewName("./course/s_main");
 		return model;
 	}
 	
@@ -51,13 +51,13 @@ public class CourseController {
 	
 	@RequestMapping(value = "/toadd")
 	public ModelAndView toadd() {
-		ModelAndView model = new ModelAndView("/course/s_add");
+		ModelAndView model = new ModelAndView("./course/s_add");
 		return model;
 	}
 	
 	@RequestMapping("/toupdate")
 	public ModelAndView toUpdate(@RequestParam(value = "courseId") int courseId) {
-		ModelAndView mv = new ModelAndView("/course/s_editor");;
+		ModelAndView mv = new ModelAndView("./course/s_editor");;
 		CourseEntity courseEntity = this.courseService.findCourseById(courseId);
 		mv.addObject("courseEntity", courseEntity);
 		mv.addObject("courseId", courseId);

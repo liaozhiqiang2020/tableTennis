@@ -30,13 +30,13 @@ public class ChooseClassController {
 		ModelAndView model = new ModelAndView();
 		StudentEntity studentEntity = this.studentService.findStudentById(studentId);
 		model.addObject("placeId",studentEntity.getPlaceId());
-		model.setViewName("/chooseClass/s_show");
+		model.setViewName("./chooseClass/s_show");
 		return model;
 	}
 
 	@RequestMapping("/toChooseClassMgr")
 	public ModelAndView dataList(ModelAndView model) {
-		model.setViewName("/chooseClass/s_main");
+		model.setViewName("./chooseClass/s_main");
 		return model;
 	}
 
@@ -58,13 +58,13 @@ public class ChooseClassController {
 	
 	@RequestMapping(value = "/toadd")
 	public ModelAndView toadd() {
-		ModelAndView model = new ModelAndView("/chooseClass/s_add");
+		ModelAndView model = new ModelAndView("./chooseClass/s_add");
 		return model;
 	}
 	
 	@RequestMapping("/toupdate")
 	public ModelAndView toUpdate(@RequestParam(value = "chooseClassId") String chooseClassId) {
-		ModelAndView mv = new ModelAndView("/chooseClass/s_editor");
+		ModelAndView mv = new ModelAndView("./chooseClass/s_editor");
 		ChooseClassEntity chooseClassEntity = this.chooseClassService.findChooseClassById(chooseClassId);
 		mv.addObject("chooseClassEntity", chooseClassEntity);
 		mv.addObject("chooseClassId", chooseClassId);

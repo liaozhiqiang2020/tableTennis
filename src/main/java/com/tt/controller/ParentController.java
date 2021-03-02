@@ -37,13 +37,13 @@ public class ParentController {
 
 	@RequestMapping("/toParentMgr")
 	public ModelAndView dataList(ModelAndView model) {
-		model.setViewName("/student/parentHome2");
+		model.setViewName("./student/parentHome2");
 		return model;
 	}
 
 	@RequestMapping("/toTest1")
 	public ModelAndView toTest1(ModelAndView model) {
-		model.setViewName("/student/test1");
+		model.setViewName("./student/test1");
 		return model;
 	}
 
@@ -52,7 +52,7 @@ public class ParentController {
 		UserEntity userEntity = (UserEntity) session.getAttribute("user");
 		String studentSn = userEntity.getUserName();
 		StudentEntity studentEntity = this.studentService.findSn(studentSn);
-		model.setViewName("/student/test4");
+		model.setViewName("./student/test4");
 		model.addObject("studentId",studentEntity.getId());
 		model.addObject("placeId",studentEntity.getPlaceId());
 		return model;
@@ -60,7 +60,7 @@ public class ParentController {
 
 	@RequestMapping("/toTest3")
 	public ModelAndView toTest3(ModelAndView model) {
-		model.setViewName("/student/test3");
+		model.setViewName("./student/test3");
 		return model;
 	}
 

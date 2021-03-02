@@ -37,13 +37,13 @@ public class StudentSignController {
 
 	@RequestMapping("/toStudentSignMgr")
 	public ModelAndView dataList(ModelAndView model) {
-		model.setViewName("/studentSign/s_main");
+		model.setViewName("./studentSign/s_main");
 		return model;
 	}
 
 	@RequestMapping("/toStudentSignShow")
 	public ModelAndView toStudentSignShow(ModelAndView model) {
-		model.setViewName("/studentSign/s_show");
+		model.setViewName("./studentSign/s_show");
 		return model;
 	}
 	
@@ -71,7 +71,7 @@ public class StudentSignController {
 		UserEntity userEntity2 = (UserEntity) session.getAttribute("user");
 		String userName = userEntity2.getUserName();
 		UserEntity userEntity = this.userService.findUserByName(userName);
-		ModelAndView model = new ModelAndView("/studentSign/s_add");
+		ModelAndView model = new ModelAndView("studentSign/s_add");
 		model.addObject("userId",userEntity.getId());
 		model.addObject("userName",userName);
 		model.addObject("studentId",id);
@@ -103,6 +103,7 @@ public class StudentSignController {
 				return "1";
 			}
 		}catch (Exception e){
+			e.printStackTrace();
 			return "1";
 		}
 

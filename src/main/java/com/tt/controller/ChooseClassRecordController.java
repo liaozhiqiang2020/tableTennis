@@ -26,7 +26,7 @@ public class ChooseClassRecordController {
 
 	@RequestMapping("/toChooseClassMgr")
 	public ModelAndView dataList(ModelAndView model) {
-		model.setViewName("/chooseClassRecord/s_main");
+		model.setViewName("./chooseClassRecord/s_main");
 		return model;
 	}
 

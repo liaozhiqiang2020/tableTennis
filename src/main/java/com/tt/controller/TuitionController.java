@@ -23,7 +23,7 @@ public class TuitionController {
 
 	@RequestMapping("/toTuitionMgr")
 	public ModelAndView dataList(ModelAndView model) {
-		model.setViewName("/tuition/s_main");
+		model.setViewName("./tuition/s_main");
 		return model;
 	}
 	
@@ -45,13 +45,13 @@ public class TuitionController {
 	
 	@RequestMapping(value = "/toadd")
 	public ModelAndView toadd() {
-		ModelAndView model = new ModelAndView("/tuition/s_add");
+		ModelAndView model = new ModelAndView("./tuition/s_add");
 		return model;
 	}
 	
 	@RequestMapping("/toupdate")
 	public ModelAndView toUpdate(@RequestParam(value = "tuitionId") int tuitionId) {
-		ModelAndView mv = new ModelAndView("/tuition/s_editor");;
+		ModelAndView mv = new ModelAndView("./tuition/s_editor");;
 		TuitionEntity tuitionEntity = this.tuitionService.findTuitionById(tuitionId);
 		mv.addObject("tuitionEntity", tuitionEntity);
 		mv.addObject("tuitionId", tuitionId);
