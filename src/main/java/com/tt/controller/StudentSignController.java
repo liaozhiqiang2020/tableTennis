@@ -86,22 +86,20 @@ public class StudentSignController {
 	public String add(StudentSignEntity studentSignEntity,HttpServletRequest request){
 		try {
 			CourseEntity courseEntity =this.courseService.findCourseById(studentSignEntity.getCourseId());
-			studentSignEntity.setMoney(Integer.parseInt(courseEntity.getMoney()));//存入本节课价格
-			StudentSignEntity studentSignEntity1 = this.studentSignService.saveStudentSign(studentSignEntity);
-			StudentEntity studentEntity = this.studentService.findStudentById(studentSignEntity1.getStudentId());
+			StudentEntity studentEntity = this.studentService.findStudentById(studentSignEntity.getStudentId());
 
-			if(!studentEntity.getUnitPrice().equals("") && !studentEntity.getMoney().equals("")){
+			if(studentEntity.getUnitPrice().equals("")){//如果单价为空
 				studentEntity.setMoney(String.valueOf(Integer.parseInt(studentEntity.getMoney())-Integer.parseInt(courseEntity.getMoney())));
 			}else{
-				studentEntity.setClassHours(String.valueOf(Integer.parseInt(studentEntity.getClassHours())-1));
+				studentEntity.setMoney(String.valueOf(Integer.parseInt(studentEntity.getMoney())-Integer.parseInt(studentEntity.getUnitPrice())));
 			}
 
 			this.studentService.updateStudent(studentEntity);
-			if(studentSignEntity1!=null){
-				return "0";
-			}else{
-				return "1";
-			}
+
+			studentSignEntity.setMoney(Integer.parseInt(courseEntity.getMoney()));//存入本节课价格
+			this.studentSignService.saveStudentSign(studentSignEntity);
+
+			return "0";
 		}catch (Exception e){
 			e.printStackTrace();
 			return "1";
