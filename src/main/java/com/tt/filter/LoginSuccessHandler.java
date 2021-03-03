@@ -2,6 +2,7 @@ package com.tt.filter;
 
 import com.tt.pojo.UserEntity;
 import com.tt.repository.UserRepository;
+import com.tt.service.PlaceService;
 import com.tt.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
@@ -42,6 +43,9 @@ public class LoginSuccessHandler extends
     @Autowired
     UserService userService;
 
+    @Autowired
+    PlaceService placeService;
+
     @Override
     @Transactional
     public void onAuthenticationSuccess(HttpServletRequest request,
@@ -62,14 +66,15 @@ public class LoginSuccessHandler extends
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         user.setLatestLoginDatetime(formatter.format(currentTime));
         String ip = this.getIpAddress(request);
-//        String companyName = this.userService.findCompanyNameByGradeType(user.getGradeId(), user.getpId());
+
+        String companyName = this.placeService.findPlaceById(user.getCompanyId()).getName();
         user.setLatestLoginIp(ip);
         this.userRepository.save(user);
         HttpSession session = request.getSession();
         //把用户信息放进缓存
         session.setAttribute("user",user);
         session.setAttribute("userName",user.getName());
-//        session.setAttribute("companyName", companyName);
+        session.setAttribute("companyName", companyName);
 
         //对登录请求页面进行判断，登录成功后进行重定向
         String url = null;

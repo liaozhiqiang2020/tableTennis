@@ -4,6 +4,9 @@
 
 <head th:fragment="header-css">
 
+    <link rel="stylesheet" th:href="@{/layui/css/layui.css}"
+          href="../static/layui/css/layui.css">
+
     <!-- Bootstrap 3.3.7 -->
     <link rel="stylesheet" th:href="@{/css/bootstrap/bootstrap.min.css}">
     <!-- Font Awesome -->
@@ -31,6 +34,10 @@
             src="../../static/js/adminlte/adminlte.min.js"></script>
     <script type="text/javascript" th:src="@{/js/jquery-slimscroll/jquery.slimscroll.min.js}"
             src="../../static/js/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script th:src="@{/layui/layui.js}"
+            src="../../static/layui/layui.js"></script>
+    <script th:src="@{/js/baseUtil.js}"
+            src="../../static/js/baseUtil.js"></script>
 
     <!--Kendo libraries-->
     <script type="text/javascript" th:src="@{/js/kendo/kendo.all.min.js}"
@@ -43,9 +50,6 @@
     <!--commons.js -->
     <script type="text/javascript" th:src="@{/js/commons.js}"
             src="../../static/js/commons.js"></script>
-    <!--echarts-->
-    <script type="text/javascript" th:src="@{/js/echarts/echarts.min.js}"
-            src="../../static/js/echarts/echarts.min.js"></script>
 </head>
 <!-- 页眉 -->
 <header class="main-header" th:fragment="header-body">

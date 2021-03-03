@@ -47,43 +47,29 @@ public class DefaultController {
      * @return
      */
     @RequestMapping("/")
-    public ModelAndView home(HttpServletRequest request) {
-        HttpSession session = request.getSession(true);
-        UserEntity userEntity= (UserEntity) session.getAttribute("user");
-        session.removeAttribute("user");
+    public ModelAndView home() {
+        return new ModelAndView("./home");
+    }
 
-        if(userEntity!=null && userEntity.getType()==0){
-            return new ModelAndView("./home");
-        }else{
-            return new ModelAndView("login");
+    /**
+     * 登陆页面跳转控制
+     * @param error 不正确
+     * @param logout 退出
+     * @return 页面跳转
+     */
+    @GetMapping("/login")
+    public ModelAndView login(@RequestParam(value = "error", required = false) String error,
+                              @RequestParam(value = "logout", required = false) String logout) {
+        ModelAndView model = new ModelAndView();
+        if (error != null) {
+            model.addObject("error", "不正确的用户名和密码");
         }
-
+        if (logout != null) {
+            model.addObject("msg", "你已经成功退出");
+        }
+        model.setViewName("login");
+        return model;
     }
-
-    @RequestMapping("/toLogin")
-    public ModelAndView toLogin() {
-        return new ModelAndView("login");
-    }
-
-//    /**
-//     * 登陆页面跳转控制
-//     * @param error 不正确
-//     * @param logout 退出
-//     * @return 页面跳转
-//     */
-//    @GetMapping("/login")
-//    public ModelAndView login(@RequestParam(value = "error", required = false) String error,
-//                              @RequestParam(value = "logout", required = false) String logout) {
-//        ModelAndView model = new ModelAndView();
-//        if (error != null) {
-//            model.addObject("error", "不正确的用户名和密码");
-//        }
-//        if (logout != null) {
-//            model.addObject("msg", "你已经成功退出");
-//        }
-//        model.setViewName("login");
-//        return model;
-//    }
 
     /**
      *
@@ -130,7 +116,7 @@ public class DefaultController {
      */
     @PostMapping("/login")
     public ModelAndView verPwd(@RequestParam(value = "username", required = false) String username,
-                         @RequestParam(value = "password", required = false) String password, HttpSession session, HttpServletResponse response,HttpServletRequest request, RedirectAttributes attributes, Map<String,Object> map) throws IOException {
+                               @RequestParam(value = "password", required = false) String password, HttpSession session, HttpServletResponse response, HttpServletRequest request, RedirectAttributes attributes, Map<String,Object> map) throws IOException {
         ModelAndView model = new ModelAndView();
         String url = (String) session.getAttribute("url");
         UserEntity userEntity = this.userService.findUserByName(username);

@@ -1,18 +1,16 @@
 package com.tt.controller;
 
-import java.util.List;
-import java.util.Map;
-
-
 import com.tt.pojo.CourseEntity;
 import com.tt.service.CourseService;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  *课程controller
@@ -25,7 +23,7 @@ public class CourseController {
 
 	@RequestMapping("/toCourseMgr")
 	public ModelAndView dataList(ModelAndView model) {
-		model.setViewName("/course/s_main");
+		model.setViewName("./course/s_main");
 		return model;
 	}
 	
@@ -51,13 +49,13 @@ public class CourseController {
 	
 	@RequestMapping(value = "/toadd")
 	public ModelAndView toadd() {
-		ModelAndView model = new ModelAndView("/course/s_add");
+		ModelAndView model = new ModelAndView("./course/s_add");
 		return model;
 	}
 	
 	@RequestMapping("/toupdate")
 	public ModelAndView toUpdate(@RequestParam(value = "courseId") int courseId) {
-		ModelAndView mv = new ModelAndView("/course/s_editor");;
+		ModelAndView mv = new ModelAndView("./course/s_editor");;
 		CourseEntity courseEntity = this.courseService.findCourseById(courseId);
 		mv.addObject("courseEntity", courseEntity);
 		mv.addObject("courseId", courseId);

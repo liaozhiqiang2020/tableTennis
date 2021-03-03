@@ -1,17 +1,22 @@
 package com.tt.controller;
 
 import com.tt.pojo.CoachEntity;
-import com.tt.pojo.PlaceEntity;
 import com.tt.service.CoachService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.*;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
@@ -29,7 +34,7 @@ public class CoachController {
 
 	@RequestMapping("/toCoachMgr")
 	public ModelAndView dataList(ModelAndView model) {
-		model.setViewName("/coach/s_main");
+		model.setViewName("./coach/s_main");
 		return model;
 	}
 
@@ -48,13 +53,13 @@ public class CoachController {
 
 	@RequestMapping(value = "/toadd")
 	public ModelAndView toadd() {
-		ModelAndView model = new ModelAndView("/coach/s_add");
+		ModelAndView model = new ModelAndView("./coach/s_add");
 		return model;
 	}
 
 	@RequestMapping("/toupdate")
 	public ModelAndView toUpdate(@RequestParam(value = "coachId") Integer coachId) {
-		ModelAndView mv = new ModelAndView("/coach/s_editor");
+		ModelAndView mv = new ModelAndView("./coach/s_editor");
 		CoachEntity coachEntity = this.coachService.findCoachEntityById(coachId);
 		mv.addObject("coachEntity", coachEntity);
 		mv.addObject("coachId", coachId);
@@ -108,7 +113,7 @@ public class CoachController {
 				String originalName = file.getOriginalFilename();
 				prefix=originalName.substring(originalName.lastIndexOf(".")+1);
 				dateStr = format.format(new Date());
-				String filepath = "E:/upload/" + dateStr + "." + prefix;
+				String filepath = "/usr/local/bin/upload/" + dateStr + "." + prefix;
 				filepath = filepath.replace("\\", "/");
 				File files=new File(filepath);
 				//打印查看上传路径

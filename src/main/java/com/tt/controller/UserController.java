@@ -1,20 +1,12 @@
 package com.tt.controller;
 
-import com.tt.pojo.RoleEntity;
-import com.tt.pojo.StudentEntity;
 import com.tt.pojo.UserEntity;
 import com.tt.service.UserService;
-import org.springframework.data.repository.query.Param;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 /**
  * 用户信息

@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
-import org.weixin4j.User;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -37,13 +36,13 @@ public class StudentSignController {
 
 	@RequestMapping("/toStudentSignMgr")
 	public ModelAndView dataList(ModelAndView model) {
-		model.setViewName("/studentSign/s_main");
+		model.setViewName("./studentSign/s_main");
 		return model;
 	}
 
 	@RequestMapping("/toStudentSignShow")
 	public ModelAndView toStudentSignShow(ModelAndView model) {
-		model.setViewName("/studentSign/s_show");
+		model.setViewName("./studentSign/s_show");
 		return model;
 	}
 	
@@ -66,12 +65,12 @@ public class StudentSignController {
 	}
 
 	@RequestMapping(value = "/toadd")
-	public ModelAndView toadd(HttpServletRequest request,int id,String name,int placeId,String placeName) {
+	public ModelAndView toadd(HttpServletRequest request, int id, String name, int placeId, String placeName) {
 		HttpSession session   =   request.getSession();
 		UserEntity userEntity2 = (UserEntity) session.getAttribute("user");
 		String userName = userEntity2.getUserName();
 		UserEntity userEntity = this.userService.findUserByName(userName);
-		ModelAndView model = new ModelAndView("/studentSign/s_add");
+		ModelAndView model = new ModelAndView("studentSign/s_add");
 		model.addObject("userId",userEntity.getId());
 		model.addObject("userName",userName);
 		model.addObject("studentId",id);
@@ -83,26 +82,25 @@ public class StudentSignController {
 
 	@ResponseBody
 	@RequestMapping(value = "/add")
-	public String add(StudentSignEntity studentSignEntity,HttpServletRequest request){
+	public String add(StudentSignEntity studentSignEntity, HttpServletRequest request){
 		try {
 			CourseEntity courseEntity =this.courseService.findCourseById(studentSignEntity.getCourseId());
-			studentSignEntity.setMoney(Integer.parseInt(courseEntity.getMoney()));//存入本节课价格
-			StudentSignEntity studentSignEntity1 = this.studentSignService.saveStudentSign(studentSignEntity);
-			StudentEntity studentEntity = this.studentService.findStudentById(studentSignEntity1.getStudentId());
+			StudentEntity studentEntity = this.studentService.findStudentById(studentSignEntity.getStudentId());
 
-			if(!studentEntity.getUnitPrice().equals("") && !studentEntity.getMoney().equals("")){
+			if(studentEntity.getUnitPrice().equals("")){//如果单价为空
 				studentEntity.setMoney(String.valueOf(Integer.parseInt(studentEntity.getMoney())-Integer.parseInt(courseEntity.getMoney())));
 			}else{
-				studentEntity.setClassHours(String.valueOf(Integer.parseInt(studentEntity.getClassHours())-1));
+				studentEntity.setMoney(String.valueOf(Integer.parseInt(studentEntity.getMoney())-Integer.parseInt(studentEntity.getUnitPrice())));
 			}
 
 			this.studentService.updateStudent(studentEntity);
-			if(studentSignEntity1!=null){
-				return "0";
-			}else{
-				return "1";
-			}
+
+			studentSignEntity.setMoney(Integer.parseInt(courseEntity.getMoney()));//存入本节课价格
+			this.studentSignService.saveStudentSign(studentSignEntity);
+
+			return "0";
 		}catch (Exception e){
+			e.printStackTrace();
 			return "1";
 		}
 

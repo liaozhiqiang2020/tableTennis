@@ -23,7 +23,7 @@ public class PlaceController {
 
 	@RequestMapping("/toPlaceMgr")
 	public ModelAndView dataList(ModelAndView model) {
-		model.setViewName("/place/s_main");
+		model.setViewName("./place/s_main");
 		return model;
 	}
 	
@@ -44,13 +44,13 @@ public class PlaceController {
 	
 	@RequestMapping(value = "/toadd")
 	public ModelAndView toadd() {
-		ModelAndView model = new ModelAndView("/place/s_add");
+		ModelAndView model = new ModelAndView("./place/s_add");
 		return model;
 	}
 	
 	@RequestMapping(value="/toupdate")
 	public ModelAndView toUpdate(@RequestParam(value = "placeId") int placeId) {
-		ModelAndView mv = new ModelAndView("/place/s_editor");
+		ModelAndView mv = new ModelAndView("./place/s_editor");
 		PlaceEntity placeEntity = this.placeService.findPlaceById(placeId);
 		mv.addObject("placeEntity", placeEntity);
 		return mv;

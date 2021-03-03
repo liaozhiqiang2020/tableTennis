@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
-<head th:replace="fragments/header::header-css">
-    <title>Triangle Platform</title>
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/css/adminlte/AdminLTE.min.css}"
+          href="../../static/css/adminlte/AdminLTE.min.css">
 </head>
 <style type="text/css">
     .bg {
@@ -31,7 +35,7 @@
         background-color: #808080;
     }
 </style>
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-blue sidebar-mini" >
 
 <!--<div th:replace="fragments/header :: header-body"/>-->
 
@@ -42,7 +46,7 @@
         <div class="row" style="width:740px; margin-left:-200px;">
             <div class="col-lg-6">
                 <div class="login-logo">
-                    <div style="text-align: right">共享按摩椅管理系统</div>
+                    <div style="text-align: right">零之启后台管理系统</div>
                     <div style="margin-top: 30px;text-align: right">系统登录</div>
                 </div>
             </div>
@@ -50,12 +54,12 @@
                 <div class="login-box-body">
                     <form th:action="@{/login}" method="post">
                         <fieldset>
-                            <div th:if="${param.error}">
+                            <div th:if="${error}">
                                 <div class="alert alert-danger">
                                     对不起，您输入的用户名或密码不正确，请重试
                                 </div>
                             </div>
-                            <div th:if="${param.logout}">
+                            <div th:if="${logout}">
                                 <div class="alert alert-info">
                                     您已经成功注销系统
                                 </div>
@@ -87,6 +91,8 @@
 </div>
 
 <!--<div th:replace="fragments/footer :: footer"/>-->
+<script>
 
+</script>
 </body>
 </html>

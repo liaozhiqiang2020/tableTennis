@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -24,7 +23,7 @@ public class StudentController {
 
 	@RequestMapping("/toStudentMgr")
 	public ModelAndView dataList(ModelAndView model) {
-		model.setViewName("/student/s_main");
+		model.setViewName("./student/s_main");
 		return model;
 	}
 	
@@ -39,7 +38,7 @@ public class StudentController {
 	@ResponseBody
 	@RequestMapping(value="/getListByPageAndPlace")
 	public Map<String,Object> getListByPage(@RequestParam(value = "page", defaultValue = "1") int page,
-											@RequestParam(value = "limit", defaultValue = "5") int limit,@RequestParam(value = "placeId") String placeId){
+                                            @RequestParam(value = "limit", defaultValue = "5") int limit, @RequestParam(value = "placeId") String placeId){
 		return this.studentService.findStudentByPage2(page,limit,placeId);
 	}
 
@@ -52,13 +51,13 @@ public class StudentController {
 	
 	@RequestMapping(value = "/toadd")
 	public ModelAndView toadd() {
-		ModelAndView model = new ModelAndView("/student/s_add");
+		ModelAndView model = new ModelAndView("./student/s_add");
 		return model;
 	}
 	
 	@RequestMapping("/toupdate")
 	public ModelAndView toUpdate(@RequestParam(value = "studentId") int studentId) {
-		ModelAndView mv = new ModelAndView("/student/s_editor");;
+		ModelAndView mv = new ModelAndView("./student/s_editor");;
 		StudentEntity studentEntity = this.studentService.findStudentById(studentId);
 		mv.addObject("studentEntity", studentEntity);
 		mv.addObject("studentId", studentId);
@@ -67,7 +66,7 @@ public class StudentController {
 
 	@RequestMapping("/toupdate2")
 	public ModelAndView toUpdate2(@RequestParam(value = "studentId") int studentId) {
-		ModelAndView mv = new ModelAndView("/student/s_editor2");;
+		ModelAndView mv = new ModelAndView("./student/s_editor2");;
 		StudentEntity studentEntity = this.studentService.findStudentById(studentId);
 		mv.addObject("studentEntity", studentEntity);
 		mv.addObject("studentId", studentId);

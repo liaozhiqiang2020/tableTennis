@@ -1,7 +1,6 @@
 package com.tt.controller;
 
 import com.tt.pojo.MemberEntity;
-import com.tt.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,11 +18,11 @@ import java.util.Map;
 @RequestMapping("/member")
 public class MemberController {
 	@Autowired
-	private MemberService MemberService;
+	private com.tt.service.MemberService MemberService;
 
 	@RequestMapping("/toMemberMgr")
 	public ModelAndView dataList(ModelAndView model) {
-		model.setViewName("/member/s_main");
+		model.setViewName("./member/s_main");
 		return model;
 	}
 	
@@ -52,13 +51,13 @@ public class MemberController {
 	
 	@RequestMapping(value = "/toadd")
 	public ModelAndView toadd() {
-		ModelAndView model = new ModelAndView("/member/s_add");
+		ModelAndView model = new ModelAndView("./member/s_add");
 		return model;
 	}
 	
 	@RequestMapping("/toupdate")
 	public ModelAndView toUpdate(@RequestParam(value = "memberId") int memberId) {
-		ModelAndView mv = new ModelAndView("/member/s_editor");;
+		ModelAndView mv = new ModelAndView("./member/s_editor");;
 		MemberEntity MemberEntity = this.MemberService.findMemberById(memberId);
 		mv.addObject("memberEntity", MemberEntity);
 		mv.addObject("memberId", memberId);
@@ -69,7 +68,7 @@ public class MemberController {
 	@ResponseBody
 	@RequestMapping(value = "/add")
 	public String add(MemberEntity MemberEntity){
-		MemberEntity MemberEntity1 = this.MemberService.saveMember(MemberEntity);
+		com.tt.pojo.MemberEntity MemberEntity1 = this.MemberService.saveMember(MemberEntity);
 		if(MemberEntity1!=null){
 			return "0";
 		}else{
@@ -82,7 +81,7 @@ public class MemberController {
 	@ResponseBody
 	@RequestMapping(value = "/update")
 	public String update(MemberEntity MemberEntity){
-		MemberEntity MemberEntity1 = this.MemberService.saveMember(MemberEntity);
+		com.tt.pojo.MemberEntity MemberEntity1 = this.MemberService.saveMember(MemberEntity);
 
 		if(MemberEntity1!=null){
 			return "0";
