@@ -87,10 +87,10 @@ public class StudentSignController {
 			CourseEntity courseEntity =this.courseService.findCourseById(studentSignEntity.getCourseId());
 			StudentEntity studentEntity = this.studentService.findStudentById(studentSignEntity.getStudentId());
 
-			if(studentEntity.getUnitPrice().equals("")){//如果单价为空
-				studentEntity.setMoney(String.valueOf(Integer.parseInt(studentEntity.getMoney())-Integer.parseInt(courseEntity.getMoney())));
-			}else{
+			if(!studentEntity.getUnitPrice().equals("") && studentSignEntity.getCourseId()==9){//如果单价不为空,并且是单陪课
 				studentEntity.setMoney(String.valueOf(Integer.parseInt(studentEntity.getMoney())-Integer.parseInt(studentEntity.getUnitPrice())));
+			}else{
+				studentEntity.setMoney(String.valueOf(Integer.parseInt(studentEntity.getMoney())-Integer.parseInt(courseEntity.getMoney())));
 			}
 
 			this.studentService.updateStudent(studentEntity);
