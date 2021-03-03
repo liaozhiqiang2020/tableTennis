@@ -130,7 +130,6 @@ public class WeixinController extends WeixinSupport {
     }
 
     @GetMapping(value = "/showImg")
-//    @ResponseBody
     public void showImg(HttpServletResponse response, String pathName) {
         File imgFile = new File(pathName);
         FileInputStream fin = null;

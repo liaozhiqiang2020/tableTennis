@@ -140,7 +140,7 @@ public class CoachController {
 		map.put("code",0);
 		map.put("msg","");
 		map.put("data",map2);
-		map2.put("src","E:/upload/" + dateStr + "." + prefix);
+		map2.put("src","/usr/local/bin/upload/" + dateStr + "." + prefix);
 		return map;
 	}
 

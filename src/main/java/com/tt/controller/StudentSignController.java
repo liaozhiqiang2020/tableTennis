@@ -70,7 +70,7 @@ public class StudentSignController {
 		UserEntity userEntity2 = (UserEntity) session.getAttribute("user");
 		String userName = userEntity2.getUserName();
 		UserEntity userEntity = this.userService.findUserByName(userName);
-		ModelAndView model = new ModelAndView("studentSign/s_add");
+		ModelAndView model = new ModelAndView("./studentSign/s_add");
 		model.addObject("userId",userEntity.getId());
 		model.addObject("userName",userName);
 		model.addObject("studentId",id);
