@@ -69,8 +69,9 @@ public class UserServiceImpl implements UserService<UserEntity> {
 
         userEntity.setType(0);
         userEntity.setStatus(0);
-        userEntity.setAuthenticationString("123456");
+        userEntity.setAuthenticationString(MD5Util.encode("123456"));
         userEntity.setCreateDatetime(time);
+        userEntity.setCompanyId(1);
         return this.userRepository.save(userEntity);
     }
 
@@ -91,7 +92,6 @@ public class UserServiceImpl implements UserService<UserEntity> {
     public String changePwd(HttpServletRequest request, HttpSession session, HttpServletResponse response) {
         String old = request.getParameter("password");
         String new1 = request.getParameter("password1");
-        String new2 = request.getParameter("password2");
         String oldPwd = MD5Util.encode(old);
         UserEntity user = (UserEntity) session.getAttribute("user");
         String message = "";
