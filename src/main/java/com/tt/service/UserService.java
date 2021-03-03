@@ -51,4 +51,13 @@ public interface UserService<T>  {
     UserEntity updateUser(UserEntity userEntity);
 
     int deleteUser(int userId);
+
+    /**
+     * 修改密码
+     * @param request 请求
+     * @param session  用户
+     * @param response  响应
+     * @return 修改后的密码
+     */
+    String changePwd(HttpServletRequest request, HttpSession session, HttpServletResponse response);
 }

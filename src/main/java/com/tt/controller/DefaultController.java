@@ -48,7 +48,7 @@ public class DefaultController {
      */
     @RequestMapping("/")
     public ModelAndView home() {
-        return new ModelAndView("./home");
+        return new ModelAndView("login");
     }
 
     /**

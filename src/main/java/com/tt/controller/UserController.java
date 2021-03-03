@@ -6,6 +6,9 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.util.Map;
 
 /**
@@ -83,5 +86,29 @@ public class UserController {
     @RequestMapping(value = "/user/delete")
     public int delete(int id){
         return this.userService.deleteUser(id);
+    }
+
+    /**
+     * 密码修改
+     * @param request 请求信息
+     * @param session 用户会话
+     * @param response 响应信息
+     * @return 修改的密码
+     */
+    @PostMapping("/userc/changePassword")
+    public String changePassword(HttpServletRequest request, HttpSession session, HttpServletResponse response){
+        return this.userService.changePwd(request,session,response);
+    }
+
+    /**
+     * 跳转到修改密码页面
+     *
+     * @return 修改密码页面view
+     */
+    @GetMapping(value = "/userc/change")
+    public ModelAndView turnToUserChangeManagement() {
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("./authorityManagement/changePassWord");
+        return mv;
     }
 }
