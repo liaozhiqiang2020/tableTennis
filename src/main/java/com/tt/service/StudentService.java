@@ -70,4 +70,7 @@ public interface StudentService<T> {
      */
     StudentEntity findSn(String sn);
 
+    //查询手机号下绑定的学员
+    List<StudentEntity> findStudentByPhone(String phone);
+
 }

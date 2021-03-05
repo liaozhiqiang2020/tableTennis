@@ -1,9 +1,9 @@
 package com.tt.controller;
 
+import com.tt.pojo.NoticeEntity;
+import com.tt.pojo.StudentEntity;
 import com.tt.pojo.WxUserInfoEntity;
-import com.tt.service.CoachService;
-import com.tt.service.WeiXinPayService;
-import com.tt.service.WxUserInfoService;
+import com.tt.service.*;
 import com.tt.weixinpay.vo.Json;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -37,6 +37,10 @@ public class WeixinController extends WeixinSupport {
     private WxUserInfoService wxUserInfoService;
     @Autowired
     private CoachService coachService;
+    @Autowired
+    private NoticeService noticeService;
+    @Autowired
+    private StudentService studentService;
 
 
     /**
@@ -127,6 +131,26 @@ public class WeixinController extends WeixinSupport {
     @RequestMapping(value="/findCoachAndClass")
     public List<Map<String, Object>> findCoachAndClass(String openCode,String state){
         return this.coachService.findCoachAndClass(state);
+    }
+
+    /**
+     * 查询公告
+     * @return
+     */
+    @ResponseBody
+    @RequestMapping(value="/findGongGaoNotice")
+    public List<NoticeEntity> findGongGaoNotice(Integer type){
+        return this.noticeService.findAllNoticeByType(type);
+    }
+
+    /**
+     * 查询手机号下绑定的学员
+     * @return
+     */
+    @ResponseBody
+    @RequestMapping(value="/findStudentByPhone")
+    public List<StudentEntity> findStudentByPhone(String phone){
+        return this.studentService.findStudentByPhone(phone);
     }
 
     @GetMapping(value = "/showImg")

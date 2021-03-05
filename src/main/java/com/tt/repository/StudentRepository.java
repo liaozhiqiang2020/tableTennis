@@ -64,6 +64,9 @@ public interface StudentRepository extends BaseRepository<StudentEntity, Long>, 
     List<StudentEntity> findStudentByPlaceId(@Param("placeId") String placeId);
 
     @Query(value = "select * from tt_student u where u.sn=:sn", nativeQuery = true)
-    public StudentEntity findSn(String sn);
+    public StudentEntity findSn(@Param("sn")String sn);
+
+    @Query(value = "select * from tt_student u where u.parent_tel=:phoneNm or u.tel=:phoneNm", nativeQuery = true)
+    List<StudentEntity> findStudentByPhone(@Param("phoneNm") String phoneNm);
 
 }

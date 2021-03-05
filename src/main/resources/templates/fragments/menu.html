@@ -33,7 +33,7 @@
 
             <li class="treeview"
                 sec:authorize="hasAnyAuthority('学员信息管理','教练信息管理','缴费信息管理','场地信息管理',
-                '课程类型管理','选课管理','选课记录查看','学员签到信息管理','会员信息管理')">
+                '课程类型管理','选课管理','选课记录查看','学员签到信息管理','会员信息管理','消息通知管理')">
                 <a href="#">
                     <i class="fa fa-files-o"></i>
                     <span>基础数据管理</span>
@@ -68,6 +68,9 @@
                     </li>
                     <li sec:authorize="hasAuthority('会员信息管理')">
                         <a href="/tt/member/toMemberMgr"><i class="fa fa-circle-o"></i>会员信息管理</a>
+                    </li>
+                    <li sec:authorize="hasAuthority('消息通知管理')">
+                        <a href="/tt/notice/toNoticeMgr"><i class="fa fa-circle-o"></i>消息通知管理</a>
                     </li>
                 </ul>
             </li>

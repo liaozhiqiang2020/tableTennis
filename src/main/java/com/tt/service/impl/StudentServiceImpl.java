@@ -127,4 +127,13 @@ public class StudentServiceImpl implements StudentService {
     public StudentEntity findSn(String sn) {
         return this.studentRepository.findSn(sn);
     }
+
+    @Override
+    public List<StudentEntity> findStudentByPhone(String phone) {
+        List<StudentEntity> list = null;
+        if(!phone.equals("")){
+            list = this.studentRepository.findStudentByPhone(phone);
+        }
+        return list;
+    }
 }
