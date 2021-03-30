@@ -89,13 +89,14 @@ public class StudentSignController {
 
 			if(!studentEntity.getUnitPrice().equals("") && studentSignEntity.getCourseId()==9){//如果单价不为空,并且是单陪课
 				studentEntity.setMoney(String.valueOf(Integer.parseInt(studentEntity.getMoney())-Integer.parseInt(studentEntity.getUnitPrice())));
+				studentSignEntity.setMoney(Integer.parseInt(studentEntity.getUnitPrice()));//存入本节课价格
 			}else{
 				studentEntity.setMoney(String.valueOf(Integer.parseInt(studentEntity.getMoney())-Integer.parseInt(courseEntity.getMoney())));
+				studentSignEntity.setMoney(Integer.parseInt(courseEntity.getMoney()));//存入本节课价格
 			}
 
 			this.studentService.updateStudent(studentEntity);
 
-			studentSignEntity.setMoney(Integer.parseInt(courseEntity.getMoney()));//存入本节课价格
 			this.studentSignService.saveStudentSign(studentSignEntity);
 
 			return "0";
