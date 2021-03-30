@@ -47,29 +47,43 @@ public class DefaultController {
      * @return
      */
     @RequestMapping("/")
-    public ModelAndView home() {
+    public ModelAndView home(HttpServletRequest request) {
+        HttpSession session = request.getSession(true);
+        UserEntity userEntity= (UserEntity) session.getAttribute("user");
+        session.removeAttribute("user");
+
+        if(userEntity!=null && userEntity.getType()==0){
+            return new ModelAndView("./home");
+        }else{
+            return new ModelAndView("login");
+        }
+
+    }
+
+    @RequestMapping("/toLogin")
+    public ModelAndView toLogin() {
         return new ModelAndView("login");
     }
 
-    /**
-     * 登陆页面跳转控制
-     * @param error 不正确
-     * @param logout 退出
-     * @return 页面跳转
-     */
-    @GetMapping("/login")
-    public ModelAndView login(@RequestParam(value = "error", required = false) String error,
-                              @RequestParam(value = "logout", required = false) String logout) {
-        ModelAndView model = new ModelAndView();
-        if (error != null) {
-            model.addObject("error", "不正确的用户名和密码");
-        }
-        if (logout != null) {
-            model.addObject("msg", "你已经成功退出");
-        }
-        model.setViewName("login");
-        return model;
-    }
+//    /**
+//     * 登陆页面跳转控制
+//     * @param error 不正确
+//     * @param logout 退出
+//     * @return 页面跳转
+//     */
+//    @GetMapping("/login")
+//    public ModelAndView login(@RequestParam(value = "error", required = false) String error,
+//                              @RequestParam(value = "logout", required = false) String logout) {
+//        ModelAndView model = new ModelAndView();
+//        if (error != null) {
+//            model.addObject("error", "不正确的用户名和密码");
+//        }
+//        if (logout != null) {
+//            model.addObject("msg", "你已经成功退出");
+//        }
+//        model.setViewName("login");
+//        return model;
+//    }
 
     /**
      *
